@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Parallax effect on scroll
-    const heroSection = document.querySelector('.hero-section');
     const heroContent = document.querySelector('.hero-content');
     
     let ticking = false;

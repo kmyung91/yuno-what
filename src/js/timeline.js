@@ -73,7 +73,7 @@ class TimelineManager {
                 location: 'Berlin, DE / New York, NY',
                 description: 'Created a free-to-use mobile app that helps people locate nearby restrooms within 5 seconds.',
                 achievements: [
-                    'Single-handedly crafted a solution achieving 4.8/5 star rating and 1k+ MAU with $0 marketing',
+                    'Produced best-in-class mobile app achieving 4.8/5 star rating and 1k+ MAU with $0 marketing',
                     'Engineered complete product using AI-assisted development and modern tech stack',
                     'Enhanced global accessibility by localizing the app in seven languages'
                 ],

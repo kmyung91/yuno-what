@@ -27,7 +27,7 @@ class PortfolioManager {
                 description: 'Toilet Finder App on iOS and Android',
                 thumbnail: 'assets/portfolio-8.jpg',
                 featured: true,
-                tags: ['Product Design', 'Mobile Development', 'Founder'],
+                tags: ['Founder', 'Product Design', 'Mobile Development'],
                 year: '2022-Present',
                 content: `
                     <div class="project-header">
@@ -178,7 +178,7 @@ class PortfolioManager {
                 description: 'iPad/Web Apps for Medical Research',
                 thumbnail: 'assets/portfolio-4.png',
                 featured: true,
-                tags: ['Product Management', 'Machine Learning', 'iOS', 'Web'],
+                tags: ['Product Management', 'iOS', 'Web'],
                 year: '2018-2020',
                 content: `
                     <div class="project-header">
@@ -277,7 +277,7 @@ class PortfolioManager {
         item.className = 'portfolio-item';
         item.dataset.projectId = project.id;
         
-        const tagsHtml = project.tags.slice(0, 2).map(tag => 
+        const tagsHtml = project.tags.map(tag => 
             `<span class="portfolio-tag">${tag}</span>`
         ).join('');
         

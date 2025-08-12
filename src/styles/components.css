@@ -465,7 +465,7 @@
 
 .testimonial-full-quote {
     position: relative;
-    margin-bottom: var(--space-xl);
+    margin-bottom: 0;
     padding: var(--space-lg);
 }
 
@@ -482,7 +482,6 @@
     align-items: center;
     gap: var(--space-md);
     padding: var(--space-lg);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.02);
 }
 
@@ -534,6 +533,55 @@
     border-color: rgba(34, 141, 255, 0.5);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(34, 141, 255, 0.2);
+}
+
+/* LinkedIn Invitation */
+.linkedin-invitation-container {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding: var(--space-xl) 0;
+}
+
+.linkedin-invitation {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.invitation-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: var(--space-md);
+    margin-top: 0;
+}
+
+.linkedin-invitation-btn {
+    display: inline-block;
+    background: #0077B5;
+    color: white;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all var(--transition-normal);
+    border: 2px solid #0077B5;
+}
+
+.linkedin-invitation-btn:hover {
+    background: #005885;
+    border-color: #005885;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.continue-reading-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+    font-style: italic;
 }
 
 /* Services Section */

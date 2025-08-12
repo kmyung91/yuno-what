@@ -295,14 +295,17 @@
     display: flex;
     gap: var(--space-lg);
     margin-top: var(--space-lg);
+    flex-direction: row;
 }
 
 .project-content .col-lg-8 {
     flex: 2;
+    order: 2;
 }
 
 .project-content .col-lg-4 {
     flex: 1;
+    order: 1;
 }
 
 .project-sidebar {
@@ -409,5 +412,26 @@
     
     .modal-body {
         padding: var(--space-md);
+    }
+    
+    /* Project modal responsive fixes */
+    .project-content .row {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .project-content .col-lg-8,
+    .project-content .col-lg-4 {
+        order: unset;
+        flex: 1;
+    }
+    
+    .project-content .col-lg-4 {
+        order: -1; /* Put sidebar on top on mobile */
+    }
+    
+    .project-sidebar {
+        position: static;
+        margin-bottom: var(--space-md);
     }
 }

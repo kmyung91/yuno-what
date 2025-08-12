@@ -27,7 +27,7 @@ class PortfolioManager {
                 description: 'Toilet Finder App on iOS and Android',
                 thumbnail: 'assets/portfolio-8.jpg',
                 featured: true,
-                tags: ['Mobile App', 'Product Design', 'Development', 'Founder'],
+                tags: ['Product Design', 'Mobile Development', 'Founder'],
                 year: '2022-Present',
                 content: `
                     <div class="project-header">
@@ -78,6 +78,7 @@ class PortfolioManager {
                                         <li>Kevin "Yuno" Myung - Product/Design</li>
                                         <li>Laura Angeli - Brand Design</li>
                                         <li>Batuhan Direk - Backend Architecture</li>
+                                        <li>Uni So - Content Lead</li>
                                     </ul>
                                     
                                     <h6>Website</h6>
@@ -177,7 +178,7 @@ class PortfolioManager {
                 description: 'iPad/Web Apps for Medical Research',
                 thumbnail: 'assets/portfolio-4.png',
                 featured: true,
-                tags: ['Product Management', 'Machine Learning', 'Medical Research', 'iPad'],
+                tags: ['Product Management', 'Machine Learning', 'iOS', 'Web'],
                 year: '2018-2020',
                 content: `
                     <div class="project-header">
@@ -234,7 +235,7 @@ class PortfolioManager {
                                     <h6>Key Metrics</h6>
                                     <ul>
                                         <li>99% client satisfaction</li>
-                                        <li>97% project satisfaction</li>
+                                        <li>97% user satisfaction</li>
                                         <li>60+ global projects</li>
                                         <li>80% workload reduction through automation</li>
                                     </ul>

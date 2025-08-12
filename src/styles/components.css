@@ -256,6 +256,34 @@
 .timeline-achievements li:last-child {
     margin-bottom: 0;
 }
+
+/* Timeline Show More Button */
+.timeline-show-more-container {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+}
+
+.timeline-show-more-btn {
+    background: rgba(34, 141, 255, 0.1);
+    border: 2px solid rgba(34, 141, 255, 0.3);
+    color: var(--color-accent);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.timeline-show-more-btn:hover {
+    background: rgba(34, 141, 255, 0.2);
+    border-color: rgba(34, 141, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(34, 141, 255, 0.2);
+}
     width: 20px;
     height: 20px;
     background: var(--color-accent);

@@ -23,26 +23,50 @@ class App {
     initTestimonials() {
         const testimonialData = [
             {
-                text: "Yuno is an exceptional product manager who consistently delivers results. His ability to bridge design and development makes him invaluable to any team.",
-                author: "Alexandra Smith",
-                position: "CEO, Tech Startup",
-                avatar: "assets/testimonials/alexandra.jpg"
+                excerpt: "Yuno's ability to blend complex business requirements into actionable items is truly remarkable.",
+                fullText: "Yuno's ability to blend complex business requirements into actionable items for the product's team is truly remarkable. His communication skills along with his product expertise makes him a highly effective product manager.\n\nWe have worked together on two highly ambitious and successful initiatives that held a crucial role for our company wide OKRs. In both case we had a small timeframe to make it happen, so the planning beforehand was crucial.\nYuno has done an outstanding job in both cases during the discovery phase and the planning itself, making it possibly to execute successfully.\n\nI could always trust and delegate to him, I knew by a fact that he would complete his tasks meticulously and by the designed deadline.\n\nOverall I cannot recommend Yuno enough, working with him has been a pleasure and frictionless.",
+                author: "Asdullah Siddique",
+                position: "Engineering Manager",
+                avatar: "assets/testimonials/asdullah.jpeg"
             },
             {
-                text: "Working with Yuno was a game-changer for our project. His UX expertise and technical knowledge helped us create something truly special.",
-                author: "Michael Chen",
-                position: "CTO, SaaS Company",
-                avatar: "assets/testimonials/michael.jpg"
+                excerpt: "Yuno possesses a rare blend of strategic foresight and practical know-how that makes him a formidable force in product development.",
+                fullText: "I had the pleasure of working with Yuno Myung at Tomorrow University, where we collaborated closely on our core product initiatives. The quality of a product manager can significantly impact the design process, which is why I was thrilled to work alongside someone of Yuno's caliber.\n\nIn my experience working with numerous product managers, Yuno truly stands out. He possesses a rare blend of strategic foresight and practical know-how that makes him a formidable force in product development. Yuno is not only punctual and exceptionally organized, but he also has a deep technical understanding that enhances the effectiveness of his teams. His ability to articulate clear product visions and defend his strategic decisions is noteworthy. Even when facing challenges, Yuno remains open to feedback, thoughtfully considering other perspectives to achieve the best outcomes.\n\nYuno's contributions have been vital to the success of our latest product enhancements, and it's genuinely disappointing that our professional paths are diverging. Working with him has been a highlight of my career, and I enthusiastically recommend Yuno to any organization looking for a visionary product manager.",
+                author: "Lilian Desvaux de Marigny",
+                position: "Product Designer",
+                avatar: "assets/testimonials/lilian.jpeg"
             },
             {
-                text: "Yuno's attention to detail and user-centric approach transformed our app. The results exceeded all our expectations.",
-                author: "Sarah Johnson",
-                position: "Head of Product, E-commerce",
-                avatar: "assets/testimonials/sarah.jpg"
+                excerpt: "He has the perfect balance between request and flexibility, always willing to listen to the whole team's ideas.",
+                fullText: "Working with Yuno has been amazing. He's really user-centred, has great ideas and is such a joy to have him in a team.\n\nFor me, Yuno has the perfect balance between request and flexibility. You will always find an open person, that is willing to listen to the whole team's ideas or technical concerns so the product delivered is not only good but also scalable and bug-free.\n\nYuno always has a kind word and does not hesitate to give a word of support when needed or to congratulate his colleagues and team for their achievements.",
+                author: "Silvia España Gil",
+                position: "iOS Developer",
+                avatar: "assets/testimonials/silvia.jpeg"
+            },
+            {
+                excerpt: "He stroke me as a great PM with extraordinary sector understanding and a big advocate for better UX practices.",
+                fullText: "Yuno and I worked as PMs in the same organisation at wefox.\nHe stroke me as a great PM with extraordinary sector/product understanding and a big advocate for better UX and user testing practices at our company. As a very active part of our team, he helped to shape our product culture and made everyone around him better.\nI believe Yuno is a great professional and a great personality - hands down, I've never met anyone who didn't like him.\nYuno all the best for your upcoming adventures - you will be missed!",
+                author: "Lars Neusesser",
+                position: "Senior Product Manager",
+                avatar: "assets/testimonials/lars.jpeg"
+            },
+            {
+                excerpt: "Working together with Yuno always felt productive, smooth and fun. I would collaborate with him again without hesitation.",
+                fullText: "I had the pleasure of working with Yuno during his time at Tomorrow University. From the first interview with him it was clear that he is meticulous, has no problem thinking of creative solutions, and is able to break down complex issues in such a way that they become simple to understand.\n\nWorking together with Yuno always felt productive, smooth and fun. I would collaborate with him again without hesitation.",
+                author: "Teun van Boxtel",
+                position: "Full Stack Engineer",
+                avatar: "assets/testimonials/teun.jpeg"
+            },
+            {
+                excerpt: "In the end, we launched a product that blew the clients and the users away.",
+                fullText: "I was part of one of Kevin's cross-functional teams and we officially collaborated on launching an iOS app together.\nHe did a lot of user research, flew out to conferences, talked with a ton of people, and always found information that we could work with.\nHis insights on the users and use cases were very helpful and he was always easy to communicate with.\nHe had a very good understanding of how to prioritise tickets, and even dismantling tickets into smaller pieces to make proper trade-offs and always reach our deadlines.\nIn the end, we launched a product that blew the clients and the users away.\n\nAs an engineer, I appreciated a competent PM like Kevin and I would love to have a chance to work with him again some day.",
+                author: "Kishore Vaddadi",
+                position: "Mobile Engineer",
+                avatar: "assets/testimonials/kishore.jpeg"
             }
         ];
         
-        this.createTestimonialSlider(testimonialData);
+        this.createTestimonialCards(testimonialData);
     }
     
     createTestimonialSlider(testimonials) {

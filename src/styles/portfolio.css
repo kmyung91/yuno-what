@@ -374,20 +374,41 @@
     }
     
     .portfolio-item {
-        aspect-ratio: 16/9;
+        /* Remove fixed aspect ratio to allow natural height */
+        aspect-ratio: unset;
+    }
+    
+    .portfolio-image {
+        /* Allow flexible height on mobile */
+        min-height: 180px;
+        height: auto;
+    }
+    
+    .portfolio-thumbnail {
+        /* Ensure full image is visible */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .portfolio-description {
+        /* Make sure description is visible */
+        opacity: 1;
+        font-size: 0.9rem;
+    }
+    
+    .portfolio-tags {
+        /* Make sure tags are visible */
+        opacity: 1;
+    }
+    
+    .portfolio-cta {
+        /* Show CTA on mobile */
+        opacity: 1;
+        transform: translateY(0);
     }
     
     .modal-body {
         padding: var(--space-md);
-    }
-    
-    .portfolio-overlay {
-        opacity: 1;
-        background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.9) 100%);
-    }
-    
-    .portfolio-title,
-    .portfolio-description {
-        transform: translateY(0);
     }
 }

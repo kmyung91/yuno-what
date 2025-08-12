@@ -4,6 +4,9 @@ class TimelineManager {
     constructor() {
         this.timelineData = [];
         this.timelineContainer = document.querySelector('.experience-timeline');
+        this.showMoreButton = null;
+        this.itemsToShow = 5;
+        this.allItemsVisible = false;
         this.init();
     }
     
@@ -24,6 +27,12 @@ class TimelineManager {
                 period: 'Aug 2025',
                 location: 'Berlin, DE (Remote)',
                 description: 'Intensive 9-week bootcamp covering Python, SQL, Machine Learning, and Data Visualization',
+                achievements: [
+                    'Mastered Python programming for data analysis and automation',
+                    'Built automated dashboards and data pipelines using modern ELT tools',
+                    'Developed expertise in SQL for data warehousing and transformation',
+                    'Created interactive visualizations and business intelligence reports'
+                ],
                 logo: 'assets/companylogos/logo_lewagon.jpeg'
             },
             {
@@ -108,6 +117,12 @@ class TimelineManager {
                 period: 'Jul 2021',
                 location: 'Berlin, DE',
                 description: 'Intensive 9-week coding bootcamp covering full-stack web development, Ruby on Rails, JavaScript, and modern web technologies.',
+                achievements: [
+                    'Built full-stack web applications using Ruby on Rails and modern JavaScript',
+                    'Mastered Object-Oriented Programming and Model-View-Controller design patterns',
+                    'Developed collaborative coding skills through pair programming and Git workflows',
+                    'Created responsive web interfaces with HTML5, CSS3, and Bootstrap framework'
+                ],
                 logo: 'assets/companylogos/logo_lewagon.jpeg'
             },
             {
@@ -185,9 +200,15 @@ class TimelineManager {
                 type: 'education',
                 title: 'Bachelor of Science in Business Administration',
                 organization: 'Northeastern University',
-                period: '2009 - 2013',
+                period: 'Sep 2010 - Jan 2015',
                 location: 'Boston, MA',
                 description: 'Bachelor\'s degree in Business Administration with focus on marketing and international business.',
+                achievements: [
+                    'Completed cooperative education program with hands-on industry experience',
+                    'Specialized in marketing strategy and international business practices',
+                    'Developed analytical and strategic thinking skills through case-based learning',
+                    'Graduated from AACSB-accredited business program with global perspective'
+                ],
                 logo: 'assets/companylogos/logo_neu.jpeg'
             },
             {
@@ -212,10 +233,63 @@ class TimelineManager {
         
         this.timelineContainer.innerHTML = '';
         
-        this.timelineData.forEach((item, index) => {
+        // Render initial items (first 5)
+        this.timelineData.slice(0, this.itemsToShow).forEach((item, index) => {
             const timelineItem = this.createTimelineItem(item, index);
             this.timelineContainer.appendChild(timelineItem);
         });
+        
+        // Create show more button if there are more items
+        if (this.timelineData.length > this.itemsToShow) {
+            this.createShowMoreButton();
+        }
+    }
+    
+    createShowMoreButton() {
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'timeline-show-more-container';
+        
+        this.showMoreButton = document.createElement('button');
+        this.showMoreButton.className = 'timeline-show-more-btn';
+        this.showMoreButton.textContent = `Show ${this.timelineData.length - this.itemsToShow} more experiences`;
+        
+        this.showMoreButton.addEventListener('click', () => {
+            this.toggleTimelineItems();
+        });
+        
+        buttonContainer.appendChild(this.showMoreButton);
+        this.timelineContainer.parentElement.appendChild(buttonContainer);
+    }
+    
+    toggleTimelineItems() {
+        if (!this.allItemsVisible) {
+            // Show all items
+            this.timelineData.slice(this.itemsToShow).forEach((item, index) => {
+                const timelineItem = this.createTimelineItem(item, index + this.itemsToShow);
+                timelineItem.style.opacity = '0';
+                timelineItem.style.transform = 'translateY(30px)';
+                this.timelineContainer.appendChild(timelineItem);
+                
+                // Animate in
+                setTimeout(() => {
+                    timelineItem.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    timelineItem.style.opacity = '1';
+                    timelineItem.style.transform = 'translateY(0)';
+                }, 50 * (index + 1));
+            });
+            
+            this.showMoreButton.textContent = 'Show less';
+            this.allItemsVisible = true;
+        } else {
+            // Hide extra items
+            const allItems = this.timelineContainer.querySelectorAll('.timeline-item');
+            for (let i = allItems.length - 1; i >= this.itemsToShow; i--) {
+                allItems[i].remove();
+            }
+            
+            this.showMoreButton.textContent = `Show ${this.timelineData.length - this.itemsToShow} more experiences`;
+            this.allItemsVisible = false;
+        }
     }
     
     createTimelineItem(item, index) {

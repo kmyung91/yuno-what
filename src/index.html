@@ -60,32 +60,32 @@
     </section>
 
     <!-- Story Section -->
-    <section id="story" class="story-section">
-        <video class="story-video" src="assets/story-video.mp4" muted loop playsinline></video>
-        <div class="story-content">
-            <div class="story-text story-text-intro">
-                <span class="reveal-text">It all starts with a vision.</span>
-                <br><br>
-                <span class="reveal-text">As a designer,</span>
-                <span class="reveal-text">I compose the music.</span>
-                <br>
-                <span class="reveal-text">As a developer,</span>
-                <span class="reveal-text">I play the notes.</span>
-                <br>
-                <span class="reveal-text">As a product manager,</span>
-                <span class="reveal-text">I conduct orchestras.</span>
-                <br><br>
-                <span class="reveal-text">I turn impossible ideas into harmony.</span>
+    <main id="story" class="mb-5">
+        <div class="story-container min-height-sm">
+            <video src="assets/story-video.mp4" autoplay playsinline muted loop></video>
+            <div class="story-content">
+                <p class="story-text" data-splitting>
+                    <span class="fade-reveal">It all starts with a vision.</span>
+                    <span class="fade-reveal">As a designer,</span>
+                    <span class="fade-reveal">I compose the music.</span>
+                    <span class="fade-reveal">As a developer,</span>
+                    <span class="fade-reveal">I play the notes.</span>
+                    <span class="fade-reveal">As a product manager,</span>
+                    <span class="fade-reveal">I conduct orchestras.</span>
+                    <span class="fade-reveal">I turn impossible ideas into harmony.</span>
+                </p>
             </div>
-            <div class="story-text story-text-about">
-                <h2 class="reveal-text">Hi there 👋</h2>
-                <p class="reveal-text">
-                    My name's Yuno, a rare UX/UI Designer, Full-Stack Developer, Product Manager, and Data Analyst hybrid. 
-                    I excel at bringing harmony to the projects I work on, no matter how complex they may be.
+            
+            <!-- Second content directly in the same container -->
+            <div class="story-content">
+                <p class="story-text" data-splitting>
+                    <div class="story-heading story-text"><strong>Hi there 👋</strong></div><br><br>
+                    <span class="fade-reveal story-text">My name's Yuno</span>
+                    <span class="fade-reveal story-text">, a rare UX/UI Designer, Full-Stack Developer, Product Manager, and Data Analyst hybrid. I excel at bringing harmony to the projects I work on, no matter how complex they may be.</span>
                 </p>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section">

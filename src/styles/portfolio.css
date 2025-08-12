@@ -1,6 +1,5 @@
 /* Portfolio Section */
 .portfolio-section {
-    background: var(--color-bg-dark);
     position: relative;
     z-index: var(--z-content);
 }

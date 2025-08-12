@@ -8,7 +8,6 @@ class App {
     init() {
         this.setCurrentYear();
         this.initTestimonials();
-        this.initExperiences();
         this.initContactForm();
         this.initScrollEffects();
         this.initServiceButtons();
@@ -77,47 +76,6 @@ class App {
         }, 5000);
     }
     
-    initExperiences() {
-        const experienceData = [
-            {
-                title: "Senior Product Manager",
-                company: "Wefox",
-                period: "2023 - Present",
-                description: "Leading product strategy for digital insurance platform, managing cross-functional teams to deliver user-centric solutions."
-            },
-            {
-                title: "UX/UI Designer & Developer",
-                company: "Freelance",
-                period: "2021 - 2023",
-                description: "Designed and developed digital products for startups and established companies, specializing in user experience optimization."
-            },
-            {
-                title: "Product Designer",
-                company: "Stealth Startup",
-                period: "2020 - 2021",
-                description: "Led design efforts for innovative fintech product, from concept to launch, focusing on user research and interface design."
-            }
-        ];
-        
-        this.createExperienceTimeline(experienceData);
-    }
-    
-    createExperienceTimeline(experiences) {
-        const timeline = document.querySelector('.experience-timeline');
-        if (!timeline) return;
-        
-        experiences.forEach(experience => {
-            const item = document.createElement('div');
-            item.className = 'experience-item';
-            item.innerHTML = `
-                <h3>${experience.title}</h3>
-                <h4>${experience.company}</h4>
-                <p class="experience-period">${experience.period}</p>
-                <p>${experience.description}</p>
-            `;
-            timeline.appendChild(item);
-        });
-    }
     
     initContactForm() {
         const form = document.getElementById('contact-form');

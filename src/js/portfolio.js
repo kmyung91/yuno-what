@@ -76,8 +76,9 @@ class PortfolioManager {
                                     <h6>Team</h6>
                                     <ul>
                                         <li>Kevin "Yuno" Myung - Product/Design</li>
-                                        <li>Laura Angeli - Brand Design</li>
+                                        <li>Laura Angeli - Logo Design</li>
                                         <li>Batuhan Direk - Backend Architecture</li>
+                                        <li>Achi - 2D Animator</li>
                                         <li>Uni So - Content Lead</li>
                                     </ul>
                                     
@@ -378,6 +379,7 @@ class PortfolioManager {
             this.closeModal();
         }
     }
+    
 }
 
 // Initialize when DOM is ready

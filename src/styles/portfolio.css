@@ -368,6 +368,7 @@
     transform: scale(1.05);
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     .portfolio-grid {
@@ -434,4 +435,5 @@
         position: static;
         margin-bottom: var(--space-md);
     }
+    
 }

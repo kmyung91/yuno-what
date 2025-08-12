@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fluid Test</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #interactive-bgr {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        #interactive-bgr canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="interactive-bgr">
+        <canvas style="visibility: visible;"></canvas>
+        <div class="overlay"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/fluid-simulation.js"></script>
+</body>
+</html>

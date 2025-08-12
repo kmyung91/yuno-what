@@ -1,0 +1,164 @@
+/* Story Section with Scroll-Triggered Animations */
+.story-section {
+    position: relative;
+    min-height: 200vh; /* Ensure enough scroll space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Video */
+.story-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: var(--z-background);
+    opacity: 0;
+    filter: brightness(0.4) saturate(0.2);
+    transition: opacity 1s ease;
+}
+
+.story-video.visible {
+    opacity: 0.3;
+}
+
+/* Story Content */
+.story-content {
+    position: relative;
+    z-index: var(--z-content);
+    max-width: 900px;
+    padding: 0 var(--space-md);
+    text-align: center;
+}
+
+.story-text {
+    margin: 50vh 0;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.story-text-intro {
+    margin-top: 30vh;
+}
+
+.story-text-intro .reveal-text:first-child {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.story-text-intro .reveal-text:nth-child(8) {
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.story-text-about {
+    margin-bottom: 30vh;
+}
+
+.story-text h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-lg);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.story-text p {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CSS Scroll-driven animations matching original */
+@keyframes highlight {
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Reveal Text Animation */
+.reveal-text {
+    display: inline-block;
+    opacity: 0.25;
+    animation: highlight both ease-in-out;
+    animation-timeline: view();
+    margin: 0 0.2em;
+}
+
+/* Progressive reveal for story intro spans - matching original tight ranges */
+.story-text-intro .reveal-text:nth-child(1) { animation-range: cover 5% cover 35%; }    /* "It all starts with a vision" */
+.story-text-intro .reveal-text:nth-child(2) { animation-range: cover 33% cover 40%; }   /* "As a designer," */
+.story-text-intro .reveal-text:nth-child(3) { animation-range: cover 38% cover 45%; }   /* "I compose the music." */
+.story-text-intro .reveal-text:nth-child(4) { animation-range: cover 43% cover 50%; }   /* "As a developer," */
+.story-text-intro .reveal-text:nth-child(5) { animation-range: cover 48% cover 55%; }   /* "I play the notes." */
+.story-text-intro .reveal-text:nth-child(6) { animation-range: cover 53% cover 60%; }   /* "As a product manager," */
+.story-text-intro .reveal-text:nth-child(7) { animation-range: cover 58% cover 65%; }   /* "I conduct orchestras." */
+.story-text-intro .reveal-text:nth-child(8) { animation-range: cover 63% cover 70%; }   /* "I turn impossible ideas into harmony." */
+
+/* About section reveal - appears after main story */
+.story-text-about .reveal-text {
+    display: block;
+    margin: var(--space-md) 0;
+    animation-range: cover 75% cover 85%;
+}
+
+.story-text-about h2.reveal-text {
+    animation-range: cover 73% cover 83%;
+}
+
+.story-text-about p.reveal-text {
+    animation-range: cover 78% cover 88%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .story-section {
+        min-height: 150vh;
+    }
+    
+    .story-text {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        margin: 30vh 0;
+    }
+    
+    .story-text-intro {
+        margin-top: 20vh;
+    }
+    
+    .story-text-about {
+        margin-bottom: 20vh;
+    }
+    
+    .reveal-text {
+        margin: 0 0.1em;
+    }
+    
+    .story-video {
+        height: 100vh;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-text {
+        opacity: 1;
+        animation: none;
+    }
+    
+    .story-video {
+        opacity: 0.3;
+        transition: none;
+    }
+}

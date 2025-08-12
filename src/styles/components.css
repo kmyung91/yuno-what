@@ -1,0 +1,320 @@
+/* Experience Section */
+.experience-section {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.experience-section .section-title {
+    color: var(--color-dark);
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.experience-timeline {
+    position: relative;
+    padding: var(--space-md) 0;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-accent);
+    transform: translateX(-50%);
+}
+
+.experience-item {
+    position: relative;
+    width: calc(50% - 40px);
+    padding: var(--space-md);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--space-lg);
+}
+
+.experience-item:nth-child(odd) {
+    margin-left: auto;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.experience-item:nth-child(odd)::before {
+    left: -30px;
+}
+
+.experience-item:nth-child(even)::before {
+    right: -30px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background: var(--color-bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.testimonials-slider {
+    position: relative;
+    min-height: 300px;
+}
+
+.testimonial-item {
+    text-align: center;
+    padding: var(--space-lg);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-info p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Services Section */
+.services-section {
+    background: var(--color-dark);
+    position: relative;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.service-card {
+    position: relative;
+    padding: var(--space-lg);
+    text-align: center;
+    transition: transform var(--transition-normal);
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-number {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.1;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.service-card p {
+    margin-bottom: var(--space-md);
+    opacity: 0.8;
+}
+
+.service-cta {
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--color-light);
+    border-radius: 50px;
+    color: var(--color-light);
+    font-weight: 500;
+    transition: all var(--transition-normal);
+}
+
+.service-cta:hover {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--color-bg-dark);
+    position: relative;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.contact-form {
+    margin-top: var(--space-lg);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: var(--space-lg);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--space-sm) 0;
+    font-size: 1rem;
+    color: var(--color-light);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color var(--transition-normal);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.form-group label {
+    position: absolute;
+    top: var(--space-sm);
+    left: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    transition: all var(--transition-normal);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 0.85rem;
+    color: var(--color-accent);
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-accent);
+    color: var(--color-light);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all var(--transition-normal);
+    margin-top: var(--space-lg);
+}
+
+.form-submit:hover {
+    background: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--color-dark);
+    padding: var(--space-lg) 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.footer-links {
+    margin-bottom: var(--space-md);
+}
+
+.footer-links a {
+    color: var(--color-light);
+    margin: 0 var(--space-sm);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-accent);
+}
+
+.site-footer p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-timeline::before {
+        left: 20px;
+    }
+    
+    .experience-item {
+        width: calc(100% - 40px);
+        margin-left: 40px !important;
+    }
+    
+    .experience-item::before {
+        left: -30px !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+}

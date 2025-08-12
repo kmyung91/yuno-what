@@ -1,0 +1,19 @@
+{
+  "name": "yuno-portfolio",
+  "version": "2.0.0",
+  "description": "Modern portfolio website for Kevin 'Yuno' Myung",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "npx serve src -p 3000",
+    "build": "npm run copy-assets && npm run minify",
+    "copy-assets": "mkdir -p dist && cp -r src/* dist/",
+    "minify": "echo 'Minification would go here in production'",
+    "preview": "npx serve dist -p 3001"
+  },
+  "keywords": ["portfolio", "product-manager", "ux-designer", "developer"],
+  "author": "Kevin 'Yuno' Myung",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

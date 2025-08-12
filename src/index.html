@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin "Yuno" Myung - Product Specialist</title>
+    <meta name="description" content="Product Manager, UX/UI Designer, and Web/Mobile Developer based in Berlin">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuno-what.com/">
+    <meta property="og:title" content="Kevin 'Yuno' Myung | Product Specialist">
+    <meta property="og:description" content="Product Manager, UX/UI Designer, and Web/Mobile Developer based in Berlin, specializing in turning digital dreams into reality.">
+    <meta property="og:image" content="https://yuno-what.com/img/profile.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kevin 'Yuno' Myung | Product Specialist">
+    <meta property="twitter:description" content="Product Manager, UX/UI Designer, and Web/Mobile Developer based in Berlin, specializing in turning digital dreams into reality.">
+    <meta property="twitter:image" content="https://yuno-what.com/img/profile.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/story.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <!-- Interactive Background -->
+    <div id="interactive-bgr">
+        <canvas style="visibility: visible;"></canvas>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="assets/profile.png" alt="Kevin Yuno Myung" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <p class="hero-intro">My real name is Kevin but you can call me</p>
+                <h1 class="neon-text">YUNO</h1>
+                <div class="hero-roles">
+                    <span class="typed-output"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <button class="hero-cta" data-scroll-to="#story">
+                    Continue reading
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story-section">
+        <video class="story-video" src="assets/story-video.mp4" muted loop playsinline></video>
+        <div class="story-content">
+            <div class="story-text story-text-intro">
+                <span class="reveal-text">It all starts with a vision.</span>
+                <br><br>
+                <span class="reveal-text">As a designer,</span>
+                <span class="reveal-text">I compose the music.</span>
+                <br>
+                <span class="reveal-text">As a developer,</span>
+                <span class="reveal-text">I play the notes.</span>
+                <br>
+                <span class="reveal-text">As a product manager,</span>
+                <span class="reveal-text">I conduct orchestras.</span>
+                <br><br>
+                <span class="reveal-text">I turn impossible ideas into harmony.</span>
+            </div>
+            <div class="story-text story-text-about">
+                <h2 class="reveal-text">Hi there 👋</h2>
+                <p class="reveal-text">
+                    My name's Yuno, a rare UX/UI Designer, Full-Stack Developer, Product Manager, and Data Analyst hybrid. 
+                    I excel at bringing harmony to the projects I work on, no matter how complex they may be.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="experience-container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <!-- Experience items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-container">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonials-slider">
+                <!-- Testimonial items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <h2 class="section-title">How I Can Help</h2>
+            <div class="services-grid">
+                <div class="service-card glass-morph">
+                    <span class="service-number">01</span>
+                    <h3>UX/UI Design</h3>
+                    <p>Ideal for businesses that need to visualize ideas to start development and/or fundraising.</p>
+                    <button class="service-cta" data-service="design">Get in touch</button>
+                </div>
+                <div class="service-card glass-morph">
+                    <span class="service-number">02</span>
+                    <h3>Website / App Development</h3>
+                    <p>Ideal for businesses that need a landing page, web or mobile apps, online stores, and/or custom tools.</p>
+                    <button class="service-cta" data-service="development">Get in touch</button>
+                </div>
+                <div class="service-card glass-morph">
+                    <span class="service-number">03</span>
+                    <h3>Product Management</h3>
+                    <p>Ideal for established companies that need help delivering value to their customers continuously.</p>
+                    <button class="service-cta" data-service="product">Get in touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/kmyung91" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+            <p>&copy; <span id="year"></span> yuno-what.com. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <!-- Project details will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/fluid-simulation.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/story.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -348,25 +348,25 @@
 }
 
 .testimonial-quote {
-    position: relative;
-    margin-bottom: var(--space-lg);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
 }
 
-.quote-mark {
-    font-size: 4rem;
+.quote-open,
+.quote-close {
+    width: 48px;
+    height: 48px;
     color: var(--color-accent-light);
-    line-height: 1;
     opacity: 0.3;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    font-family: serif;
+    flex-shrink: 0;
 }
 
-.quote-mark.large {
-    font-size: 6rem;
-    top: -20px;
-    left: -20px;
+.quote-close {
+    align-self: flex-end;
+    margin-top: 80px; /* Adjust this value to move down more */
 }
 
 .testimonial-excerpt {
@@ -374,7 +374,6 @@
     line-height: 1.6;
     color: var(--color-light);
     margin: 0;
-    padding-left: var(--space-md);
     font-style: italic;
 }
 
@@ -706,17 +705,17 @@
 .service-number {
     position: absolute;
     bottom: -84px;
-
     font-size: 8rem;
     font-weight: 700;
     opacity: 0.15;
-    color: var(--color-accent);
+    color: var(--color-accent-light);
     transition: all 0.3s ease;
     z-index: 1;
 }
 
 .service-card:hover .service-number {
     opacity: 0.2;
+    color: var(--color-accent);
 }
 
 .service-card h3 {

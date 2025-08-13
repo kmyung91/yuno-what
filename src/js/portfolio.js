@@ -116,57 +116,86 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <img src="assets/portfolio-8-logo.png" class="project-logo" alt="EasyPZ Logo">
-                        <h2>EasyPZ: Toilet Finder</h2>
-                        <p class="lead">Gifting Humanity the Power to Find a Restroom Within 5 Seconds</p>
+                        <h2>EasyPZ: Restroom Finder App</h2>
+                        <p class="lead">Full-stack mobile application helping users locate accessible restrooms within 5 seconds</p>
                         <div class="project-meta">
-                            <span class="project-tag">Mobile App</span>
-                            <span class="project-tag">Product Design</span>
-                            <span class="project-tag">Development</span>
                             <span class="project-tag">Founder</span>
+                            <span class="project-tag">Full-Stack Development</span>
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Product Strategy</span>
                         </div>
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="https://easypz.app/images/problem.gif" class="img-fluid mb-4" alt="EasyPZ Problem">
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">[App Screenshots: Main map interface and restroom discovery flow]</div>
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Overview</h3>
-                                <p>EasyPZ is a mobile app built to make finding public restrooms as easy and stress-free as possible—especially for travelers, women, and anyone with medical needs. It offers real-time, user-powered restroom data, with a core focus on accessibility and convenience.</p>
-                                <p>Our mission is simple but impactful: help anyone locate a suitable restroom within 5 seconds, wherever they are in the world.</p>
-                                
-                                <h3>The Challenge</h3>
-                                <p>The idea for EasyPZ emerged from personal frustration during decades of global travel, where finding clean, safe restrooms often proved unnecessarily difficult. To validate this wasn't just my problem, I conducted interviews with over 100 diverse individuals across different demographics.</p>
-                                
-                                <h3>Brand Identity</h3>
-                                <div class="text-center my-4">
-                                    <img src="assets/portfolio-8-branding.png" class="img-fluid" alt="EasyPZ Branding">
-                                </div>
-                                <p>The EasyPZ logo is a swirl of water inside a location pin, which was a brilliant concept created by talented brand designer Laura Angeli. For the color palette, I drew inspiration from <em>Zima Blue</em> (Netflix's <em>Love, Death + Robots</em>)—a shade that symbolizes water, cleanliness, and tranquility.</p>
-                                
-                                <h3>Technical Stack</h3>
-                                <ul>
-                                    <li><strong>Backend</strong>: NestJS (TypeScript) with PostgreSQL and MikroORM</li>
-                                    <li><strong>Mobile App</strong>: React Native (Expo) for iOS & Android</li>
-                                    <li><strong>Admin Panel</strong>: SvelteKit + TypeScript + DaisyUI</li>
-                                    <li><strong>Authentication</strong>: Google & Apple OAuth integration</li>
-                                    <li><strong>Localization</strong>: Available in 7 languages</li>
-                                </ul>
+                                <h3>The Beginning</h3>
+                                <p>EasyPZ started from a simple frustration—finding a restroom in an unfamiliar city shouldn't be this hard. After countless awkward situations and rushed searches, I decided to build the solution I wished existed.</p>
+
+                                <p>I interviewed over 100 people and discovered this wasn't just my problem. Parents with young children, people with medical conditions, travelers—everyone had a restroom horror story.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[User Research: The stories that shaped our understanding]</div>
+
+                                <h3>Launch & The Zombie Phase</h3>
+                                <p>We launched with a technical co-founder, gained some traction, and reached the app stores. But when my co-founder stepped away, EasyPZ became a zombie—functional but stagnant, slowly losing users while I focused on other projects.</p>
+
+                                <p>For months, EasyPZ sat there, a good idea collecting digital dust.</p>
+
+                                <h3>The AI Revival</h3>
+                                <p>Everything changed when I discovered prompt engineering. Suddenly, I could rebuild what took a team months in just weeks. I didn't just revive EasyPZ—I completely reimagined it.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[Architecture Evolution: From zombie to modern powerhouse]</div>
+
+                                <h3>Where We Are Now</h3>
+                                <p>The new EasyPZ is 90% better than the original—faster, more reliable, and available in 7 languages. We've hit 1,000+ monthly active users with zero marketing spend and maintain a 4.8/5 star rating.</p>
+
+                                <p>But the real victory? I learned that sometimes the best way forward is to tear everything down and rebuild it better.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[Growth Metrics: The comeback story in numbers]</div>
+
+                                <h3>Current Challenges & What's Next</h3>
+                                <p>The challenge now isn't technical—it's growth. How do you scale a utility app that people use once and forget about until they desperately need it again?</p>
+
+                                <p>I'm working on a brand refresh that transforms EasyPZ from a simple utility into something more memorable. Think retro gaming vibes with our mascot Zima leading the charge.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[Brand Evolution: From utility to personality]</div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
-                                    <h6>Team</h6>
+                                    <h6>TIMELINE</h6>
+                                    <p>Sep 2022 - Present</p>
+                                    
+                                    <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Yuno - Product/Design/Development</li>
-                                        <li>Laura Angeli - Logo Design</li>
-                                        <li>Batuhan Direk - Backend Architecture</li>
+                                        <li>Product Strategy & User Research</li>
+                                        <li>Full-Stack Development</li>
+                                        <li>Technical Architecture</li>
+                                        <li>Team Leadership</li>
                                     </ul>
                                     
-                                    <h6>Website</h6>
-                                    <p><a href="https://easypz.app" target="_blank">easypz.app</a></p>
+                                    <h6>Key Metrics</h6>
+                                    <ul>
+                                        <li>1,000+ Monthly Active Users</li>
+                                        <li>4.8/5 App Store Rating</li>
+                                        <li>7 Languages Supported</li>
+                                        <li>90% better and more optimized than v1</li>
+                                        <li>Zero Marketing Spend</li>
+                                    </ul>
                                     
+                                    <h6>Technologies</h6>
+                                    <ul>
+                                        <li>React Native + TypeScript</li>
+                                        <li>NestJS + PostgreSQL</li>
+                                        <li>AWS Infrastructure</li>
+                                        <li>Monorepo Architecture</li>
+                                        <li>OAuth Integration</li>
+                                    </ul>
+                                    
+                                    <h6>DOWNLOAD</h6>
                                     <div class="store-badges">
                                         <a href="https://apps.apple.com/us/app/easypz-toilet-finder/id6740248448" target="_blank">
                                             <img src="assets/store-ios.png" alt="Download on App Store" class="store-badge">

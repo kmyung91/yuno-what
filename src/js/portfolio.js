@@ -233,7 +233,7 @@ class PortfolioManager {
                                     <li><strong>Research Connections</strong>: Created connections between distinct research pieces to enhance discovery and collaboration</li>
                                     <li><strong>iPad Presentation App</strong>: Conceptualized and rolled out an iPad presentation app for global medical conferences</li>
                                     <li><strong>Client Satisfaction</strong>: Achieved 99% client satisfaction for the conference presentation system</li>
-                                    <li><strong>Project Management</strong>: Executed over 60 global projects while implementing automation that maintained 97% satisfaction levels</li>
+                                    <li><strong>Project Management</strong>: Executed over 60 global projects while implementing automation that maintained 97% user satisfaction levels</li>
                                 </ul>
                                 
                                 <h3>The Challenge</h3>

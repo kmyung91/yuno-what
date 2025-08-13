@@ -631,6 +631,10 @@
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateX(0) rotateY(0);
     will-change: transform;
+    display: grid;
+    grid-template-rows: 80px auto auto;
+    align-items: start;
+    min-height: 320px;
 }
 
 
@@ -685,6 +689,7 @@
     font-weight: 600;
     position: relative;
     z-index: 2;
+    align-self: end;
 }
 
 .service-card p {
@@ -693,6 +698,10 @@
     line-height: 1.6;
     position: relative;
     z-index: 2;
+    height: 80px;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
 }
 
 .service-cta {
@@ -713,6 +722,7 @@
     z-index: 2;
     text-decoration: none;
     cursor: pointer;
+    justify-self: center;
 }
 
 .service-cta::after {
@@ -970,8 +980,8 @@
 .contact-item {
     display: inline-flex;
     align-items: center;
-    padding: var(--space-xs) var(--space-md);
-    border-radius: 20px;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 8px;
     font-size: 0.85rem;
     font-weight: 500;
     transition: all var(--transition-normal);

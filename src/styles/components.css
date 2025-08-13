@@ -1200,10 +1200,16 @@
 }
 
 .site-footer p {
-    opacity: 0.6;
+    opacity: 0.8;
     font-size: 0.9rem;
     margin: 0;
-    color: var(--color-light);
+    color: var(--color-accent-light);
+}
+
+#year {
+    color: var(--color-accent-light) !important;
+    opacity: 0.8 !important;
+    font-weight: 500;
 }
 
 /* Responsive */

@@ -222,62 +222,70 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_wefox.jpeg" class="project-logo" alt="wefox Logo">
                         <h2>wefox</h2>
-                        <p class="lead">Comprehensive redesign of flagship insurtech app valued at $4.5B</p>
+                        <p class="lead">Leading complex database integrations and cross-platform redesign at Europe's insurtech unicorn</p>
                         <div class="project-meta">
                             <span class="project-tag">Product Management</span>
-                            <span class="project-tag">iOS</span>
-                            <span class="project-tag">Android</span>
-                            <span class="project-tag">Web</span>
+                            <span class="project-tag">Technical Integration</span>
+                            <span class="project-tag">Cross-Platform</span>
+                            <span class="project-tag">Team Leadership</span>
                         </div>
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/portfolio-7-3.gif" class="img-fluid mb-4" alt="wefox App Demo">
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">[App Evolution: Before and after redesign comparison]</div>
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Overview</h3>
-                                <p>Wefox is an insurance technology (insurtech) platform valued at $4.5B that connects insurance companies, brokers, businesses, and customers to provide digital insurance solutions. As Product Manager, I led the comprehensive redesign of their flagship applications across iOS, Android, and Web platforms.</p>
+                                <h3>The Technical Challenge</h3>
+                                <p>When I joined wefox, the app could only display insurance policies from wefox providers—limiting its value for customers with multiple insurers. The core challenge was architecting database integrations across external insurance providers while navigating legal, privacy, and security requirements.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[Integration Architecture: External database connectivity diagram]</div>
                                 
-                                <h3>Key Achievements</h3>
-                                <ul>
-                                    <li><strong>Rating Improvement</strong>: Increased app ratings from 2.1 to 3.6 (71% improvement) over a 2-year period</li>
-                                    <li><strong>User Base Expansion</strong>: Expanded potential user base from 35K to 2M+ customers</li>
-                                    <li><strong>Team Leadership</strong>: Led the largest tech squad at wefox (8-9 members across web, iOS, Android, and QA)</li>
-                                    <li><strong>Cross-functional Initiative</strong>: Overcame data privacy and technical integration challenges to create a unified system displaying insurance policies from any provider</li>
-                                </ul>
+                                <h3>Cross-Functional Leadership</h3>
+                                <p>As Product Manager for the largest tech squad at wefox (8-9 engineers across iOS, Android, and web), I coordinated between Principal Engineers, legal teams, and external partners to solve this complex integration challenge.</p>
                                 
-                                <h3>The Challenge</h3>
-                                <p>The original wefox app suffered from poor user ratings and limited functionality. Users struggled with complex workflows and the app could only display wefox-specific insurance products, limiting its utility for customers with multiple insurance providers.</p>
+                                <p>The breakthrough required months of stakeholder alignment, security audits, and custom API development to create a unified system that could safely aggregate insurance data from any provider.</p>
+
+                                <h3>Design System Implementation</h3>
+                                <p>Simultaneously, I led the implementation of wefox's first unified design system across all platforms, working with external agencies and internal designers to establish consistent UI components and patterns.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">[Design System: Component library and platform consistency]</div>
                                 
-                                <h3>The Solution</h3>
-                                <p>I championed a cross-functional initiative that involved collaborating with legal teams and external partners to create a unified system. This breakthrough allowed the app to display insurance policies from any provider, significantly increasing its value proposition and contributing to the company's growth from $1.5B to $4.5B valuation.</p>
-                                
-                                <h3>Technical Approach</h3>
-                                <p>Working closely with engineering teams across multiple platforms, we implemented a robust architecture that could handle complex data integration while maintaining security and compliance standards required for the insurance industry.</p>
+                                <h3>Technical Achievement</h3>
+                                <p>The successful integration expanded platform capabilities from serving 35K existing wefox customers to supporting 2M+ potential users across multiple insurance providers—a fundamental shift in the product's value proposition.</p>
+
+                                <p>This complex technical achievement required navigating insurance industry compliance standards while maintaining security and performance across three platforms.</p>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
-                                    <h6>My Role</h6>
-                                    <p>Product Manager (iOS, Android, Web)</p>
-                                    
-                                    <h6>Team Size</h6>
-                                    <p>8-9 members (largest tech squad at wefox)</p>
-                                    
-                                    <h6>Duration</h6>
+                                    <h6>TIMELINE</h6>
                                     <p>Aug 2021 - Oct 2023</p>
                                     
-                                    <h6>Key Metrics</h6>
+                                    <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>71% rating improvement</li>
-                                        <li>2M+ potential user base</li>
-                                        <li>$4.5B company valuation</li>
+                                        <li>Cross-platform product strategy</li>
+                                        <li>Technical integration leadership</li>
+                                        <li>Squad management (8-9 engineers)</li>
+                                        <li>Design system implementation</li>
                                     </ul>
                                     
-                                    <h6>Recognition</h6>
-                                    <p>Consistently received executive recognition as the highest-performing product team</p>
+                                    <h6>Technical Scope</h6>
+                                    <ul>
+                                        <li>iOS, Android, and Web platforms</li>
+                                        <li>External database integrations</li>
+                                        <li>Security and compliance architecture</li>
+                                        <li>Cross-platform design system</li>
+                                    </ul>
+                                    
+                                    <h6>Team Structure</h6>
+                                    <ul>
+                                        <li>Principal Engineers (2)</li>
+                                        <li>Platform developers (iOS, Android, Web)</li>
+                                        <li>QA Engineers (2)</li>
+                                        <li>UX/UI Designers (3)</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

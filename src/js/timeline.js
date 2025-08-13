@@ -20,6 +20,24 @@ class TimelineManager {
         // Sorted in reverse chronological order (most recent first)
         this.timelineData = [
             {
+                id: 'freelance-consultant',
+                type: 'work',
+                title: 'Freelance Product Specialist',
+                organization: 'Independent Consultant',
+                period: 'Nov 2023 - Present',
+                location: 'Berlin, DE',
+                description: 'Helping businesses elevate their digital presence through design, development, and strategic consulting.',
+                achievements: [
+                    'Created custom websites and portfolios for professionals and businesses',
+                    'Built specialized tools and automation solutions for client workflows',
+                    'Designed and beautified Shopify stores for e-commerce businesses',
+                    'Delivered speaker engagements on product management and tech entrepreneurship',
+                    'Provided strategic consulting for startups and established companies'
+                ],
+                logo: 'assets/profile.png',
+                highlight: true
+            },
+            {
                 id: 'lewagon-data-2025',
                 type: 'education',
                 title: 'Data Analytics Bootcamp',
@@ -53,7 +71,7 @@ class TimelineManager {
             {
                 id: 'stealth-startup',
                 type: 'venture',
-                title: 'Co-Founder (Vibe Engineer)',
+                title: 'Co-Founder / Vibe Engineer',
                 organization: 'Stealth Startup',
                 period: 'Jul 2023 - Jan 2024',
                 location: 'Berlin, DE (Remote)',
@@ -74,7 +92,7 @@ class TimelineManager {
                 description: 'Created a free-to-use mobile app that helps people locate nearby restrooms within 5 seconds.',
                 achievements: [
                     'Produced best-in-class mobile app achieving 4.8/5 star rating and 1k+ MAU with $0 marketing',
-                    'Engineered complete product using AI-assisted development and modern tech stack',
+                    'Engineered complete mobile app using AI-assisted development and modern tech stack',
                     'Enhanced global accessibility by localizing the app in seven languages'
                 ],
                 logo: 'assets/companylogos/logo_easypz.jpeg'
@@ -86,9 +104,9 @@ class TimelineManager {
                 organization: 'wefox',
                 period: 'Aug 2021 - Oct 2023',
                 location: 'Berlin, DE (Remote)',
-                description: 'Led comprehensive redesign of flagship insurtech app valued at $4.5B, managing the largest tech squad.',
+                description: 'Led comprehensive redesign of flagship insurtech app valued at $4.5B, managing the largest tech squad spanning across Web, iOS, and Android.',
                 achievements: [
-                    'Increased app ratings from 2.1 to 3.6 (71% improvement) and expanded user base from 35K to 2M+',
+                    'Increased app ratings from 2.1 to 3.6 (71% improvement) and expanded TAM from 35K to 2M+',
                     'Championed cross-functional initiative overcoming data privacy challenges',
                     'Led the largest tech squad at wefox (8-9 members) with consistent executive recognition'
                 ],
@@ -292,7 +310,7 @@ class TimelineManager {
         }
     }
     
-    createTimelineItem(item, index) {
+    createTimelineItem(item) {
         const timelineItem = document.createElement('div');
         timelineItem.className = `timeline-item ${item.type} ${item.highlight ? 'highlight' : ''}`;
         

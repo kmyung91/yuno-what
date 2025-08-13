@@ -447,26 +447,268 @@ class App {
         serviceButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 const service = e.target.getAttribute('data-service');
-                this.openContactModal(service);
+                this.openServiceModal(service);
+            });
+        });
+        
+        // Create service modal
+        this.createServiceModal();
+        
+        // Add tilt effect to service cards
+        this.initServiceCardTilt();
+    }
+    
+    initServiceCardTilt() {
+        const cards = document.querySelectorAll('.service-card');
+        
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'none';
+            });
+            
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                // Normalize coordinates to -1 to 1
+                const normalX = (x - centerX) / centerX;
+                const normalY = (y - centerY) / centerY;
+                
+                // Clamp the values to prevent extreme tilts at edges
+                const clampedX = Math.max(-0.8, Math.min(0.8, normalX));
+                const clampedY = Math.max(-0.8, Math.min(0.8, normalY));
+                
+                const rotateX = -clampedY * 8;
+                const rotateY = -clampedX * 8;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px) scale(1.005)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'transform 0.3s ease';
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
             });
         });
     }
     
-    openContactModal(service) {
-        // Pre-fill contact form or show service-specific message
-        const messageField = document.getElementById('message');
-        if (messageField) {
-            const serviceMessages = {
-                design: "Hi! I'm interested in your UX/UI design services...",
-                development: "Hi! I'd like to discuss a development project...",
-                product: "Hi! I'm looking for product management expertise..."
-            };
-            
-            messageField.value = serviceMessages[service] || "Hi! I'd like to discuss working together...";
-        }
+    createServiceModal() {
+        const modal = document.createElement('div');
+        modal.id = 'service-modal';
+        modal.className = 'service-modal';
+        modal.innerHTML = `
+            <div class="modal-backdrop"></div>
+            <div class="modal-content service-modal-content">
+                <div class="service-modal-header">
+                    <button class="service-modal-close" aria-label="Close modal">&times;</button>
+                    <h2 class="service-modal-title"></h2>
+                    <p class="service-modal-subtitle"></p>
+                </div>
+                <div class="service-modal-body">
+                    <!-- Service details will be dynamically loaded -->
+                </div>
+                <div class="service-cta-modal">
+                    <a href="#contact" class="contact-cta">Get Started →</a>
+                </div>
+            </div>
+        `;
         
-        // Scroll to contact form
-        this.smoothScrollTo('#contact');
+        document.body.appendChild(modal);
+        
+        // Add event listeners
+        modal.querySelector('.service-modal-close').addEventListener('click', () => {
+            this.closeServiceModal();
+        });
+        
+        modal.querySelector('.modal-backdrop').addEventListener('click', () => {
+            this.closeServiceModal();
+        });
+        
+        modal.querySelector('.contact-cta').addEventListener('click', () => {
+            this.closeServiceModal();
+            setTimeout(() => this.smoothScrollTo('#contact'), 300);
+        });
+        
+        // ESC key handler
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                this.closeServiceModal();
+            }
+        });
+    }
+    
+    openServiceModal(service) {
+        const modal = document.getElementById('service-modal');
+        if (!modal) return;
+        
+        const serviceData = {
+            design: {
+                title: 'UX/UI Design',
+                subtitle: 'From concept to pixel-perfect execution',
+                content: `
+                    <div class="service-section">
+                        <h3>My Design Process</h3>
+                        <p>I believe great design starts with understanding. My process ensures we create solutions that not only look beautiful but solve real problems for your users.</p>
+                        <ul class="service-features">
+                            <li>User research & competitive analysis</li>
+                            <li>Information architecture & user flows</li>
+                            <li>Wireframing & prototyping</li>
+                            <li>Visual design & design systems</li>
+                            <li>Usability testing & iterations</li>
+                            <li>Developer handoff & implementation support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-section">
+                        <h3>What You Get</h3>
+                        <div class="service-packages">
+                            <div class="service-package">
+                                <h4>Discovery Package</h4>
+                                <div class="price">Starting at $2,500</div>
+                                <p>Perfect for early-stage projects that need strategic direction.</p>
+                                <ul class="service-features">
+                                    <li>User research & insights</li>
+                                    <li>Competitive analysis</li>
+                                    <li>Information architecture</li>
+                                    <li>Low-fidelity wireframes</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Complete Design</h4>
+                                <div class="price">Starting at $8,000</div>
+                                <p>End-to-end design solution ready for development.</p>
+                                <ul class="service-features">
+                                    <li>Full discovery process</li>
+                                    <li>High-fidelity designs</li>
+                                    <li>Interactive prototypes</li>
+                                    <li>Design system & components</li>
+                                    <li>Developer handoff</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            development: {
+                title: 'Development',
+                subtitle: 'Building digital experiences that perform',
+                content: `
+                    <div class="service-section">
+                        <h3>Technical Expertise</h3>
+                        <p>I specialize in modern web and mobile development, focusing on performance, scalability, and user experience. Every line of code is written with purpose.</p>
+                        <ul class="service-features">
+                            <li>React Native mobile apps (iOS & Android)</li>
+                            <li>Modern web applications (React, Vue, Svelte)</li>
+                            <li>Backend APIs (Node.js, NestJS, PostgreSQL)</li>
+                            <li>E-commerce platforms & integrations</li>
+                            <li>Custom tools & automation</li>
+                            <li>Performance optimization & monitoring</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-section">
+                        <h3>Development Packages</h3>
+                        <div class="service-packages">
+                            <div class="service-package">
+                                <h4>MVP Development</h4>
+                                <div class="price">Starting at $15,000</div>
+                                <p>Get your idea to market quickly with a solid foundation.</p>
+                                <ul class="service-features">
+                                    <li>Core functionality</li>
+                                    <li>Responsive design</li>
+                                    <li>Database & API setup</li>
+                                    <li>Basic analytics</li>
+                                    <li>Deployment & hosting</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Full-Scale Application</h4>
+                                <div class="price">Starting at $35,000</div>
+                                <p>Production-ready application with advanced features.</p>
+                                <ul class="service-features">
+                                    <li>Complete feature set</li>
+                                    <li>User authentication & roles</li>
+                                    <li>Advanced integrations</li>
+                                    <li>Performance optimization</li>
+                                    <li>Testing & monitoring</li>
+                                    <li>Maintenance & support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            product: {
+                title: 'Product Management',
+                subtitle: 'Turning vision into successful products',
+                content: `
+                    <div class="service-section">
+                        <h3>Product Strategy & Execution</h3>
+                        <p>I help companies build products that users love and businesses thrive on. From strategy to launch, I ensure every decision is data-driven and user-focused.</p>
+                        <ul class="service-features">
+                            <li>Product strategy & roadmap planning</li>
+                            <li>User research & market analysis</li>
+                            <li>Feature prioritization & backlog management</li>
+                            <li>Cross-functional team leadership</li>
+                            <li>Analytics setup & performance tracking</li>
+                            <li>Go-to-market strategy & launch planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-section">
+                        <h3>Engagement Options</h3>
+                        <div class="service-packages">
+                            <div class="service-package">
+                                <h4>Product Audit</h4>
+                                <div class="price">Starting at $3,500</div>
+                                <p>Comprehensive analysis of your current product and growth opportunities.</p>
+                                <ul class="service-features">
+                                    <li>Product & market analysis</li>
+                                    <li>User journey optimization</li>
+                                    <li>Feature gap analysis</li>
+                                    <li>Strategic recommendations</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Ongoing Partnership</h4>
+                                <div class="price">$8,000-15,000/month</div>
+                                <p>Hands-on product management to drive continuous growth.</p>
+                                <ul class="service-features">
+                                    <li>Strategic product leadership</li>
+                                    <li>Team collaboration & communication</li>
+                                    <li>Data analysis & insights</li>
+                                    <li>Feature planning & execution</li>
+                                    <li>Performance optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+        
+        const data = serviceData[service];
+        if (!data) return;
+        
+        // Populate modal content
+        modal.querySelector('.service-modal-title').textContent = data.title;
+        modal.querySelector('.service-modal-subtitle').textContent = data.subtitle;
+        modal.querySelector('.service-modal-body').innerHTML = data.content;
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    closeServiceModal() {
+        const modal = document.getElementById('service-modal');
+        if (!modal) return;
+        
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 

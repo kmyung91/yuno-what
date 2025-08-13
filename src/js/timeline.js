@@ -81,7 +81,7 @@ class TimelineManager {
                 type: 'education',
                 title: 'Data Analytics Bootcamp',
                 organization: 'Le Wagon',
-                period: 'Aug 2025',
+                period: 'Jun 2025 - Aug 2025',
                 location: 'Berlin, DE (Remote)',
                 description: 'Intensive 9-week bootcamp covering Python, SQL, Machine Learning, and Data Visualization',
                 achievements: [

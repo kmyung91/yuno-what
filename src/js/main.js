@@ -11,6 +11,7 @@ class App {
         this.initContactForm();
         this.initScrollEffects();
         this.initServiceButtons();
+        this.initSectionTitleAnimations();
     }
     
     setCurrentYear() {
@@ -153,11 +154,13 @@ class App {
             this.createTestimonialShowMoreButton(container);
         }
         
-        // Create LinkedIn recommendation invitation
-        this.createLinkedInInvitation(container);
+        // LinkedIn invitation will be created only when showing more testimonials
         
         // Create modal structure
         this.createTestimonialModal();
+        
+        // Setup scroll animations for testimonials
+        this.setupTestimonialScrollAnimations();
     }
     
     renderTestimonialCards(testimonials, container) {
@@ -204,6 +207,33 @@ class App {
         container.parentElement.appendChild(buttonContainer);
     }
     
+    setupTestimonialScrollAnimations() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all testimonial cards
+        setTimeout(() => {
+            document.querySelectorAll('.testimonial-card').forEach((card, index) => {
+                // Add staggered delay for entrance animation
+                card.style.transitionDelay = `${index * 0.1}s`;
+                observer.observe(card);
+            });
+        }, 100);
+        
+        // Store observer for later use with "show more" cards
+        this.testimonialObserver = observer;
+    }
+    
     toggleTestimonials(container) {
         if (!this.allTestimonialsVisible) {
             // Show all testimonials
@@ -211,8 +241,6 @@ class App {
             remainingTestimonials.forEach((testimonial, index) => {
                 const card = document.createElement('div');
                 card.className = 'testimonial-card glass-morph';
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
                 card.innerHTML = `
                     <div class="testimonial-quote">
                         <div class="quote-mark">"</div>
@@ -233,15 +261,19 @@ class App {
                     this.openTestimonialModal(testimonial);
                 });
                 
+                // Set staggered delay for animation
+                card.style.transitionDelay = `${(this.testimonialsToShow + index) * 0.1}s`;
+                
                 container.appendChild(card);
                 
-                // Animate in
-                setTimeout(() => {
-                    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, 50 * (index + 1));
+                // Add to scroll observer
+                if (this.testimonialObserver) {
+                    this.testimonialObserver.observe(card);
+                }
             });
+            
+            // Add LinkedIn invitation as the final card
+            this.createLinkedInInvitationCard(container);
             
             this.testimonialShowMoreButton.textContent = 'Show less';
             this.allTestimonialsVisible = true;
@@ -324,10 +356,10 @@ class App {
         document.body.style.overflow = '';
     }
     
-    createLinkedInInvitation(container) {
-        const invitationContainer = document.createElement('div');
-        invitationContainer.className = 'linkedin-invitation-container';
-        invitationContainer.innerHTML = `
+    createLinkedInInvitationCard(container) {
+        const invitationCard = document.createElement('div');
+        invitationCard.className = 'testimonial-card linkedin-invitation-container';
+        invitationCard.innerHTML = `
             <div class="linkedin-invitation">
                 <p class="invitation-text">Have we worked together before? 👀</p>
                 <a href="https://www.linkedin.com/in/kmyung91/edit/forms/recommendation/write/?profileFormEntryPoint=PROFILE_SECTION&profileUrn=urn%3Ali%3Afsd_profile%3AACoAAA0HKO8Bq3w1NnjSkZusavxTOEt9V0oyC6g&trackingId=6P4m90%2FfRlKaFe1zdboOvA%3D%3D" 
@@ -336,11 +368,19 @@ class App {
                    class="linkedin-invitation-btn">
                     Give recommendation
                 </a>
-                <p class="continue-reading-text">...or continue reading</p>
             </div>
         `;
         
-        container.parentElement.appendChild(invitationContainer);
+        // Set animation delay to appear after all testimonials
+        const totalItems = this.allTestimonials.length;
+        invitationCard.style.transitionDelay = `${totalItems * 0.1}s`;
+        
+        container.appendChild(invitationCard);
+        
+        // Add to scroll observer
+        if (this.testimonialObserver) {
+            this.testimonialObserver.observe(invitationCard);
+        }
     }
     
     
@@ -416,18 +456,18 @@ class App {
         
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
                 }
             });
         }, observerOptions);
         
         // Observe elements that should fade in
-        document.querySelectorAll('.service-card, .experience-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        document.querySelectorAll('.experience-item, .fade-in-element').forEach((el, index) => {
+            // Add staggered delay for elements
+            if (el.classList.contains('fade-in-element')) {
+                el.style.transitionDelay = `${index * 0.1}s`;
+            }
             observer.observe(el);
         });
     }
@@ -454,46 +494,9 @@ class App {
         // Create service modal
         this.createServiceModal();
         
-        // Add tilt effect to service cards
-        this.initServiceCardTilt();
+        // Remove the old tilt effect - service cards now use simple hover from CSS
     }
     
-    initServiceCardTilt() {
-        const cards = document.querySelectorAll('.service-card');
-        
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transition = 'none';
-            });
-            
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                // Normalize coordinates to -1 to 1
-                const normalX = (x - centerX) / centerX;
-                const normalY = (y - centerY) / centerY;
-                
-                // Clamp the values to prevent extreme tilts at edges
-                const clampedX = Math.max(-0.8, Math.min(0.8, normalX));
-                const clampedY = Math.max(-0.8, Math.min(0.8, normalY));
-                
-                const rotateX = -clampedY * 8;
-                const rotateY = -clampedX * 8;
-                
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px) scale(1.005)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transition = 'transform 0.3s ease';
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
-            });
-        });
-    }
     
     createServiceModal() {
         const modal = document.createElement('div');
@@ -740,6 +743,33 @@ class App {
             messageField.value = serviceMessages[this.selectedService] || "Hi! I'd like to discuss working together on my project.";
             messageField.focus();
         }
+    }
+    
+    initSectionTitleAnimations() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    // Add delay for portfolio section title
+                    if (entry.target.classList.contains('portfolio-title-delayed')) {
+                        setTimeout(() => {
+                            entry.target.classList.add('animated');
+                        }, 800); // 0.8 second delay
+                    } else {
+                        entry.target.classList.add('animated');
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all section titles
+        document.querySelectorAll('.section-title').forEach(title => {
+            observer.observe(title);
+        });
     }
 }
 

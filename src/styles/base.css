@@ -94,7 +94,28 @@ a:hover {
     text-align: center;
     margin-bottom: var(--space-lg);
     font-size: clamp(2rem, 4vw, 3rem);
+    /* Initial state for scroll animation */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animated state */
+.section-title.animated {
     opacity: 0.9;
+    transform: translateY(0);
+}
+
+/* Fade-in elements */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-element.animated {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Glass Morphism */

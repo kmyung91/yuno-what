@@ -44,10 +44,12 @@
 }
 
 .portfolio-item.animated:hover {
-    transform: translateY(-8px);
     border-color: rgba(34, 141, 255, 0.3);
-    box-shadow: 0 25px 50px rgba(34, 141, 255, 0.1), 
-                0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 25px 50px rgba(34, 141, 255, 0.2),
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 /* Portfolio Image Container */
@@ -71,7 +73,6 @@
 }
 
 .portfolio-item.animated:hover .portfolio-thumbnail {
-    transform: scale(1.08);
     filter: brightness(0.9) saturate(1.2);
 }
 
@@ -378,12 +379,61 @@
     width: 120px;
     height: auto;
     transition: transform var(--transition-fast);
+    border-radius: 0 !important;
 }
 
 .store-badge:hover {
     transform: scale(1.05);
 }
 
+
+/* Portfolio Show More Button */
+.portfolio-show-more-container {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+}
+
+.portfolio-show-more-btn {
+    background: rgba(34, 141, 255, 0.08);
+    border: 2px solid rgba(34, 141, 255, 0.4);
+    color: var(--color-accent);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.portfolio-show-more-btn:hover {
+    background: rgba(34, 141, 255, 0.15);
+    border-color: rgba(34, 141, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(34, 141, 255, 0.2);
+}
+
+/* Portfolio Disclaimer */
+.portfolio-disclaimer-container {
+    text-align: center;
+    margin-top: var(--space-lg);
+    padding: var(--space-md) 0;
+}
+
+.portfolio-disclaimer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.disclaimer-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    margin: 0;
+    opacity: 0.7;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

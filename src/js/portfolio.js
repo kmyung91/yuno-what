@@ -16,6 +16,31 @@ class PortfolioManager {
         this.loadPortfolioData();
         this.setupEventListeners();
         this.handleInitialRoute();
+        this.setupScrollAnimations();
+    }
+    
+    setupScrollAnimations() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all portfolio items
+        setTimeout(() => {
+            document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+                // Add staggered delay based on position
+                item.style.transitionDelay = `${index * 0.1}s`;
+                observer.observe(item);
+            });
+        }, 100);
     }
     
     loadPortfolioData() {
@@ -75,11 +100,9 @@ class PortfolioManager {
                                 <div class="project-sidebar">
                                     <h6>Team</h6>
                                     <ul>
-                                        <li>Kevin "Yuno" Myung - Product/Design</li>
+                                        <li>Yuno - Product/Design/Development</li>
                                         <li>Laura Angeli - Logo Design</li>
                                         <li>Batuhan Direk - Backend Architecture</li>
-                                        <li>Achi - 2D Animator</li>
-                                        <li>Uni So - Content Lead</li>
                                     </ul>
                                     
                                     <h6>Website</h6>

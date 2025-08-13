@@ -529,7 +529,10 @@ class App {
         
         modal.querySelector('.contact-cta').addEventListener('click', () => {
             this.closeServiceModal();
-            setTimeout(() => this.smoothScrollTo('#contact'), 300);
+            setTimeout(() => {
+                this.smoothScrollTo('#contact');
+                this.prefillContactForm();
+            }, 300);
         });
         
         // ESC key handler
@@ -543,6 +546,9 @@ class App {
     openServiceModal(service) {
         const modal = document.getElementById('service-modal');
         if (!modal) return;
+        
+        // Store the service for later use in contact form
+        this.selectedService = service;
         
         const serviceData = {
             design: {
@@ -709,6 +715,31 @@ class App {
         
         modal.classList.remove('active');
         document.body.style.overflow = '';
+    }
+    
+    prefillContactForm() {
+        if (!this.selectedService) return;
+        
+        const serviceSelect = document.getElementById('service');
+        const messageField = document.getElementById('message');
+        
+        if (serviceSelect) {
+            serviceSelect.value = this.selectedService;
+            
+            // Trigger change event to update any styling
+            serviceSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+        
+        if (messageField) {
+            const serviceMessages = {
+                design: "Hi! I'm interested in your UX/UI design services. I'd like to discuss my project requirements and get a quote.",
+                development: "Hi! I'd like to discuss a website/app development project. Let me know what information you need to get started.",
+                product: "Hi! I'm looking for product management expertise. I'd love to discuss how you can help with my product strategy."
+            };
+            
+            messageField.value = serviceMessages[this.selectedService] || "Hi! I'd like to discuss working together on my project.";
+            messageField.focus();
+        }
     }
 }
 

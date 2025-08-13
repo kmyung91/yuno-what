@@ -148,20 +148,48 @@
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-intro">Ready to turn your ideas into reality? Let's discuss your project and create something amazing together.</p>
+            <p class="contact-languages">Available in: English, Spanish, Korean</p>
+            
+            <div class="contact-info">
+                <div class="contact-item availability">
+                    <span>✨ Open for Work</span>
+                </div>
+                <div class="contact-item location">
+                    <span>📍 Berlin, Deutschland</span>
+                </div>
+            </div>
+            
             <form class="contact-form" id="contact-form">
                 <div class="form-group">
-                    <input type="text" id="name" name="name" required>
-                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
                 </div>
+                
                 <div class="form-group">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
                 </div>
+                
                 <div class="form-group">
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <label for="message">Your Message</label>
+                    <select id="service" name="service" required>
+                        <option value="">What do you need help with?</option>
+                        <option value="design">🎨 UX/UI Design</option>
+                        <option value="development">💻 Website/App Development</option>
+                        <option value="product">📊 Product Management</option>
+                        <option value="shopify">🛒 Shopify Store Setup</option>
+                        <option value="automation">⚙️ Custom Tools & Automation</option>
+                        <option value="speaking">🎤 Speaking Engagement</option>
+                        <option value="consulting">💡 Strategic Consulting</option>
+                        <option value="other">📋 Other</option>
+                    </select>
                 </div>
-                <button type="submit" class="form-submit">Send Message</button>
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    Send Message →
+                </button>
             </form>
         </div>
     </section>

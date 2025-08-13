@@ -13,6 +13,45 @@ class TimelineManager {
     init() {
         this.loadTimelineData();
         this.renderTimeline();
+        this.setupScrollAnimations();
+    }
+    
+    setupScrollAnimations() {
+        // Blue highlight effect observer
+        const highlightObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-20% 0px -20% 0px'
+        });
+        
+        // Entrance animation observer
+        const entranceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        // Observe all timeline items
+        setTimeout(() => {
+            document.querySelectorAll('.timeline-item').forEach((item, index) => {
+                // Add staggered delay for entrance animation
+                item.style.transitionDelay = `${index * 0.1}s`;
+                highlightObserver.observe(item);
+                entranceObserver.observe(item);
+            });
+        }, 100);
     }
     
     loadTimelineData() {
@@ -22,8 +61,8 @@ class TimelineManager {
             {
                 id: 'freelance-consultant',
                 type: 'work',
-                title: 'Freelance Product Specialist',
-                organization: 'Independent Consultant',
+                title: 'Full-Stack Product Specialist',
+                organization: 'Freelance',
                 period: 'Nov 2023 - Present',
                 location: 'Berlin, DE',
                 description: 'Helping businesses elevate their digital presence through design, development, and strategic consulting.',
@@ -32,7 +71,7 @@ class TimelineManager {
                     'Built specialized tools and automation solutions for client workflows',
                     'Designed and beautified Shopify stores for e-commerce businesses',
                     'Delivered speaker engagements on product management and tech entrepreneurship',
-                    'Provided strategic consulting for startups and established companies'
+                    'Provided strategic consulting for startups and established companies',
                 ],
                 logo: 'assets/profile.png',
                 highlight: true
@@ -123,7 +162,8 @@ class TimelineManager {
                 achievements: [
                     'Delivered engaging presentations to 100+ students during Le Wagon\'s career week',
                     'Mentored bootcamp graduates with 4 mentees successfully securing first PM positions',
-                    'Teaching Assistant for CSS concepts (Jul 2021)'
+                    'Teaching Assistant for CSS concepts (Jul 2021)',
+                    'Currently mentoring junior designers and product managers'
                 ],
                 logo: 'assets/companylogos/logo_lewagon.jpeg'
             },
@@ -283,18 +323,14 @@ class TimelineManager {
         if (!this.allItemsVisible) {
             // Show all items
             this.timelineData.slice(this.itemsToShow).forEach((item, index) => {
-                const timelineItem = this.createTimelineItem(item, index + this.itemsToShow);
-                timelineItem.style.opacity = '0';
-                timelineItem.style.transform = 'translateY(30px)';
+                const timelineItem = this.createTimelineItem(item);
+                // Set up for scroll animation instead of immediate animation
+                timelineItem.style.transitionDelay = `${(this.itemsToShow + index) * 0.1}s`;
                 this.timelineContainer.appendChild(timelineItem);
-                
-                // Animate in
-                setTimeout(() => {
-                    timelineItem.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    timelineItem.style.opacity = '1';
-                    timelineItem.style.transform = 'translateY(0)';
-                }, 50 * (index + 1));
             });
+            
+            // Setup observers for new items
+            this.setupNewItemObservers();
             
             this.showMoreButton.textContent = 'Show less';
             this.allItemsVisible = true;
@@ -307,6 +343,41 @@ class TimelineManager {
             
             this.showMoreButton.textContent = `Show ${this.timelineData.length - this.itemsToShow} more experiences`;
             this.allItemsVisible = false;
+        }
+    }
+    
+    setupNewItemObservers() {
+        // Blue highlight effect observer
+        const highlightObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-20% 0px -20% 0px'
+        });
+        
+        // Entrance animation observer
+        const entranceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        // Observe only the new timeline items (after itemsToShow)
+        const allItems = document.querySelectorAll('.timeline-item');
+        for (let i = this.itemsToShow; i < allItems.length; i++) {
+            highlightObserver.observe(allItems[i]);
+            entranceObserver.observe(allItems[i]);
         }
     }
     

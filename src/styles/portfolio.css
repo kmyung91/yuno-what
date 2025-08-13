@@ -233,6 +233,13 @@
     overflow-y: auto;
     max-height: 90vh;
     padding: var(--space-lg);
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
 }
 
 /* Modal Content Styles */

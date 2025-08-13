@@ -322,7 +322,10 @@
     border-radius: 20px;
     padding: var(--space-lg);
     cursor: pointer;
-    transition: all var(--transition-normal);
+    transition: background var(--transition-normal), 
+                border-color var(--transition-normal), 
+                box-shadow var(--transition-normal),
+                transform 0.2s ease;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
@@ -332,9 +335,16 @@
 }
 
 .testimonial-card:hover {
-    transform: translateY(-8px);
     border-color: rgba(34, 141, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(34, 141, 255, 0.1);
+    box-shadow: 0 25px 50px rgba(34, 141, 255, 0.1), 
+                0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03) translateY(-5px);
+}
+
+.testimonial-card:hover .quote-open,
+.testimonial-card:hover .quote-close {
+    color: var(--color-accent);
+    opacity: 0.5;
 }
 
 /* Animated state */
@@ -344,7 +354,7 @@
 }
 
 .testimonial-card.animated:hover {
-    transform: translateY(-8px);
+    transform: scale(1.03) translateY(-5px);
 }
 
 .testimonial-quote {
@@ -873,6 +883,13 @@
     padding: var(--space-lg);
     overflow-y: auto;
     max-height: calc(90vh - 150px);
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.service-modal-body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
 }
 
 .service-section {
@@ -1190,7 +1207,6 @@
 .linkedin-icon:hover {
     color: var(--color-accent);
     opacity: 1;
-    transform: translateY(-2px);
 }
 
 .linkedin-icon svg {

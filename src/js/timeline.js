@@ -152,10 +152,10 @@ class TimelineManager {
                 logo: 'assets/companylogos/logo_wefox.jpeg'
             },
             {
-                id: 'lewagon-speaker',
+                id: 'speaker-mentor',
                 type: 'volunteer',
                 title: 'Speaker / Mentor',
-                organization: 'Le Wagon',
+                organization: 'Yuno',
                 period: 'Aug 2021 - Present',
                 location: 'Berlin, DE (Remote)',
                 description: 'Delivered presentations on product management and mentored bootcamp graduates on career transitions.',
@@ -165,7 +165,7 @@ class TimelineManager {
                     'Teaching Assistant for CSS concepts (Jul 2021)',
                     'Currently mentoring junior designers and product managers'
                 ],
-                logo: 'assets/companylogos/logo_lewagon.jpeg'
+                logo: 'assets/profile.png'
             },
             {
                 id: 'lewagon-bootcamp',
@@ -182,20 +182,6 @@ class TimelineManager {
                     'Created responsive web interfaces with HTML5, CSS3, and Bootstrap framework'
                 ],
                 logo: 'assets/companylogos/logo_lewagon.jpeg'
-            },
-            {
-                id: 'khanst-collective',
-                type: 'venture',
-                title: 'Co-Founder (Project Manager)',
-                organization: 'KHANST Collective',
-                period: 'Feb 2019 - May 2021',
-                location: 'Berlin, DE',
-                description: 'Multi-disciplinary creative collective coordinating diverse talents across music, fashion, and visual design.',
-                achievements: [
-                    'Coordinated multi-disciplinary collective launching products reaching ~50k views total',
-                    'Deployed growth marketing strategies growing Instagram to 10K+ followers'
-                ],
-                logo: 'assets/companylogos/logo_khanst.jpeg'
             },
             {
                 id: 'morressier-pm',

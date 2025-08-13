@@ -52,8 +52,8 @@ class App {
                 avatar: "assets/testimonials/silvia.jpeg"
             },
             {
-                excerpt: "He stroke me as a great PM with extraordinary sector understanding and a big advocate for better UX practices.",
-                fullText: "Yuno and I worked as PMs in the same organisation at wefox. He stroke me as a great PM with extraordinary sector/product understanding and a big advocate for better UX and user testing practices at our company. As a very active part of our team, he helped to shape our product culture and made everyone around him better. I believe Yuno is a great professional and a great personality - hands down, I've never met anyone who didn't like him.\n\nYuno all the best for your upcoming adventures - you will be missed!",
+                excerpt: "He struck me as a great PM with extraordinary sector understanding and a big advocate for better UX practices.",
+                fullText: "Yuno and I worked as PMs in the same organisation at wefox. He struck me as a great PM with extraordinary sector/product understanding and a big advocate for better UX and user testing practices at our company. As a very active part of our team, he helped to shape our product culture and made everyone around him better. I believe Yuno is a great professional and a great personality - hands down, I've never met anyone who didn't like him.\n\nYuno all the best for your upcoming adventures - you will be missed!",
                 author: "Lars Neusesser",
                 position: "Senior Product Manager",
                 avatar: "assets/testimonials/lars.jpeg"
@@ -571,45 +571,45 @@ class App {
         const serviceData = {
             design: {
                 title: 'UX/UI Design',
-                subtitle: 'From concept to pixel-perfect execution',
+                subtitle: 'From wireframes to wow moments',
                 content: `
                     <div class="service-section">
-                        <h3>My Design Process</h3>
-                        <p>I believe great design starts with understanding. My process ensures we create solutions that not only look beautiful but solve real problems for your users.</p>
+                        <h3>Design That Developers Actually Want to Build</h3>
+                        <p>I create designs that aren't just beautiful—they're technically sound and strategically smart. Perfect for founders who need to visualize their vision, pitch to investors, or brief developers.</p>
                         <ul class="service-features">
                             <li>User research & competitive analysis</li>
                             <li>Information architecture & user flows</li>
-                            <li>Wireframing & prototyping</li>
-                            <li>Visual design & design systems</li>
-                            <li>Usability testing & iterations</li>
-                            <li>Developer handoff & implementation support</li>
+                            <li>Wireframing & interactive prototyping</li>
+                            <li>Visual design & component systems</li>
+                            <li>Developer-friendly handoff documentation</li>
+                            <li>Mobile-first responsive design</li>
                         </ul>
                     </div>
                     
                     <div class="service-section">
-                        <h3>What You Get</h3>
+                        <h3>Investment Options</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>Discovery Package</h4>
-                                <div class="price">Starting at $2,500</div>
-                                <p>Perfect for early-stage projects that need strategic direction.</p>
+                                <h4>Design Foundation</h4>
+                                <div class="price">Starting at €2,000</div>
+                                <p>Essential design work to get your project moving forward.</p>
                                 <ul class="service-features">
-                                    <li>User research & insights</li>
-                                    <li>Competitive analysis</li>
-                                    <li>Information architecture</li>
-                                    <li>Low-fidelity wireframes</li>
+                                    <li>Core wireframes & user flows</li>
+                                    <li>Visual design & style direction</li>
+                                    <li>Developer-ready specifications</li>
+                                    <li>Mobile-first responsive design</li>
                                 </ul>
                             </div>
                             <div class="service-package">
-                                <h4>Complete Design</h4>
-                                <div class="price">Starting at $8,000</div>
-                                <p>End-to-end design solution ready for development.</p>
+                                <h4>Complete Design System</h4>
+                                <div class="price">Custom pricing</div>
+                                <p>Comprehensive design solution scaled to your specific needs.</p>
                                 <ul class="service-features">
-                                    <li>Full discovery process</li>
-                                    <li>High-fidelity designs</li>
-                                    <li>Interactive prototypes</li>
-                                    <li>Design system & components</li>
-                                    <li>Developer handoff</li>
+                                    <li>Full user research & strategy</li>
+                                    <li>High-fidelity designs & prototypes</li>
+                                    <li>Reusable component library</li>
+                                    <li>Developer handoff & ongoing support</li>
+                                    <li>Iterative design process</li>
                                 </ul>
                             </div>
                         </div>
@@ -618,47 +618,46 @@ class App {
             },
             development: {
                 title: 'Development',
-                subtitle: 'Building digital experiences that perform',
+                subtitle: 'Code that scales with your ambitions',
                 content: `
                     <div class="service-section">
-                        <h3>Technical Expertise</h3>
-                        <p>I specialize in modern web and mobile development, focusing on performance, scalability, and user experience. Every line of code is written with purpose.</p>
+                        <h3>Frontend & Mobile Specialist</h3>
+                        <p>I excel at creating beautiful, fast user experiences built on strong foundations. While others focus on flashy features, I nail the core fundamentals that make apps fast, reliable, and scalable. Perfect for businesses who need polished user interfaces that work flawlessly across devices.</p>
                         <ul class="service-features">
                             <li>React Native mobile apps (iOS & Android)</li>
-                            <li>Modern web applications (React, Vue, Svelte)</li>
-                            <li>Backend APIs (Node.js, NestJS, PostgreSQL)</li>
-                            <li>E-commerce platforms & integrations</li>
-                            <li>Custom tools & automation</li>
-                            <li>Performance optimization & monitoring</li>
+                            <li>Modern web frontends (React, Vue, Next.js)</li>
+                            <li>E-commerce & Shopify customization</li>
+                            <li>Landing pages & marketing sites</li>
+                            <li>Third-party API integrations</li>
+                            <li>Performance optimization & deployment</li>
                         </ul>
                     </div>
                     
                     <div class="service-section">
-                        <h3>Development Packages</h3>
+                        <h3>Development Options</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>MVP Development</h4>
-                                <div class="price">Starting at $15,000</div>
-                                <p>Get your idea to market quickly with a solid foundation.</p>
+                                <h4>Web Development</h4>
+                                <div class="price">Starting at €2,500</div>
+                                <p>Professional websites and e-commerce that convert visitors into customers.</p>
                                 <ul class="service-features">
-                                    <li>Core functionality</li>
-                                    <li>Responsive design</li>
-                                    <li>Database & API setup</li>
-                                    <li>Basic analytics</li>
-                                    <li>Deployment & hosting</li>
+                                    <li>Modern responsive websites</li>
+                                    <li>E-commerce & Shopify setup</li>
+                                    <li>Landing page optimization</li>
+                                    <li>SEO & performance optimization</li>
+                                    <li>Analytics & conversion tracking</li>
                                 </ul>
                             </div>
                             <div class="service-package">
-                                <h4>Full-Scale Application</h4>
-                                <div class="price">Starting at $35,000</div>
-                                <p>Production-ready application with advanced features.</p>
+                                <h4>Mobile Applications</h4>
+                                <div class="price">€5,000 - €25,000+</div>
+                                <p>Cross-platform mobile apps from simple MVPs to full-featured applications.</p>
                                 <ul class="service-features">
-                                    <li>Complete feature set</li>
-                                    <li>User authentication & roles</li>
-                                    <li>Advanced integrations</li>
-                                    <li>Performance optimization</li>
-                                    <li>Testing & monitoring</li>
-                                    <li>Maintenance & support</li>
+                                    <li>React Native for iOS & Android</li>
+                                    <li>MVP apps & prototypes (€5k-10k)</li>
+                                    <li>Full-featured apps (€15k-25k+)</li>
+                                    <li>App store deployment & optimization</li>
+                                    <li>Backend integration when needed</li>
                                 </ul>
                             </div>
                         </div>
@@ -667,45 +666,47 @@ class App {
             },
             product: {
                 title: 'Product Management',
-                subtitle: 'Turning vision into successful products',
+                subtitle: 'Your technical co-pilot from idea to launch',
                 content: `
                     <div class="service-section">
-                        <h3>Product Strategy & Execution</h3>
-                        <p>I help companies build products that users love and businesses thrive on. From strategy to launch, I ensure every decision is data-driven and user-focused.</p>
+                        <h3>The Rare Combo: Business Sense + Technical Expertise</h3>
+                        <p>I bridge the gap between vision and execution. Perfect for startups who need someone who speaks both business and code. I've built successful products from 0 to scale—and I can do the same for you.</p>
                         <ul class="service-features">
-                            <li>Product strategy & roadmap planning</li>
-                            <li>User research & market analysis</li>
-                            <li>Feature prioritization & backlog management</li>
-                            <li>Cross-functional team leadership</li>
-                            <li>Analytics setup & performance tracking</li>
-                            <li>Go-to-market strategy & launch planning</li>
+                            <li>Product strategy & competitive positioning</li>
+                            <li>User research & data-driven decisions</li>
+                            <li>Technical roadmap & feasibility planning</li>
+                            <li>Cross-functional team coordination</li>
+                            <li>Go-to-market strategy & launch execution</li>
+                            <li>Team scaling & process optimization</li>
                         </ul>
                     </div>
                     
                     <div class="service-section">
-                        <h3>Engagement Options</h3>
+                        <h3>Partnership Models</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>Product Audit</h4>
-                                <div class="price">Starting at $3,500</div>
-                                <p>Comprehensive analysis of your current product and growth opportunities.</p>
+                                <h4>Strategic Consulting</h4>
+                                <div class="price">€111.11/hour</div>
+                                <p>Project-based product strategy and technical guidance.</p>
                                 <ul class="service-features">
-                                    <li>Product & market analysis</li>
-                                    <li>User journey optimization</li>
-                                    <li>Feature gap analysis</li>
-                                    <li>Strategic recommendations</li>
+                                    <li>Product audits & strategic planning</li>
+                                    <li>Market research & competitive analysis</li>
+                                    <li>Technical roadmap development</li>
+                                    <li>Team process optimization</li>
+                                    <li>Go-to-market strategy</li>
                                 </ul>
                             </div>
                             <div class="service-package">
                                 <h4>Ongoing Partnership</h4>
-                                <div class="price">$8,000-15,000/month</div>
-                                <p>Hands-on product management to drive continuous growth.</p>
+                                <div class="price">€7,000-10,000/month</div>
+                                <p>Turn your ideas into shipped products. Part-time embedded leadership (15-25 hours/week).</p>
                                 <ul class="service-features">
-                                    <li>Strategic product leadership</li>
-                                    <li>Team collaboration & communication</li>
-                                    <li>Data analysis & insights</li>
-                                    <li>Feature planning & execution</li>
-                                    <li>Performance optimization</li>
+                                    <li>From idea to launch execution</li>
+                                    <li>Cross-functional team coordination</li>
+                                    <li>Weekly planning & rapid iteration</li>
+                                    <li>Technical feasibility & roadmapping</li>
+                                    <li>Performance tracking & optimization</li>
+                                    <li>Full-time positions from €85k+/year</li>
                                 </ul>
                             </div>
                         </div>
@@ -716,6 +717,10 @@ class App {
         
         const data = serviceData[service];
         if (!data) return;
+        
+        // Reset scroll position to top
+        const modalBody = modal.querySelector('.service-modal-body');
+        modalBody.scrollTop = 0;
         
         // Populate modal content
         modal.querySelector('.service-modal-title').textContent = data.title;

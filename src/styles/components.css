@@ -322,10 +322,7 @@
     border-radius: 20px;
     padding: var(--space-lg);
     cursor: pointer;
-    transition: background var(--transition-normal), 
-                border-color var(--transition-normal), 
-                box-shadow var(--transition-normal),
-                transform 0.2s ease;
+    transition: all var(--transition-normal);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
@@ -335,17 +332,11 @@
 }
 
 .testimonial-card:hover {
+    transform: translateY(-8px);
     border-color: rgba(34, 141, 255, 0.3);
-    box-shadow: 0 25px 50px rgba(34, 141, 255, 0.1), 
-                0 10px 30px rgba(0, 0, 0, 0.2);
-    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 20px 40px rgba(34, 141, 255, 0.1);
 }
 
-.testimonial-card:hover .quote-open,
-.testimonial-card:hover .quote-close {
-    color: var(--color-accent);
-    opacity: 0.5;
-}
 
 /* Animated state */
 .testimonial-card.animated {
@@ -354,7 +345,7 @@
 }
 
 .testimonial-card.animated:hover {
-    transform: scale(1.03) translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .testimonial-quote {
@@ -835,11 +826,71 @@
     transform: scale(1);
 }
 
+/* Mobile optimizations for service modal */
+@media (max-width: 768px) {
+    .service-modal {
+        padding: var(--space-xs);
+        align-items: flex-start;
+        padding-top: var(--space-sm);
+    }
+    
+    .service-modal-content {
+        max-height: 95vh;
+        border-radius: 12px;
+        margin: 0;
+    }
+    
+    .service-modal-header {
+        padding: var(--space-lg) var(--space-md) var(--space-md);
+    }
+    
+    .service-modal-body {
+        padding: var(--space-md);
+        max-height: calc(95vh - 120px);
+    }
+    
+    .service-modal-title {
+        font-size: 1.6rem;
+    }
+    
+    .service-packages {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+}
+
 .service-modal-header {
     padding: var(--space-xl) var(--space-lg) var(--space-lg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(34, 141, 255, 0.05);
     position: relative;
+}
+
+.service-modal-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--color-light);
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    transition-delay: 0s;
+}
+
+.service-modal-subtitle {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
+    transition-delay: 0.1s;
+}
+
+.service-modal.active .service-modal-title,
+.service-modal.active .service-modal-subtitle {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .service-modal-close {
@@ -865,19 +916,6 @@
     transform: rotate(90deg);
 }
 
-.service-modal-title {
-    font-size: 2rem;
-    margin-bottom: var(--space-sm);
-    color: var(--color-light);
-    font-weight: 600;
-}
-
-.service-modal-subtitle {
-    color: var(--color-accent);
-    font-size: 1.1rem;
-    margin: 0;
-    opacity: 0.9;
-}
 
 .service-modal-body {
     padding: var(--space-lg);
@@ -894,7 +932,20 @@
 
 .service-section {
     margin-bottom: var(--space-xl);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    transition-delay: 0.1s;
 }
+
+.service-modal.active .service-section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-modal.active .service-section:nth-child(1) { transition-delay: 0.1s; }
+.service-modal.active .service-section:nth-child(2) { transition-delay: 0.2s; }
+.service-modal.active .service-section:nth-child(3) { transition-delay: 0.3s; }
 
 .service-section h3 {
     color: var(--color-accent);
@@ -935,6 +986,24 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-md);
     margin-top: var(--space-lg);
+}
+
+.service-package {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.service-modal.active .service-package:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.service-modal.active .service-package:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
 }
 
 .service-package {
@@ -1269,9 +1338,20 @@
         padding-left: var(--space-sm);
     }
     
+    .testimonial-modal {
+        padding: var(--space-xs);
+        align-items: flex-start;
+        padding-top: var(--space-sm);
+    }
+    
     .testimonial-modal-content {
-        margin: var(--space-sm);
+        margin: 0;
         max-height: 95vh;
+        border-radius: 12px;
+    }
+    
+    .testimonial-full-quote {
+        padding: var(--space-md);
     }
     
     .testimonial-full-text {

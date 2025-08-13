@@ -117,12 +117,11 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/portfolio-8-logo.png" class="project-logo" alt="EasyPZ Logo">
                         <h2>EasyPZ: Restroom Finder App</h2>
-                        <p class="lead">Full-stack mobile application helping users locate accessible restrooms within 5 seconds</p>
+                        <p class="lead">When nature calls, be ready for it</p>
                         <div class="project-meta">
                             <span class="project-tag">Founder</span>
-                            <span class="project-tag">Full-Stack Development</span>
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Product Strategy</span>
+                            <span class="project-tag">Product Design</span>
+                            <span class="project-tag">Mobile Development</span>
                         </div>
                     </div>
                     
@@ -133,66 +132,66 @@ class PortfolioManager {
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>The Beginning</h3>
-                                <p>EasyPZ started from a simple frustration—finding a restroom in an unfamiliar city shouldn't be this hard. After countless awkward situations and rushed searches, I decided to build the solution I wished existed.</p>
+                                <h3>Problem and approach</h3>
+                                <p>Parents, travelers, and people with medical needs shared the same frustration: finding a clean, accessible restroom quickly. I designed EasyPZ to minimize decision time and get users to a restroom in a few taps.</p>
 
-                                <p>I interviewed over 100 people and discovered this wasn't just my problem. Parents with young children, people with medical conditions, travelers—everyone had a restroom horror story.</p>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-research.png — interview highlights, critical moments, pain/need grid</div>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📊 CREATE: easypz-research.png → User interviews and survey insights (assets/projects/easypz/)</div>
+                                								<h3>Rebuild for performance</h3>
+								<p>I rebuilt the app with React Native + TypeScript on a modern backend, improving stability and time‑to‑first‑result, and simplifying the codebase for faster iteration.</p>
 
-                                <h3>Launch & The Zombie Phase</h3>
-                                <p>We launched with a technical co-founder, gained some traction, and reached the app stores. But when my co-founder stepped away, EasyPZ became a zombie—functional but stagnant, slowly losing users while I focused on other projects.</p>
+								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-architecture-before-after.png — simplified v2 architecture vs v1</div>
 
-                                <p>For months, EasyPZ sat there, a good idea collecting digital dust.</p>
+								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-reviews.png — ratings collage (blur usernames if needed)</div>
 
-                                <h3>The AI Revival</h3>
-                                <p>Everything changed when I discovered prompt engineering. Suddenly, I could rebuild what took a team months in just weeks. I didn't just revive EasyPZ—I completely reimagined it.</p>
+                                <h3>Brand identity</h3>
+                                <p>A calm, friendly identity helps users under stress. The Zima mascot, clear color system, and clean maps keep focus on task completion.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">⚙️ CREATE: easypz-architecture.png → Technical stack comparison (before/after) (assets/projects/easypz/)</div>
+                                								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-branding.png — logo, palette, mascot (Zima)</div>
 
-                                <h3>Where We Are Now</h3>
-                                <p>The new EasyPZ is 90% better than the original—faster, more reliable, and available in 7 languages. We've hit 1,000+ monthly active users with zero marketing spend and maintain a 4.8/5 star rating.</p>
+								<h3>What I did</h3>
+								<ul>
+									<li>Rebuilt v2 and released v3; designed end‑to‑end UX/UI and brand (including mascot Zima)</li>
+									<li>Defined product strategy, user journeys, and specs; coordinated backend work with Batuhan Direk (admin panel by Batuhan)</li>
+									<li>Implemented map search, restroom submissions and reviews with moderation workflows</li>
+									<li>Integrated Apple/Google OAuth and streamlined first‑run experience</li>
+									<li>Localized the app and crafted a calm, task‑focused visual system</li>
+								</ul>
 
-                                <p>But the real victory? I learned that sometimes the best way forward is to tear everything down and rebuild it better.</p>
+								<h3>Key outcomes</h3>
+								<ul>
+									<li>App available in EN, ES, DE, FR, KR, JP</li>
+									<li>Partnership presence at Karneval der Kulturen and Christopher Street Day (Berlin)</li>
+									<li>Organic growth with zero paid marketing</li>
+									<li>Consistently strong store ratings</li>
+								</ul>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📈 CREATE: easypz-metrics.png → App store ratings and user growth charts (assets/projects/easypz/)</div>
-
-                                <h3>Current Challenges & What's Next</h3>
-                                <p>The challenge now isn't technical—it's growth. How do you scale a utility app that people use once and forget about until they desperately need it again?</p>
-
-                                <p>I'm working on a brand refresh that transforms EasyPZ from a simple utility into something more memorable. Think retro gaming vibes with our mascot Zima leading the charge.</p>
-
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🎨 CREATE: easypz-branding.png → Zima mascot and brand refresh concept (assets/projects/easypz/)</div>
-                            </div>
-                            <div class="col-lg-4">
+								<h3>Technical highlights</h3>
+								<ul>
+									<li>React Native + TypeScript; NestJS + PostgreSQL; monorepo</li>
+									<li>OAuth (Apple/Google); map search; submissions & moderation (coord. with Batuhan)</li>
+									<li>Admin panel built by Batuhan (SvelteKit)</li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
-                                    <p>Sep 2022 - Present</p>
+                                    <p>Sep 2022 – Present</p>
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Product Strategy & User Research</li>
-                                        <li>Full-Stack Development</li>
-                                        <li>Technical Architecture</li>
-                                        <li>Team Leadership</li>
-                                    </ul>
-                                    
-                                    <h6>Key Metrics</h6>
-                                    <ul>
-                                        <li>1,000+ Monthly Active Users</li>
-                                        <li>4.8/5 App Store Rating</li>
-                                        <li>7 Languages Supported</li>
-                                        <li>90% better and more optimized than v1</li>
-                                        <li>Zero Marketing Spend</li>
+                                        <li>Product research & strategy</li>
+                                        <li>Full‑stack development</li>
+                                        <li>Technical architecture</li>
+                                        <li>Brand & UI</li>
                                     </ul>
                                     
                                     <h6>Technologies</h6>
                                     <ul>
                                         <li>React Native + TypeScript</li>
                                         <li>NestJS + PostgreSQL</li>
-                                        <li>AWS Infrastructure</li>
-                                        <li>Monorepo Architecture</li>
-                                        <li>OAuth Integration</li>
+                                        <li>AWS</li>
+                                        <li>Monorepo</li>
                                     </ul>
                                     
                                     <h6>DOWNLOAD</h6>
@@ -222,7 +221,7 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_wefox.jpeg" class="project-logo" alt="wefox Logo">
                         <h2>wefox</h2>
-                        <p class="lead">Leading complex database integrations and cross-platform redesign at Europe's insurtech unicorn</p>
+                        <p class="lead">Cross‑platform product leadership: external policy integrations and a unified design system</p>
                         <div class="project-meta">
                             <span class="project-tag">Product Management</span>
                             <span class="project-tag">iOS</span>
@@ -232,59 +231,66 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">📱 CREATE: wefox-hero.png → App interface before/after comparison (assets/projects/wefox/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/wefox/wefox-hero.png — before/after UI snapshots</div>
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>The Technical Challenge</h3>
-                                <p>When I joined wefox, the app could only display insurance policies from wefox providers—limiting its value for customers with multiple insurers. The core challenge was architecting database integrations across external insurance providers while navigating legal, privacy, and security requirements.</p>
+                                <h3>Unlocking access via integrations</h3>
+                                <p>I led the initiative to support external insurance policies in the app, coordinating legal, privacy, and platform teams to design a compliant, secure integration approach.</p>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/wefox/wefox-integration-architecture.png — high‑level integration diagram</div>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🔗 CREATE: wefox-integration.png → Database integration architecture diagram (assets/projects/wefox/)</div>
-                                
-                                <h3>Cross-Functional Leadership</h3>
-                                <p>As Product Manager for the largest tech squad at wefox (8-9 engineers across iOS, Android, and web), I coordinated between Principal Engineers, legal teams, and external partners to solve this complex integration challenge.</p>
-                                
-                                <p>The breakthrough required months of stakeholder alignment, security audits, and custom API development to create a unified system that could safely aggregate insurance data from any provider.</p>
+                                <h3>Design system across platforms</h3>
+                                <p>In parallel, I drove the first unified design system for iOS, Android, and Web—reducing design drift and aligning UX across product lines.</p>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/wefox/wefox-design-system.png — components/tokens examples</div>
 
-                                <h3>Design System Implementation</h3>
-                                <p>Simultaneously, I led the implementation of wefox's first unified design system across all platforms, working with external agencies and internal designers to establish consistent UI components and patterns.</p>
+                                								<h3>Impact</h3>
+								<ul>
+									<li>Expanded eligibility from a limited subset to the full customer base through external policy support</li>
+									<li>Material store‑rating improvement during my tenure</li>
+									<li>Consistent cross‑platform UX via a shared design system</li>
+								</ul>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🎨 CREATE: wefox-design-system.png → Cross-platform component library (assets/projects/wefox/)</div>
-                                
-                                <h3>Technical Achievement</h3>
-                                <p>The successful integration expanded platform capabilities from serving 35K existing wefox customers to supporting 2M+ potential users across multiple insurance providers—a fundamental shift in the product's value proposition.</p>
+								<h3>What I did</h3>
+								<ul>
+									<li>Defined integration strategy under legal/privacy/security constraints</li>
+									<li>Coordinated iOS, Android, and Web squads with Principal Engineers, QA, and design</li>
+									<li>Drove the rollout of a unified cross‑platform design system</li>
+									<li>Aligned stakeholders and release timelines across platforms</li>
+								</ul>
 
-                                <p>This complex technical achievement required navigating insurance industry compliance standards while maintaining security and performance across three platforms.</p>
-                            </div>
-                            <div class="col-lg-4">
+								<h3>Key outcomes</h3>
+								<ul>
+									<li>Eligibility expanded from ~35k to ~2M users in DE (during my tenure)</li>
+									<li>Store rating improved from 2.1 to 3.6 in DE (during my tenure)</li>
+									<li>Introduced a shared component library to reduce design/engineering drift</li>
+								</ul>
+
+								<h3>Technical highlights</h3>
+								<ul>
+									<li>External policy integrations; security/compliance reviews; API orchestration</li>
+									<li>Cross‑platform design tokens/components across iOS/Android/Web</li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>Aug 2021 - Oct 2023</p>
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Cross-platform product strategy</li>
-                                        <li>Technical integration leadership</li>
-                                        <li>Squad management (8-9 engineers)</li>
-                                        <li>Design system implementation</li>
+                                        <li>Integration strategy & execution</li>
+                                        <li>Design system leadership</li>
+                                        <li>Squad coordination</li>
+                                        <li>Stakeholder alignment</li>
                                     </ul>
                                     
                                     <h6>Technical Scope</h6>
                                     <ul>
-                                        <li>iOS, Android, and Web platforms</li>
-                                        <li>External database integrations</li>
-                                        <li>Security and compliance architecture</li>
-                                        <li>Cross-platform design system</li>
-                                    </ul>
-                                    
-                                    <h6>Team Structure</h6>
-                                    <ul>
-                                        <li>Principal Engineers (2)</li>
-                                        <li>Platform developers (iOS, Android, Web)</li>
-                                        <li>QA Engineers (2)</li>
-                                        <li>UX/UI Designers (3)</li>
+                                        <li>External data integrations</li>
+                                        <li>Security & compliance</li>
+                                        <li>Platform consistency</li>
                                     </ul>
                                 </div>
                             </div>
@@ -304,7 +310,7 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_morressier.jpeg" class="project-logo" alt="Morressier Logo">
                         <h2>Morressier</h2>
-                        <p class="lead">Growing with a seed-stage startup from Customer Success to Product Management</p>
+                        <p class="lead">From Customer Success to Product Management: conference iPad app redesign and research discovery</p>
                         <div class="project-meta">
                             <span class="project-tag">Product Management</span>
                             <span class="project-tag">iOS</span>
@@ -313,56 +319,65 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">📱 CREATE: morressier-hero.png → iPad presentation app interface (assets/projects/morressier/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/morressier/morressier-hero.png — redesigned iPad app screens</div>
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Organic Role Evolution</h3>
-                                <p>I joined Morressier as one of the early hires when the product wasn't yet functional enough to meet user needs. Initially hired for Customer Success, I naturally transitioned into project management, overseeing 60+ global medical conference implementations.</p>
+                                <h3>Role evolution</h3>
+                                <p>I joined early, managed 60+ conference implementations, and transitioned into Product Management by advocating UX/UI improvements grounded in user feedback.</p>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/morressier/morressier-timeline.png — role progression overview</div>
 
-                                <p>During my commute, I studied UX/UI design, continuously advocating for product improvements. The CTO noticed my initiative and created a Product Manager position specifically for me—my first introduction to product management.</p>
+                                <h3>iPad app redesign</h3>
+                                <p>Partnered with design and engineering to redesign the on‑site presentation app for global medical conferences, improving reliability and presenter workflows.</p>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/morressier/morressier-conferences.png — Berlin/NYC/Busan/Lisbon map + photos</div>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📈 CREATE: morressier-growth.png → Career progression timeline (assets/projects/morressier/)</div>
-                                
-                                <h3>iPad App Redesign</h3>
-                                <p>The existing iPad presentation app had numerous bugs and UX flaws. As the internal expert having attended medical conferences in Berlin, NYC, Busan, and Lisbon, I gathered direct user feedback and led the complete app overhaul.</p>
+                                <h3>Research discovery platform</h3>
+                                <p>Contributed to a web platform to help researchers discover related work and build connections from early‑stage presentations to publication.</p>
 
-                                <p>Working closely with our Senior Product Designer, we delivered a significantly improved conference presentation experience that conference organizers adopted across multiple global events.</p>
+                                									<h3>Feedback</h3>
+									<p>Consistently positive organizer feedback across events validated the direction.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🌍 CREATE: morressier-conferences.png → Global conference locations and user feedback (assets/projects/morressier/)</div>
-                                
-                                <h3>Research Discovery Platform</h3>
-                                <p>I contributed to developing Morressier's web platform that helped medical researchers discover related work through content analysis and connection algorithms. The platform supported researchers through their pre-publication journey from early-stage conference presentations to final publication.</p>
+									<h3>What I did</h3>
+									<ul>
+										<li>Managed 60+ conference implementations as an early hire (8th employee)</li>
+										<li>Redesigned the on‑site iPad presentation app for medical conferences</li>
+										<li>Partnered with design/engineering to improve reliability and presenter workflows</li>
+										<li>Contributed to the research discovery platform and the company landing page</li>
+									</ul>
 
-                                <h3>Startup Growth Experience</h3>
-                                <p>Working at seed-stage Morressier provided hands-on experience with multiple product aspects—from customer-facing implementations to technical product decisions. This environment taught me to wear multiple hats and adapt quickly as the company grew toward Series A.</p>
-                            </div>
-                            <div class="col-lg-4">
+									<h3>Key outcomes</h3>
+									<ul>
+										<li>Deployed at medical conferences worldwide; improved on‑site presenter experience</li>
+										<li>Consistent organizer satisfaction across events</li>
+									</ul>
+
+									<h3>Technical highlights</h3>
+									<ul>
+										<li>iPad presentation app; on‑site constraints; reliability improvements</li>
+										<li>ML‑assisted discovery: extracted metadata from PDFs to relate similar research</li>
+									</ul>
+								</div>
+								<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>Feb 2018 - Apr 2020</p>
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Managed 60+ global projects</li>
-                                        <li>iPad app redesign</li>
-                                        <li>Research discovery platform MVP</li>
-                                        <li>Landing Page Relaunch</li>
+                                        <li>60+ global implementations</li>
+                                        <li>Conference iPad app redesign</li>
+                                        <li>Research discovery platform</li>
+                                        <li>Landing page relaunch</li>
                                     </ul>
                                     
-                                    <h6>Technologies</h6>
+                                    <h6>Focus</h6>
                                     <ul>
-                                        <li>iOS (iPad) Development</li>
-                                        <li>Machine-learning Platform</li>
-                                        <li>Conference Management Tools</li>
-                                        <li>Content Collection & Analysis Systems</li>
-
+                                        <li>iOS reliability & UX</li>
+                                        <li>Search/discovery</li>
+                                        <li>On‑site workflows</li>
                                     </ul>
-                                    
-                                    <h6>Growth</h6>
-                                    <p>Seed stage → Series A progression</p>
                                 </div>
                             </div>
                         </div>
@@ -381,7 +396,7 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_tou.jpeg" class="project-logo" alt="Tomorrow University Logo">
                         <h2>Tomorrow University</h2>
-                        <p class="lead">Operating as sole Product Manager after team restructuring, shipping groundbreaking Vision Pro app</p>
+                        <p class="lead">Solo Product Management across multiple platform releases, including an early Apple Vision Pro app</p>
                         <div class="project-meta">
                             <span class="project-tag">Apple Vision Pro</span>
                             <span class="project-tag">Product Management</span>
@@ -390,63 +405,61 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">🥽 CREATE: tou-hero.png → Vision Pro app interface mockup (assets/projects/tomorrow-university/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/tomorrow-university/tou-hero.png — highlights of homepage/catalog/checkout</div>
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Solo Product Leadership</h3>
-                                <p>After the previous PM team was restructured, I operated as the sole Product Manager for Tomorrow University's platform development. Despite being promised a Head of Product role, I took ownership of the entire product strategy and execution across 7 major platform releases.</p>
+                                									<h3>Scope and ownership</h3>
+									<p>After a team restructure, I operated as the sole PM and shipped multiple releases: a modern homepage, public program catalog, streamlined application/checkout, and an Apple Vision Pro app (media coverage available on request).</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🗺 CREATE: tou-releases.png → 7 major releases timeline (assets/projects/tomorrow-university/)</div>
-                                
-                                <h3>Vision Pro Pioneer Launch</h3>
-                                <p>When Apple surprise-launched Vision Pro earlier than expected, I quickly reallocated resources to develop Tomorrow University's metaverse app for the new platform. As the only PM with App Store release experience on the team, I led the technical and strategic decisions for this groundbreaking educational application.</p>
+									<h3>Reducing friction and opening access</h3>
+									<p>I implemented Google & Apple SSO and shaped the end‑to‑end self‑service flow so prospective learners could explore, apply, and enroll directly.</p>
 
-                                <p>The successful launch positioned Tomorrow University as a pioneer in metaverse education and generated significant media attention for the institution.</p>
+									<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/tomorrow-university/tou-growth.png — SSO flows & simplified onboarding</div>
 
-                                <h3>Growth Engineering Initiatives</h3>
-                                <p>I implemented comprehensive product-led growth features including Google & Apple SSO integration that reduced registration friction by 95%, and designed the first end-to-end digital sales flow enabling direct program purchases through the platform.</p>
+									<h3>What I did</h3>
+									<ul>
+										<li>Sole PM: roadmap, requirements, and release coordination</li>
+										<li>Implemented Google & Apple SSO; opened up public browsing of programs</li>
+										<li>Designed the first end‑to‑end digital sales journey (application → checkout → enrollment)</li>
+										<li>Launched an Apple Vision Pro app and supported marketing/press coordination</li>
+									</ul>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📊 CREATE: tou-growth.png → SSO integration and conversion flow improvements (assets/projects/tomorrow-university/)</div>
-                                
-                                <h3>Cross-Functional Coordination</h3>
-                                <p>Working with a distributed team of 5+ engineers, designers, and stakeholders, I managed product roadmaps, feature prioritization, and release coordination across multiple platform initiatives simultaneously.</p>
+									<h3>Key outcomes</h3>
+									<ul>
+										<li>Significantly reduced signup/onboarding time</li>
+										<li>Enabled direct course purchases via Shopify integration</li>
+										<li>Modernized the top of funnel (homepage, program catalog) for prospective learners</li>
+									</ul>
 
-                                <p>The largest platform release included a complete homepage redesign, comprehensive program catalog, and integrated checkout system—representing months of cross-team coordination and technical implementation.</p>
+																	<h3>Technical highlights</h3>
+								<ul>
+									<li>Clerk SSO; program catalog; application & checkout; Shopify integration</li>
+									<li>Web app experience delivered on Apple Vision Pro</li>
+								</ul>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>Nov 2023 - May 2024</p>
-                                    
+
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Solo product management leadership</li>
-                                        <li>Vision Pro app development</li>
-                                        <li>Growth feature implementation</li>
-                                        <li>Cross-functional team coordination</li>
+                                        <li>Solo PM execution</li>
+                                        <li>SSO + self‑service enrollment</li>
+                                        <li>Vision Pro app (early launch)</li>
+                                        <li>Release management</li>
                                     </ul>
-                                    
-                                    <h6>Major Releases</h6>
+
+                                    <h6>Major releases</h6>
                                     <ul>
-                                        <li>Apple Vision Pro app (pioneering launch)</li>
-                                        <li>SSO integration (95% time reduction)</li>
-                                        <li>End-to-end sales platform</li>
-                                        <li>Homepage and program catalog</li>
+                                        <li>Homepage and catalog</li>
+                                        <li>SSO integration</li>
+                                        <li>Application → checkout</li>
+                                        <li>Vision Pro app</li>
                                     </ul>
-                                    
-                                    <h6>Team Structure</h6>
-                                    <ul>
-                                        <li>Product Manager (sole)</li>
-                                        <li>Engineers (5+)</li>
-                                        <li>Designers & Stakeholders</li>
-                                        <li>QA and DevOps support</li>
-                                    </ul>
-                                    
-                                    <h6>Platform Focus</h6>
-                                    <p>Web, Apple Vision Pro, Mobile</p>
                                 </div>
                             </div>
                         </div>
@@ -464,34 +477,30 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <h2>Tattoo Booking Form</h2>
-                        <p class="lead">Solving client communication challenges with custom form design</p>
+                        <p class="lead">Custom intake form that improved pre‑project clarity for a traveling tattoo artist</p>
                         <div class="project-meta">
                             <span class="project-tag">Form Design</span>
-                            <span class="project-tag">Creative Solutions</span>
                             <span class="project-tag">Custom Development</span>
                         </div>
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">📋 CREATE: tattoo-booking-hero.png → Custom form interface design (assets/projects/tattoo-booking/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/tattoo-booking/tattoo-booking-hero.png — final form UI</div>
                     </div>
                     
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Client Challenge</h3>
-                                <p>Undulmood, a high-demand traveling tattoo artist, was frustrated by clients who would DM or email with insufficient information for project discussions. This created inefficient back-and-forth communication that was eating into his creative time.</p>
-                                
-                                <h3>Custom Solution Approach</h3>
-                                <p>Despite my recommendation to use Typeform, the client wanted to avoid operational costs. I developed a custom booking form that captured all necessary client information upfront while maintaining visual consistency with his artistic brand.</p>
-                                
-                                <h3>Technical Constraints & Innovation</h3>
-                                <p>Working within a zero-budget constraint, I implemented a creative solution using formsubmit.co for form handling and Netlify for hosting. The form was designed to organize submissions into a clean table format delivered via email.</p>
+                                <h3>Context</h3>
+                                <p>DMs and emails lacked critical details, causing back‑and‑forth. I designed a form that gathered the essentials up front while matching the artist’s brand.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">⚙️ CREATE: tattoo-booking-tech.png → Technical flow diagram (Netlify + Formsubmit) (assets/projects/tattoo-booking/)</div>
-                                
-                                <h3>Outcome & Client Transition</h3>
-                                <p>The custom form successfully filtered client inquiries and improved communication quality for several months. Eventually, as the client's business grew, he transitioned to Typeform for enhanced features—validating the original technical recommendation while proving the custom solution met immediate needs.</p>
+                                <h3>Zero‑ops implementation</h3>
+                                <p>To keep this free to run, I used formsubmit.co for submissions and Netlify for hosting. Submissions arrived formatted for quick triage.</p>
+
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/tattoo-booking/tattoo-booking-flow.png — Netlify + Formsubmit diagram</div>
+
+                                <h3>Outcome</h3>
+                                <p>The form reduced friction and improved intake quality. As the business grew, the client later moved to Typeform for advanced features.</p>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
@@ -500,25 +509,18 @@ class PortfolioManager {
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Client needs analysis</li>
-                                        <li>Technical constraint navigation</li>
-                                        <li>Custom form development</li>
-                                        <li>Brand-consistent design</li>
+                                        <li>Requirements & UX</li>
+                                        <li>Form development</li>
+                                        <li>Brand‑consistent UI</li>
+                                        <li>Zero‑ops delivery</li>
                                     </ul>
                                     
-                                    <h6>Technical Stack</h6>
+                                    <h6>Stack</h6>
                                     <ul>
-                                        <li>HTML/CSS custom styling</li>
-                                        <li>Responsive JavaScript</li>
-                                        <li>Formsubmit.co integration</li>
-                                        <li>Netlify hosting</li>
+                                        <li>HTML/CSS + JS</li>
+                                        <li>Formsubmit.co</li>
+                                        <li>Netlify</li>
                                     </ul>
-                                    
-                                    <h6>Client</h6>
-                                    <p>Undulmood (Freelance)</p>
-                                    
-                                    <h6>Constraint</h6>
-                                    <p>Zero operational cost requirement</p>
                                 </div>
                             </div>
                         </div>
@@ -536,7 +538,7 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <h2>Feedbacker</h2>
-                        <p class="lead">Leading team development and product vision at Le Wagon coding bootcamp</p>
+                        <p class="lead">Location‑based visual feedback for artwork—built in a 2‑week bootcamp sprint</p>
                         <div class="project-meta">
                             <span class="project-tag">Design Leadership</span>
                             <span class="project-tag">Ruby on Rails</span>
@@ -545,59 +547,44 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">📱 CREATE: feedbacker-hero.png → Main app interface showing location-based feedback (assets/projects/feedbacker/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/feedbacker/feedbacker-hero.png — final screens with pin‑based comments</div>
                     </div>
                     
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Problem Identification & Product Vision</h3>
-                                <p>During Le Wagon bootcamp, I identified a personal frustration with online visual design feedback—typically limited to commenting on entire images rather than specific elements. I pitched Feedbacker as a platform enabling location-specific feedback on visual artwork.</p>
-                                
-                                <h3>Team Leadership & Project Management</h3>
-                                <p>Taking the lead on this 4-developer team project, I organized workflows to keep everyone constantly updated and contributing effectively. The project management approach ensured efficient collaboration during the intensive 2-week development sprint.</p>
+                                <h3>Problem</h3>
+                                <p>Online feedback on visuals is often vague. We built coordinate‑mapped comments so reviewers could leave precise, contextual feedback.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">👥 CREATE: feedbacker-team.png → Team organization and workflow process (assets/projects/feedbacker/)</div>
-                                
-                                <h3>Technical Implementation</h3>
-                                <p>We built a full-stack Ruby on Rails application with location-based commenting functionality. Users could click on specific parts of uploaded images to add coordinate-mapped feedback, enabling precise visual communication between artists and reviewers.</p>
-                                
-                                <h3>Bootcamp Recognition</h3>
-                                <p>Our team was highly commended for achieving exceptional development progress within the short timeframe. We were awarded the honorary "final presentation" slot, recognizing both our technical execution and project management effectiveness.</p>
+                                <h3>Build</h3>
+                                <p>Full‑stack Rails app with image uploads and click‑to‑comment overlays. I led scoping, design, and coordination to ship within 2 weeks.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🏆 CREATE: feedbacker-presentation.png → Final bootcamp presentation slides (assets/projects/feedbacker/)</div>
-                            </div>
-                            <div class="col-lg-4">
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/feedbacker/feedbacker-workflow.png — flows for upload, annotate, review</div>
+
+                                									<h3>Result</h3>
+									<p>Delivered a working MVP and final presentation; recognized internally for scope achieved within the sprint.</p>
+
+									<h6>Proof</h6>
+									<p>Screenshots and screen recordings available.</p>
+								</div>
+								<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>2021 (2 weeks intensive)</p>
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Product concept and vision</li>
-                                        <li>Team leadership and coordination</li>
-                                        <li>Project management and workflows</li>
-                                        <li>Full-stack development</li>
+                                        <li>Concept & UX</li>
+                                        <li>Team leadership</li>
+                                        <li>Full‑stack build</li>
                                     </ul>
                                     
-                                    <h6>Team Structure</h6>
+                                    <h6>Stack</h6>
                                     <ul>
-                                        <li>Kevin Myung (Team Lead)</li>
-                                        <li>Martin Kühne</li>
-                                        <li>Marnie Nyenhuis</li>
-                                        <li>Laura Hauertmann</li>
+                                        <li>Ruby on Rails</li>
+                                        <li>JavaScript</li>
+                                        <li>PostgreSQL</li>
                                     </ul>
-                                    
-                                    <h6>Technical Stack</h6>
-                                    <ul>
-                                        <li>Ruby on Rails (full-stack)</li>
-                                        <li>JavaScript (frontend interaction)</li>
-                                        <li>PostgreSQL (database)</li>
-                                        <li>HTML/CSS (responsive design)</li>
-                                    </ul>
-                                    
-                                    <h6>Recognition</h6>
-                                    <p>Honorary final presentation slot</p>
                                 </div>
                             </div>
                         </div>
@@ -615,7 +602,7 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <h2>Undulmood Store</h2>
-                        <p class="lead">Digital transformation during COVID-19 pandemic for creative professionals</p>
+                        <p class="lead">Shopify store enabling multiple revenue streams during lockdowns</p>
                         <div class="project-meta">
                             <span class="project-tag">E-commerce</span>
                             <span class="project-tag">Shopify</span>
@@ -625,59 +612,47 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">🛍 CREATE: undulmood-store-hero.png → Shopify store homepage design (assets/projects/undulmood-store/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/undulmood-store/undulmood-hero.png — storefront and product grids</div>
                     </div>
                     
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Pandemic Business Adaptation</h3>
-                                <p>During 2020's lockdowns, I was approached by three Berlin-based creatives needing assistance with digitalizing their work. Undulmood, a tattoo artist, needed to establish online revenue streams while traditional tattooing was restricted.</p>
-                                
-                                <h3>E-commerce Strategy & Implementation</h3>
-                                <p>I developed a comprehensive Shopify store featuring multiple revenue streams: original artwork sales, branded accessories, and digital brush sets for other tattoo artists. This diversified approach provided income while building his digital presence.</p>
+                                <h3>Objective</h3>
+                                <p>Build an online presence and diversify income across original artwork, accessories, and digital brush sets.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📋 CREATE: undulmood-products.png → Product categories and revenue streams (assets/projects/undulmood-store/)</div>
-                                
-                                <h3>Brand Integration & Content Collaboration</h3>
-                                <p>Working closely with Undulmood, I created detailed product listings and descriptions that accurately represented his artistic style. The store design maintained visual consistency with his existing brand while optimizing for e-commerce conversion.</p>
-                                
-                                <h3>Creative Professional Support</h3>
-                                <p>This project represented broader support for creative professionals adapting to pandemic restrictions. By enabling digital sales channels, artists could maintain income while building long-term online presence beyond the immediate crisis.</p>
+                                <h3>Implementation</h3>
+                                <p>Custom theme tweaks, product taxonomy, and brand‑consistent visuals to showcase the artist’s work and streamline checkout.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📈 CREATE: undulmood-impact.png → Pandemic business adaptation timeline (assets/projects/undulmood-store/)</div>
-                            </div>
-                            <div class="col-lg-4">
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/undulmood-store/undulmood-products.png — categories and example PDP</div>
+
+                                									<h3>Outcome</h3>
+									<p>Launched a functional store that supported sales while studios were closed; foundation for longer‑term digital presence.</p>
+
+									<h6>Results</h6>
+									<ul>
+										<li>Generated a few thousand EUR in sales; enabled passive income via digital goods</li>
+										<li>Store remains active</li>
+									</ul>
+								</div>
+								<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
-                                    <p>2020 (COVID-19 pandemic)</p>
+                                    <p>2020</p>
                                     
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>E-commerce strategy development</li>
-                                        <li>Shopify store setup and customization</li>
-                                        <li>Product categorization and organization</li>
-                                        <li>Brand-consistent design implementation</li>
+                                        <li>Store design & setup</li>
+                                        <li>Product taxonomy & content</li>
+                                        <li>Brand‑consistent UI</li>
                                     </ul>
-                                    
-                                    <h6>Platform & Features</h6>
+
+                                    <h6>Platform</h6>
                                     <ul>
-                                        <li>Shopify e-commerce platform</li>
-                                        <li>Custom theme development</li>
-                                        <li>Mobile-responsive design</li>
-                                        <li>Integrated payment processing</li>
+                                        <li>Shopify</li>
+                                        <li>Custom theme</li>
+                                        <li>Payments & shipping</li>
                                     </ul>
-                                    
-                                    <h6>Product Categories</h6>
-                                    <ul>
-                                        <li>Original artwork</li>
-                                        <li>Branded accessories</li>
-                                        <li>Digital brush sets</li>
-                                        <li>Print-on-demand items</li>
-                                    </ul>
-                                    
-                                    <h6>Client</h6>
-                                    <p>Undulmood (Freelance)</p>
                                 </div>
                             </div>
                         </div>
@@ -695,7 +670,7 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <h2>Perfect Living</h2>
-                        <p class="lead">Comprehensive responsive design system for real estate application</p>
+                        <p class="lead">Mobile‑first responsive design for a real estate application</p>
                         <div class="project-meta">
                             <span class="project-tag">UI Design</span>
                             <span class="project-tag">UX Design</span>
@@ -704,59 +679,41 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">📱 CREATE: perfect-living-hero.png → Responsive design showcase (mobile/tablet/desktop) (assets/projects/perfect-living/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/perfect-living/perfect-living-hero.png — mobile, tablet, desktop layouts</div>
                     </div>
                     
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Mobile-First Design Methodology</h3>
-                                <p>As a UX/UI design student project, Perfect Living emphasized comprehensive responsive design principles. I focused on mobile-first methodology, ensuring optimal user experience across all device types while maintaining visual consistency.</p>
-                                
-                                <h3>Cross-Device Design System</h3>
-                                <p>The project required developing cohesive design elements—color schemes, typography, and interface patterns—that adapted seamlessly from mobile to tablet to desktop. This systematic approach ensured consistent user experience regardless of access point.</p>
+                                <h3>Focus</h3>
+                                <p>Established a responsive system: color/typography, components, and patterns that scale cleanly across devices.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🎨 CREATE: perfect-living-system.png → Design system components and style guide (assets/projects/perfect-living/)</div>
-                                
-                                <h3>User Experience Focus</h3>
-                                <p>The real estate application design included property browsing, advanced filtering, detailed property views, and user account management. Each feature was optimized for touch interaction on mobile while scaling appropriately for larger screens.</p>
-                                
-                                <h3>Design Education Foundation</h3>
-                                <p>This project established fundamental skills in responsive design thinking, visual hierarchy, and user interface consistency that became essential for professional design work. The systematic approach to multi-device design informed my later product management decisions.</p>
+                                <h3>Key screens</h3>
+                                <p>Property search, filters, listing details, saved items, and account—optimized for touch and readability.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">🗺 CREATE: perfect-living-userflow.png → Property search user journey flow (assets/projects/perfect-living/)</div>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/perfect-living/perfect-living-system.png — grid, spacing, and component variants</div>
+
+                                <h3>Takeaway</h3>
+                                <p>Foundational exercise in responsive design and visual hierarchy that informs later product work.</p>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>2019 (Student project)</p>
-                                    
+
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Mobile-first design strategy</li>
-                                        <li>Cross-device interface adaptation</li>
-                                        <li>Visual design system development</li>
-                                        <li>User experience optimization</li>
+                                        <li>Mobile‑first strategy</li>
+                                        <li>Component library</li>
+                                        <li>Cross‑device adaptation</li>
                                     </ul>
-                                    
-                                    <h6>Design Focus</h6>
+
+                                    <h6>Tools</h6>
                                     <ul>
-                                        <li>Responsive layout systems</li>
-                                        <li>Touch-optimized interactions</li>
-                                        <li>Visual hierarchy consistency</li>
-                                        <li>Brand-appropriate aesthetics</li>
+                                        <li>Sketch</li>
+                                        <li>InVision</li>
+                                        <li>Adobe Suite</li>
                                     </ul>
-                                    
-                                    <h6>Tools & Methods</h6>
-                                    <ul>
-                                        <li>Sketch (interface design)</li>
-                                        <li>InVision (prototyping)</li>
-                                        <li>Adobe Creative Suite</li>
-                                        <li>Mobile-first methodology</li>
-                                    </ul>
-                                    
-                                    <h6>Context</h6>
-                                    <p>UX/UI Design Education</p>
                                 </div>
                             </div>
                         </div>
@@ -774,7 +731,7 @@ class PortfolioManager {
                 content: `
                     <div class="project-header">
                         <h2>Inkery</h2>
-                        <p class="lead">Comprehensive UX research and design methodology foundations</p>
+                        <p class="lead">UX research and service design for tattoo appointment booking</p>
                         <div class="project-meta">
                             <span class="project-tag">UX Research</span>
                             <span class="project-tag">Service Design</span>
@@ -783,59 +740,41 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1);">🔍 CREATE: inkery-hero.png → UX research process overview (assets/projects/inkery/)</div>
+                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/inkery/inkery-hero.png — research→flows→UI overview</div>
                     </div>
                     
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>UX Research Foundation</h3>
-                                <p>As my first major UX/UI project, Inkery established fundamental research methodologies I continue using professionally. The project focused on comprehensive user understanding, hypothesis formation, and validation processes for a tattoo appointment booking service.</p>
-                                
-                                <h3>Systematic Design Process</h3>
-                                <p>The project required extensive market analysis, user interviews, persona development, and user journey mapping. This systematic approach taught me to ground design decisions in research rather than assumptions—a principle that informs my product management approach.</p>
+                                <h3>Research foundation</h3>
+                                <p>Market analysis, interviews, personas, and journeys framed hypotheses for booking flows and communication clarity.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📱 CREATE: inkery-evolution.png → Design process from research to final app (assets/projects/inkery/)</div>
-                                
-                                <h3>Comprehensive Documentation</h3>
-                                <p>The project produced over 40 design images documenting the entire process from initial research through final designs. Additionally, I created a comprehensive YouTube presentation explaining the methodology and outcomes—demonstrating early communication and presentation skills.</p>
-                                
-                                <h3>Career Foundation Impact</h3>
-                                <p>This project established core UX principles that became essential for professional growth: user-centered thinking, iterative design processes, and research-driven decision making. These methodologies directly influenced my approach to product management and cross-functional collaboration.</p>
+                                <h3>Design process</h3>
+                                <p>Iterative wireframes to high‑fidelity designs across onboarding, browsing, artist selection, and inquiry.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255, 68, 68, 0.1); margin: 20px 0;">📊 CREATE: inkery-documentation.png → 40+ design images and YouTube presentation (assets/projects/inkery/)</div>
+                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/inkery/inkery-documentation.png — selected artifacts (personas, journeys, final UI)</div>
+
+                                <h3>Takeaway</h3>
+                                <p>Established UX habits I still use: research‑driven decisions, crisp flows, and testable assumptions.</p>
                             </div>
                             <div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
-                                    <p>2019 (Major UX project)</p>
-                                    
+                                    <p>2019</p>
+
                                     <h6>MY CONTRIBUTION</h6>
                                     <ul>
-                                        <li>Comprehensive user research</li>
-                                        <li>Market analysis and competitive study</li>
-                                        <li>Persona and journey development</li>
-                                        <li>Mobile app interface design</li>
+                                        <li>User research & synthesis</li>
+                                        <li>Flows & IA</li>
+                                        <li>Mobile UI</li>
                                     </ul>
-                                    
-                                    <h6>Research Methods</h6>
-                                    <ul>
-                                        <li>User interviews and surveys</li>
-                                        <li>Hypothesis formation and testing</li>
-                                        <li>Persona development</li>
-                                        <li>User journey mapping</li>
-                                    </ul>
-                                    
+
                                     <h6>Deliverables</h6>
                                     <ul>
-                                        <li>40+ documented design images</li>
-                                        <li>Comprehensive research documentation</li>
-                                        <li>YouTube methodology presentation</li>
-                                        <li>Mobile app design system</li>
+                                        <li>Research summary</li>
+                                        <li>Personas & journeys</li>
+                                        <li>Design system & screens</li>
                                     </ul>
-                                    
-                                    <h6>Professional Impact</h6>
-                                    <p>Established UX career foundation</p>
                                 </div>
                             </div>
                         </div>

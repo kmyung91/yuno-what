@@ -61,17 +61,16 @@ class TimelineManager {
             {
                 id: 'freelance-consultant',
                 type: 'work',
-                title: 'Full-Stack Product Specialist',
+                title: 'Full‑Stack Product Specialist',
                 organization: 'Freelance',
                 period: 'Nov 2023 - Present',
                 location: 'Berlin, DE',
-                description: 'Helping businesses elevate their digital presence through design, development, and strategic consulting.',
+                description: 'Design, build, and ship end‑to‑end solutions—from UX/UI to web/mobile and product systems.',
                 achievements: [
-                    'Created custom websites and portfolios for professionals and businesses',
-                    'Built specialized tools and automation solutions for client workflows',
-                    'Designed and beautified Shopify stores for e-commerce businesses',
-                    'Delivered speaker engagements on product management and tech entrepreneurship',
-                    'Provided strategic consulting for startups and established companies',
+                    'Custom websites and portfolios for professionals and businesses',
+                    'Automation and internal tools to streamline operations',
+                    'Shopify storefronts and brand‑consistent UI',
+                    'Speaking and strategic consulting on product delivery',
                 ],
                 logo: 'assets/profile.png',
                 highlight: true
@@ -99,11 +98,12 @@ class TimelineManager {
                 organization: 'Tomorrow University',
                 period: 'Nov 2023 - May 2024',
                 location: 'Berlin, DE (Remote)',
-                description: 'Pioneered the university\'s first Apple Vision Pro app and spearheaded platform releases that created the first direct digital revenue channel.',
+                description: 'Operated as the sole PM shipping multiple releases, including an early Apple Vision Pro app.',
                 achievements: [
-                    'Pioneered the university\'s first Apple Vision Pro app, rapidly adapting to the device\'s surprise early launch',
-                    'Integrated Google & Apple SSO capabilities that reduced registration time by approximately 95%',
-                    'Spearheaded the company\'s largest platform release with comprehensive homepage for non-enrolled users'
+                    'Launched a public homepage, catalog, and self‑service enrollment flow',
+                    'Implemented Google & Apple SSO to reduce registration friction',
+                    'Coordinated design, engineering, and QA through several releases',
+                    'Early Apple Vision Pro app with media coverage (available on request)'
                 ],
                 logo: 'assets/companylogos/logo_tou.jpeg'
             },
@@ -128,12 +128,15 @@ class TimelineManager {
                 organization: 'EasyPZ',
                 period: 'Sep 2022 - Present',
                 location: 'Berlin, DE / New York, NY',
-                description: 'Created a free-to-use mobile app that helps people locate nearby restrooms within 5 seconds.',
-                achievements: [
-                    'Produced best-in-class mobile app achieving 4.8/5 star rating and 1k+ MAU with $0 marketing',
-                    'Engineered complete mobile app using AI-assisted development and modern tech stack',
-                    'Enhanced global accessibility by localizing the app in seven languages'
-                ],
+                description: 'Created a free-to-use mobile app that helps people locate nearby restrooms quickly and confidently.',
+                					achievements: [
+						'Rebuilt v2 & v3 with React Native + TypeScript and a modern backend',
+						'Improved stability and time-to-first-result; streamlined onboarding',
+						'Multilingual support (EN, ES, DE, FR, KR, JP) with a calm, task-focused UI',
+						'Partnership presence at Karneval der Kulturen and Christopher Street Day (Berlin)',
+						'Organic growth with zero paid marketing',
+						'Consistently strong store ratings'
+					],
                 logo: 'assets/companylogos/logo_easypz.jpeg'
             },
             {
@@ -143,12 +146,13 @@ class TimelineManager {
                 organization: 'wefox',
                 period: 'Aug 2021 - Oct 2023',
                 location: 'Berlin, DE (Remote)',
-                description: 'Led comprehensive redesign of flagship insurtech app valued at $4.5B, managing the largest tech squad spanning across Web, iOS, and Android.',
-                achievements: [
-                    'Increased app ratings from 2.1 to 3.6 (71% improvement) and expanded TAM from 35K to 2M+',
-                    'Championed cross-functional initiative overcoming data privacy challenges',
-                    'Led the largest tech squad at wefox (8-9 members) with consistent executive recognition'
-                ],
+                description: 'Led external policy integrations and a unified cross-platform design system for the flagship app.',
+                					achievements: [
+						'Defined integration approach to support external insurance policies under legal and privacy constraints',
+						'Drove a shared design system across iOS, Android, and Web for consistent UX',
+						'Expanded eligibility from ~35k to ~2M users in DE (during my tenure)',
+						'Store rating improved from 2.1 to 3.6 in DE (during my tenure)'
+					],
                 logo: 'assets/companylogos/logo_wefox.jpeg'
             },
             {
@@ -158,12 +162,11 @@ class TimelineManager {
                 organization: 'Yuno',
                 period: 'Aug 2021 - Present',
                 location: 'Berlin, DE (Remote)',
-                description: 'Delivered presentations on product management and mentored bootcamp graduates on career transitions.',
+                description: 'Talks on product management and mentoring for early‑career designers and PMs.',
                 achievements: [
                     'Delivered engaging presentations to 100+ students during Le Wagon\'s career week',
-                    'Mentored bootcamp graduates with 4 mentees successfully securing first PM positions',
-                    'Teaching Assistant for CSS concepts (Jul 2021)',
-                    'Currently mentoring junior designers and product managers'
+                    'Mentored graduates transitioning into PM roles',
+                    'Teaching Assistant for CSS concepts (Jul 2021)'
                 ],
                 logo: 'assets/profile.png'
             },
@@ -190,10 +193,11 @@ class TimelineManager {
                 organization: 'Morressier',
                 period: 'Feb 2019 - Apr 2020',
                 location: 'Berlin, DE',
-                description: 'Spearheaded machine learning-powered platform for medical research collaboration.',
+                description: 'Product management across an on‑site conference iPad app and research discovery experiences.',
                 achievements: [
-                    'Created machine learning-powered platform digitizing early-stage medical research',
-                    'Rolled out iPad presentation app for global medical conferences with 99% client satisfaction'
+                    'Redesigned iPad presentation app for conferences in Berlin, NYC, Busan, and Lisbon',
+                    'Contributed to the web platform for content discovery and researcher connections',
+                    'Consistently positive organizer feedback on on‑site experience'
                 ],
                 logo: 'assets/companylogos/logo_morressier.jpeg'
             },
@@ -204,10 +208,10 @@ class TimelineManager {
                 organization: 'Morressier',
                 period: 'Feb 2018 - Feb 2019',
                 location: 'Berlin, DE',
-                description: 'Executed global projects while implementing automation to maintain high satisfaction levels.',
+                description: 'Managed global conference implementations while advocating UX/UI improvements based on field feedback.',
                 achievements: [
-                    'Executed over 60 global projects with 97% satisfaction levels',
-                    'Implemented automation reducing workload by ~80% through strategic scaling'
+                    'Executed over 60 global projects end‑to‑end',
+                    'Implemented automation reducing workload through scalable playbooks'
                 ],
                 logo: 'assets/companylogos/logo_morressier.jpeg'
             },

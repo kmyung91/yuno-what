@@ -110,6 +110,7 @@ class PortfolioManager {
                 title: 'EasyPZ',
                 description: 'Toilet Finder App on iOS and Android',
                 thumbnail: 'assets/portfolio-8.jpg',
+                hero: 'assets/projects/easypz/easypz-hero.gif',
                 featured: true,
                 tags: ['Founder', 'Product Design', 'Mobile Development'],
                 year: '2022-Present',
@@ -132,50 +133,127 @@ class PortfolioManager {
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Problem and approach</h3>
-                                <p>Parents, travelers, and people with medical needs shared the same frustration: finding a clean, accessible restroom quickly. I designed EasyPZ to minimize decision time and get users to a restroom in a few taps.</p>
+                                <h3>How it started</h3>
+                                <p>Back in 2016, I was stuck in NYC traffic for 30 minutes, and I jumped out the bus window and ran to the nearest Subway sandwich shop because I needed to pee. As I exited the nasty restroom I had just used, I noticed that a guy in a wheelchair was waiting his turn. As I walked past the long line of people in this narrow corridor, I heard the door lock behind me and I felt so bad for him that it still haunts me to this day. This combined with seeing women having nowhere to pee, delivery workers being denied access by restaurants, and even my friends and family getting a UTI because they couldn't find a restroom made me realize that this is a major problem that not enough people are talking about.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-research.png — interview highlights, critical moments, pain/need grid</div>
+                                <h3>Understanding the problem</h3>
+                                <p>I interviewed everyone—friends, family, strangers, even Tinder dates—about their restroom experiences. The pattern was clear: in general, women consider this to be quite a frequent and significant problem. Young parents, wheelchair users, elderly, trans people, and those who are affected by IBS and other issues are hit especially hard. My research revealed a darker truth: we're losing public restrooms every year, creating an inequitable world that restricts mobility and targets marginalized groups. This isn't just inconvenience—it's a threat to basic human dignity and civil rights.</p>
 
-                                								<h3>Rebuild for performance</h3>
-								<p>I rebuilt the app with React Native + TypeScript on a modern backend, improving stability and time‑to‑first‑result, and simplifying the codebase for faster iteration.</p>
-
-								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-architecture-before-after.png — simplified v2 architecture vs v1</div>
-
-								<div class="project-image-container" style="margin: 20px 0;">
-									<img src="assets/projects/easypz/easypz-reviews.png" alt="EasyPZ app store reviews and ratings" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-								</div>
-
-                                <h3>Brand identity</h3>
-                                <p>A calm, friendly identity helps users under stress. The Zima mascot, clear color system, and clean maps keep focus on task completion.</p>
-
-                                								<div class="project-image-container" style="margin: 20px 0;">
-                                									<img src="assets/projects/easypz/easypz-branding.png" alt="EasyPZ brand identity showing logo, color palette, and Zima mascot" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                								<div class="project-image-carousel" data-carousel="easypz-research" style="margin: 20px 0;">
+                                									<div class="carousel-container" style="height: 400px; overflow: hidden;">
+                                										<div class="carousel-track">
+                                											<div class="carousel-slide">
+                                												<img src="assets/projects/easypz/easypz-1.png" alt="Competitive analysis whiteboard" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                											</div>
+                                											<div class="carousel-slide">
+                                												<img src="assets/projects/easypz/easypz-2.png" alt="Research and planning: business model, personas, sitemaps, flowcharts, mockups, data schema" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                											</div>
+                                											<div class="carousel-slide">
+                                												<img src="assets/projects/easypz/easypz-3.png" alt="Low fidelity sketches and wireframes" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                											</div>
+                                											<div class="carousel-slide">
+                                												<img src="assets/projects/easypz/easypz-4.png" alt="User journey maps and pain points analysis" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                											</div>
+                                											<div class="carousel-slide">
+                                												<img src="assets/projects/easypz/easypz-5.png" alt="Market research findings and opportunity mapping" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                											</div>
+                                										</div>
+                                										<button class="carousel-nav prev" aria-label="Previous image">❮</button>
+                                										<button class="carousel-nav next" aria-label="Next image">❯</button>
+                                									</div>
+                                									<div class="carousel-indicators">
+                                										<div class="carousel-indicator active"></div>
+                                										<div class="carousel-indicator"></div>
+                                										<div class="carousel-indicator"></div>
+                                										<div class="carousel-indicator"></div>
+                                										<div class="carousel-indicator"></div>
+                                									</div>
                                 								</div>
 
-								<h3>What I did</h3>
-								<ul>
-									<li>Rebuilt v2 and released v3; designed end‑to‑end UX/UI and brand (including mascot Zima)</li>
-									<li>Defined product strategy, user journeys, and specs; coordinated backend work with Batuhan Direk (admin panel by Batuhan)</li>
-									<li>Implemented map search, restroom submissions and reviews with moderation workflows</li>
-									<li>Integrated Apple/Google OAuth and streamlined first‑run experience</li>
-									<li>Localized the app and crafted a calm, task‑focused visual system</li>
-								</ul>
+                                <h3>It was not exactly a novel idea</h3>
+                                <p>This type of app has been attempted ever since the smartphone came out. But why wasn't it sticking? If looking for a restroom is cumbersome and people settle for the first option, wouldn't they be willing to use an app that saves them time and gives them more options? I realized the existing apps, and the big graveyard of similar apps, were overwhelming and failed to provide trust. To me, it was clear that men were behind these projects, and I decided to approach it with woman-first design principles. Besides a sleek and modern UI, I also implemented a mascot — the cat came from interview insights where women mentioned feeling comfortable peeing with their cats at home. I built a community-first app with gamification, reviews, and submissions, wrapped in aesthetics that create trust and delight.</p>
 
-								<h3>Key outcomes</h3>
-								<ul>
-									<li>App available in EN, ES, DE, FR, KR, JP</li>
-									<li>Partnership presence at Karneval der Kulturen and Christopher Street Day (Berlin)</li>
-									<li>Organic growth with zero paid marketing</li>
-									<li>Consistently strong store ratings</li>
-								</ul>
+                                <h3>Design decisions that mattered</h3>
+                                <p>Every design choice was intentional. Soft color palettes and rounded corners to reduce anxiety. Clear indicators showing if restrooms are public and if there are any barriers. Community features that let women warn each other about unsafe locations. The mascot Zima appears during loading states to provide comfort during urgent moments. I designed custom icons that are instantly recognizable even when someone is panicking. The entire UI is optimized for one-handed use because users often carry bags, push strollers, or hold children. These weren't just aesthetic choices—they were survival tools wrapped in delightful design.</p>
 
-								<h3>Technical highlights</h3>
-								<ul>
-									<li>React Native + TypeScript; NestJS + PostgreSQL; monorepo</li>
-									<li>OAuth (Apple/Google); map search; submissions & moderation (coord. with Batuhan)</li>
-									<li>Admin panel built by Batuhan (SvelteKit)</li>
-								</ul>
+                                <div class="project-image-carousel" data-carousel="easypz-mascot" style="margin: 20px 0;">
+                                    <div class="carousel-container" style="height: 400px; overflow: hidden;">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-1.png" alt="Zima mascot evolution 1" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-2.png" alt="Zima mascot evolution 2" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-3.png" alt="Zima mascot evolution 3" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-4.png" alt="Zima mascot evolution 4" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-5.gif" alt="Zima mascot evolution 5" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-6.png" alt="Zima mascot evolution 6" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-7.png" alt="Zima mascot evolution 7" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-8.jpg" alt="Zima mascot evolution 8" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-9.jpg" alt="Zima mascot evolution 9" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-10.gif" alt="Zima mascot evolution 10" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/easypz/easypz-mascot-11.png" alt="Zima mascot evolution 11" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-nav prev" aria-label="Previous image">❮</button>
+                                        <button class="carousel-nav next" aria-label="Next image">❯</button>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <div class="carousel-indicator active"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                    </div>
+                                </div>
+
+                                								<h3>First rocket crashed, built a second one</h3>
+								<p>The idea started in 2020, found a technical cofounder in 2022, launched in 2023, then went dormant due to the unexpected departure of my co-founder. Around August 2024, I decided to use AI-driven development (aka "vibe coding") to bring it back. Learning mobile development from scratch, I rebuilt everything in React Native + TypeScript with a modern backend. The original code was messy and obsolete, so starting fresh was the only way forward. I managed to re-launch it in January 2025. As of August 2025, the iOS and Android apps are 100% vibe-coded.</p>
+
+								<div class="project-image-container" style="margin: 20px 0;">
+									<img src="assets/projects/easypz/easypz-screens.png" alt="All app screens mockup showing the complete user interface" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+								</div>
+
+								<h3>Technical execution</h3>
+								<p>I recruited Batuhan Direk, who joined the project to replace my backend with a more robust and scalable backend. I built with React Native + TypeScript and Expo, and Batu handled the backend with NestJS + PostgreSQL in a monorepo. Together, we implemented OAuth (Apple/Google), real-time map search, user submissions with moderation, reviews, gamification (EXP points, leveling, in-app currency), reporting, and multi-language support (EN, ES, DE, FR, KR, JP, TR). Additionally, Batu built the admin panel in SvelteKit, where we manage all the content.</p>
+                                <p>Together, we launched Version 3.0.0, a major milestone for the project.</p>
+
+								<h3>When it clicked</h3>
+								<p>Festival organizers loved the concept. They shared restroom location data, we mapped it in our app, and hundreds used it at events like Karneval der Kulturen and Christopher Street Day in Berlin. Users tell me the app is "saving their lives." The numbers speak for themselves: 11.73k searches, 4,710 users, 1k MAU, and 4.8/4.6 app store ratings. The soft launch was a success, with room for improvement.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+									<img src="assets/projects/easypz/easypz-reviews.png" alt="Positive user reviews and app store ratings" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+								</div>
+
+								<h3>Reception and what's next</h3>
+								<p>The response has been overwhelmingly positive. Users consistently praise the app's design, functionality, and impact on their daily lives. The strong app store ratings (4.8 on iOS, 4.6 on Android) reflect genuine user satisfaction. With solid foundations in place, the team is growing and a major rebrand is in the works. This project is perhaps a culmination of all my skills and experiences, and I'm proud of how far it's come.</p>
+                                <p>Monetization is a work in progress, but for the time being, the app is free to download and use. Although one might find this project to be a bit niche, I believe it will change our world into a more inclusive and accessible place for everyone.</p>
+
+								
 							</div>
 							<div class="col-lg-4">
                                 <div class="project-sidebar">
@@ -218,6 +296,7 @@ class PortfolioManager {
                 title: 'wefox',
                 description: 'Insurtech application on iOS, Android, and Web',
                 thumbnail: 'assets/portfolio-7.jpg',
+                hero: 'assets/projects/wefox/wefox-hero.gif',
                 featured: true,
                 tags: ['Product Management', 'iOS', 'Android', 'Web'],
                 year: '2021-2023',
@@ -311,6 +390,7 @@ class PortfolioManager {
                 title: 'Morressier',
                 description: 'iPad/Web Apps for Medical Research',
                 thumbnail: 'assets/portfolio-4.png',
+                hero: 'assets/projects/morressier/morressier-hero.gif',
                 featured: true,
                 tags: ['Product Management', 'iOS', 'Web'],
                 year: '2018-2020',
@@ -327,7 +407,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/projects/morressier/morressier-hero.png" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <img src="assets/projects/morressier/morressier-hero.gif" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
 
                     <div class="project-content">
@@ -359,12 +439,12 @@ class PortfolioManager {
                                         </div>
                                         <button class="carousel-nav prev" aria-label="Previous image">❮</button>
                                         <button class="carousel-nav next" aria-label="Next image">❯</button>
-                                        <div class="carousel-indicators">
-                                            <div class="carousel-indicator active"></div>
-                                            <div class="carousel-indicator"></div>
-                                            <div class="carousel-indicator"></div>
-                                            <div class="carousel-indicator"></div>
-                                        </div>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <div class="carousel-indicator active"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
                                     </div>
                                 </div>
 
@@ -443,7 +523,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/tomorrow-university/tou-hero.png — highlights of homepage/catalog/checkout</div>
+                        <img src="assets/projects/tomorrow-university/tomorrow-university-hero.png" alt="Tomorrow University platform highlights: homepage, catalog, and checkout flow" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
 
                     <div class="project-content">
@@ -455,7 +535,9 @@ class PortfolioManager {
 									<h3>Reducing friction and opening access</h3>
 									<p>I implemented Google & Apple SSO and shaped the end‑to‑end self‑service flow so prospective learners could explore, apply, and enroll directly.</p>
 
-									<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/tomorrow-university/tou-growth.png — SSO flows & simplified onboarding</div>
+									<div class="project-image-container" style="margin: 20px 0;">
+										<img src="assets/projects/tomorrow-university/tomorrow-university-1.png" alt="Tomorrow University SSO flows and simplified onboarding process" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+									</div>
 
 									<h3>What I did</h3>
 									<ul>
@@ -523,7 +605,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/tattoo-booking/tattoo-booking-hero.png — final form UI</div>
+                        <img src="assets/projects/tattoo-booking/tattoo-booking-hero.png" alt="Tattoo booking form final UI design" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
                     
                     <div class="project-content">
@@ -535,7 +617,9 @@ class PortfolioManager {
                                 <h3>Zero‑ops implementation</h3>
                                 <p>To keep this free to run, I used formsubmit.co for submissions and Netlify for hosting. Submissions arrived formatted for quick triage.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/tattoo-booking/tattoo-booking-flow.png — Netlify + Formsubmit diagram</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/tattoo-booking/tattoo-booking-1.png" alt="Tattoo booking form architecture: Netlify + Formsubmit workflow diagram" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 <h3>Outcome</h3>
                                 <p>The form reduced friction and improved intake quality. As the business grew, the client later moved to Typeform for advanced features.</p>
@@ -585,7 +669,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/feedbacker/feedbacker-hero.png — final screens with pin‑based comments</div>
+                        <img src="assets/projects/feedbacker/feedbacker-hero.png" alt="Feedbacker app final screens showing pin-based visual comments on artwork" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
                     
                     <div class="project-content">
@@ -597,7 +681,9 @@ class PortfolioManager {
                                 <h3>Build</h3>
                                 <p>Full‑stack Rails app with image uploads and click‑to‑comment overlays. I led scoping, design, and coordination to ship within 2 weeks.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/feedbacker/feedbacker-workflow.png — flows for upload, annotate, review</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/feedbacker/feedbacker-1.png" alt="Feedbacker user workflows: upload, annotate, and review flows" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 									<h3>Result</h3>
 									<p>Delivered a working MVP and final presentation; recognized internally for scope achieved within the sprint.</p>
@@ -650,7 +736,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/undulmood-store/undulmood-hero.png — storefront and product grids</div>
+                        <img src="assets/projects/undulmood-store/undulmood-store-hero.png" alt="Undulmood Store Shopify storefront and product grid layouts" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
                     
                     <div class="project-content">
@@ -662,7 +748,9 @@ class PortfolioManager {
                                 <h3>Implementation</h3>
                                 <p>Custom theme tweaks, product taxonomy, and brand‑consistent visuals to showcase the artist’s work and streamline checkout.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/undulmood-store/undulmood-products.png — categories and example PDP</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/undulmood-store/undulmood-store-1.png" alt="Undulmood Store product categories and example product detail page" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 									<h3>Outcome</h3>
 									<p>Launched a functional store that supported sales while studios were closed; foundation for longer‑term digital presence.</p>
@@ -717,7 +805,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/perfect-living/perfect-living-hero.png — mobile, tablet, desktop layouts</div>
+                        <img src="assets/projects/perfect-living/perfect-living-hero.png" alt="Perfect Living real estate app responsive designs across mobile, tablet, and desktop" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
                     
                     <div class="project-content">
@@ -729,7 +817,9 @@ class PortfolioManager {
                                 <h3>Key screens</h3>
                                 <p>Property search, filters, listing details, saved items, and account—optimized for touch and readability.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/perfect-living/perfect-living-system.png — grid, spacing, and component variants</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/perfect-living/perfect-living-1.png" alt="Perfect Living design system: grid, spacing, and component variants" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 <h3>Takeaway</h3>
                                 <p>Foundational exercise in responsive design and visual hierarchy that informs later product work.</p>
@@ -778,7 +868,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/inkery/inkery-hero.png — research→flows→UI overview</div>
+                        <img src="assets/projects/inkery/inkery-hero.png" alt="Inkery tattoo booking app: research to flows to UI design overview" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
                     
                     <div class="project-content">
@@ -790,7 +880,9 @@ class PortfolioManager {
                                 <h3>Design process</h3>
                                 <p>Iterative wireframes to high‑fidelity designs across onboarding, browsing, artist selection, and inquiry.</p>
 
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/inkery/inkery-documentation.png — selected artifacts (personas, journeys, final UI)</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/inkery/inkery-1.png" alt="Inkery design documentation: selected artifacts including personas, user journeys, and final UI" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 <h3>Takeaway</h3>
                                 <p>Established UX habits I still use: research‑driven decisions, crisp flows, and testable assumptions.</p>
@@ -857,6 +949,7 @@ class PortfolioManager {
         item.innerHTML = `
             <div class="portfolio-image">
                 <img src="${project.thumbnail}" alt="${project.title}" class="portfolio-thumbnail">
+                ${project.hero ? `<div class="portfolio-hero-overlay" style="background-image: url('${project.hero}')"></div>` : ''}
                 <div class="portfolio-year">${project.year}</div>
             </div>
             <div class="portfolio-content">
@@ -870,7 +963,25 @@ class PortfolioManager {
         
         item.addEventListener('click', () => this.openProject(project.id));
         
+        // Add hero hover effect if hero image exists
+        if (project.hero) {
+            this.addHeroHoverEffect(item, project);
+        }
+        
         return item;
+    }
+    
+    addHeroHoverEffect(item, project) {
+        const heroOverlay = item.querySelector('.portfolio-hero-overlay');
+        if (!heroOverlay) return;
+        
+        item.addEventListener('mouseenter', () => {
+            heroOverlay.style.opacity = '1';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            heroOverlay.style.opacity = '0';
+        });
     }
     
     createPortfolioShowMoreButton() {

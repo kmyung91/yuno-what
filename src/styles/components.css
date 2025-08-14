@@ -437,29 +437,14 @@
     -webkit-backdrop-filter: blur(20px);
 }
 
-.testimonial-full-quote {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: flex-start;
-    gap: var(--space-sm);
-    margin-bottom: 0;
-    padding: var(--space-lg);
-    position: relative;
+/* Modal uses same testimonial-quote styles as cards */
+.testimonial-modal .modal-content {
+    overflow: visible;
 }
 
-.testimonial-full-quote .quote-open,
-.testimonial-full-quote .quote-close {
-    width: 48px;
-    height: 48px;
-    color: var(--color-accent-light);
-    opacity: 0.5;
-    flex-shrink: 0;
-    fill: currentColor;
-}
-
-.testimonial-full-quote .quote-close {
-    align-self: flex-end;
-    margin-top: 80px;
+.testimonial-quote {
+    overflow: visible;
+    padding: var(--space-sm);
 }
 
 .testimonial-full-text {
@@ -954,6 +939,7 @@
 }
 
 .contact-section .section-title {
+    color: var(--color-light);
     background: linear-gradient(135deg, var(--color-light), var(--color-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1229,20 +1215,31 @@
         /* Mobile styles inherited from base.css */
     }
     
-    .testimonial-full-quote {
-        padding: var(--space-md);
-        grid-template-columns: auto 1fr;
-        gap: var(--space-sm);
+    /* Mobile-specific layout for testimonial modal only */
+    .testimonial-modal .testimonial-quote {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md) 0;
     }
     
-    .testimonial-full-quote .quote-open,
-    .testimonial-full-quote .quote-close {
+    .testimonial-modal .quote-open {
+        align-self: flex-start;
         width: 40px;
         height: 40px;
+        order: 1;
     }
     
-    .testimonial-full-quote .quote-close {
-        display: none; /* Hide closing quote on mobile for cleaner layout */
+    .testimonial-modal .testimonial-full-text {
+        order: 2;
+    }
+    
+    .testimonial-modal .quote-close {
+        align-self: flex-end;
+        width: 40px;
+        height: 40px;
+        order: 3;
+        margin-top: 0;
     }
     
     .testimonial-full-text {

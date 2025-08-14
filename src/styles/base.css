@@ -94,15 +94,15 @@ a:hover {
     text-align: center;
     margin-bottom: var(--space-lg);
     font-size: clamp(2rem, 4vw, 3rem);
-    /* Initial state for scroll animation */
-    opacity: 0;
-    transform: translateY(30px);
+    /* Make all section titles visible by default */
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Animated state */
+/* Keep animated state for consistency but start visible */
 .section-title.animated {
-    opacity: 0.9;
+    opacity: 1;
     transform: translateY(0);
 }
 

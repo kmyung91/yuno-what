@@ -163,89 +163,9 @@
     transform: translateY(0);
 }
 
-/* Project Modal */
+/* Project Modal - Inherits from unified modal system */
 .project-modal {
-    position: fixed;
-    inset: 0;
-    z-index: var(--z-modal);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-md);
-    opacity: 0;
-    visibility: hidden;
-    transition: all var(--transition-normal);
-}
-
-.project-modal.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    position: relative;
-    background: var(--color-bg-dark);
-    border-radius: 20px;
-    max-width: 1200px;
-    max-height: 90vh;
-    width: 100%;
-    overflow: hidden;
-    transform: scale(0.9);
-    transition: transform var(--transition-normal);
-}
-
-.project-modal.active .modal-content {
-    transform: scale(1);
-}
-
-.modal-close {
-    position: absolute;
-    top: var(--space-md);
-    right: var(--space-md);
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    z-index: 10;
-    display: grid;
-    place-items: center;
-    font-size: 20px;
-    color: var(--color-light);
-    line-height: 1;
-    transform-origin: center;
-}
-
-.modal-close:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(90deg);
-}
-
-.modal-close::after {
-    content: '✕';
-}
-
-.modal-body {
-    overflow-y: auto;
-    max-height: 90vh;
-    padding: var(--space-lg);
-    /* Hide scrollbar */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-}
-
-.modal-body::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    /* Inherits base modal styles from base.css */
 }
 
 /* Modal Content Styles */
@@ -471,6 +391,176 @@
     opacity: 0.7;
 }
 
+/* Project Image Gallery Styles */
+.project-image-gallery {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 300px; /* Maintain consistent height like placeholders */
+}
+
+.project-image-gallery.four-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 500px; /* Much larger minimum height */
+    height: auto; /* Allow natural height */
+}
+
+.project-image-gallery.single-image {
+    grid-template-columns: 1fr;
+    height: 200px; /* Fixed height for single image */
+}
+
+.project-image-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255,255,255,0.02);
+}
+
+.project-image-gallery img:hover {
+    box-shadow: 0 4px 16px rgba(34, 141, 255, 0.2);
+}
+
+/* Single image in gallery */
+.project-image-gallery.single-image img {
+    object-fit: contain !important; /* For single images, contain instead of cover */
+    background: rgba(0,0,0,0.05);
+    height: auto !important; /* Allow natural height */
+    max-height: 100%;
+}
+
+/* Image Carousel Styles */
+.project-image-carousel {
+    position: relative;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.05);
+    min-height: 300px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    background: rgba(34, 141, 255, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev {
+    left: 10px;
+}
+
+.carousel-nav.next {
+    right: 10px;
+}
+
+.carousel-nav:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.carousel-nav:disabled:hover {
+    background: rgba(0,0,0,0.7);
+    transform: translateY(-50%) scale(1);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: var(--color-accent);
+    transform: scale(1.2);
+}
+
+/* Mobile responsive for galleries */
+@media (max-width: 768px) {
+    .project-image-gallery.four-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .project-image-gallery.single-image {
+        height: 180px;
+    }
+    
+    .carousel-container {
+        height: 300px;
+    }
+    
+    .carousel-nav {
+        width: 35px;
+        height: 35px;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .portfolio-grid {
@@ -502,28 +592,7 @@
         font-size: 0.9rem;
     }
     
-    /* Project modal mobile optimizations */
-    .project-modal {
-        padding: var(--space-xs);
-        align-items: flex-start;
-        padding-top: var(--space-sm);
-    }
-    
-    .project-modal .modal-content {
-        max-height: 100vh;
-        height: 100vh;
-        border-radius: 12px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .modal-body {
-        padding: var(--space-md) var(--space-md) var(--space-xl) var(--space-md);
-        max-height: none;
-        height: auto;
-        flex: 1;
-    }
+    /* Project modal mobile optimizations - inherits from base.css */
     
     .portfolio-tags {
         /* Make sure tags are visible */

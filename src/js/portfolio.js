@@ -142,12 +142,16 @@ class PortfolioManager {
 
 								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-architecture-before-after.png — simplified v2 architecture vs v1</div>
 
-								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-reviews.png — ratings collage (blur usernames if needed)</div>
+								<div class="project-image-container" style="margin: 20px 0;">
+									<img src="assets/projects/easypz/easypz-reviews.png" alt="EasyPZ app store reviews and ratings" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+								</div>
 
                                 <h3>Brand identity</h3>
                                 <p>A calm, friendly identity helps users under stress. The Zima mascot, clear color system, and clean maps keep focus on task completion.</p>
 
-                                								<div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/easypz/easypz-branding.png — logo, palette, mascot (Zima)</div>
+                                								<div class="project-image-container" style="margin: 20px 0;">
+                                									<img src="assets/projects/easypz/easypz-branding.png" alt="EasyPZ brand identity showing logo, color palette, and Zima mascot" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                								</div>
 
 								<h3>What I did</h3>
 								<ul>
@@ -221,7 +225,7 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_wefox.jpeg" class="project-logo" alt="wefox Logo">
                         <h2>wefox</h2>
-                        <p class="lead">Cross‑platform product leadership: external policy integrations and a unified design system</p>
+                        <p class="lead">Leading the Re-Branding of wefox's Flagship Application</p>
                         <div class="project-meta">
                             <span class="project-tag">Product Management</span>
                             <span class="project-tag">iOS</span>
@@ -231,7 +235,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/wefox/wefox-hero.png — before/after UI snapshots</div>
+                        <img src="assets/projects/wefox/wefox-hero.gif" alt="wefox before and after UI snapshots" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
 
                     <div class="project-content">
@@ -239,11 +243,15 @@ class PortfolioManager {
                             <div class="col-lg-8">
                                 <h3>Unlocking access via integrations</h3>
                                 <p>I led the initiative to support external insurance policies in the app, coordinating legal, privacy, and platform teams to design a compliant, secure integration approach.</p>
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/wefox/wefox-integration-architecture.png — high‑level integration diagram</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/wefox/wefox-platform.png" alt="wefox integration platform architecture" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 <h3>Design system across platforms</h3>
                                 <p>In parallel, I drove the first unified design system for iOS, Android, and Web—reducing design drift and aligning UX across product lines.</p>
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/wefox/wefox-design-system.png — components/tokens examples</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                	<img src="assets/projects/wefox/wefox-design-system.gif" alt="wefox design system components and design tokens" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 								<h3>Impact</h3>
 								<ul>
@@ -310,7 +318,7 @@ class PortfolioManager {
                     <div class="project-header">
                         <img src="assets/companylogos/logo_morressier.jpeg" class="project-logo" alt="Morressier Logo">
                         <h2>Morressier</h2>
-                        <p class="lead">From Customer Success to Product Management: conference iPad app redesign and research discovery</p>
+                        <p class="lead">Seed to Series A: How I Became a Product Manager</p>
                         <div class="project-meta">
                             <span class="project-tag">Product Management</span>
                             <span class="project-tag">iOS</span>
@@ -319,7 +327,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1);">ADD: assets/projects/morressier/morressier-hero.png — redesigned iPad app screens</div>
+                        <img src="assets/projects/morressier/morressier-hero.png" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
 
                     <div class="project-content">
@@ -327,14 +335,44 @@ class PortfolioManager {
                             <div class="col-lg-8">
                                 <h3>Role evolution</h3>
                                 <p>I joined early, managed 60+ conference implementations, and transitioned into Product Management by advocating UX/UI improvements grounded in user feedback.</p>
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/morressier/morressier-timeline.png — role progression overview</div>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/morressier/morressier-timeline.png" alt="Morressier role progression timeline" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                </div>
 
                                 <h3>iPad app redesign</h3>
                                 <p>Partnered with design and engineering to redesign the on‑site presentation app for global medical conferences, improving reliability and presenter workflows.</p>
-                                <div class="image-placeholder" style="border: 2px solid #ff4444; padding: 20px; border-radius: 8px; color: #ff4444; text-align: center; background: rgba(255,68,68,0.1); margin: 20px 0;">ADD: assets/projects/morressier/morressier-conferences.png — Berlin/NYC/Busan/Lisbon map + photos</div>
+                                <div class="project-image-carousel" data-carousel="morressier-ipad">
+                                    <div class="carousel-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/morressier/morressier-ipad-1.png" alt="Morressier iPad app redesign screen 1">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/morressier/morressier-ipad-2.png" alt="Morressier iPad app redesign screen 2">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/morressier/morressier-ipad-3.png" alt="Morressier iPad app redesign screen 3">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/morressier/morressier-ipad-4.gif" alt="Morressier iPad app redesign screen 4">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-nav prev" aria-label="Previous image">❮</button>
+                                        <button class="carousel-nav next" aria-label="Next image">❯</button>
+                                        <div class="carousel-indicators">
+                                            <div class="carousel-indicator active"></div>
+                                            <div class="carousel-indicator"></div>
+                                            <div class="carousel-indicator"></div>
+                                            <div class="carousel-indicator"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <h3>Research discovery platform</h3>
                                 <p>Contributed to a web platform to help researchers discover related work and build connections from early‑stage presentations to publication.</p>
+                                <div class="project-image-gallery single-image">
+                                    <img src="assets/projects/morressier/morressier-platform.png" alt="Morressier research discovery platform interface">
+                                </div>
 
                                 									<h3>Feedback</h3>
 									<p>Consistently positive organizer feedback across events validated the direction.</p>
@@ -982,12 +1020,93 @@ class PortfolioManager {
         // Set modal content
         this.modalBody.innerHTML = project.content;
         
+        // Initialize carousels in the modal
+        this.initCarousels();
+        
         // Show modal
         this.modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scroll
         
         // Focus management for accessibility
         this.modalClose?.focus();
+    }
+    
+    initCarousels() {
+        const carousels = this.modalBody?.querySelectorAll('[data-carousel]');
+        if (!carousels) return;
+        
+        carousels.forEach(carousel => {
+            this.setupCarousel(carousel);
+        });
+    }
+    
+    setupCarousel(carousel) {
+        const track = carousel.querySelector('.carousel-track');
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const prevBtn = carousel.querySelector('.carousel-nav.prev');
+        const nextBtn = carousel.querySelector('.carousel-nav.next');
+        const indicators = carousel.querySelectorAll('.carousel-indicator');
+        
+        if (!track || !slides.length) return;
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        
+        const updateCarousel = () => {
+            const translateX = -currentSlide * 100;
+            track.style.transform = `translateX(${translateX}%)`;
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+            
+            // Update navigation buttons
+            if (prevBtn) prevBtn.disabled = currentSlide === 0;
+            if (nextBtn) nextBtn.disabled = currentSlide === totalSlides - 1;
+        };
+        
+        const goToSlide = (slideIndex) => {
+            currentSlide = Math.max(0, Math.min(slideIndex, totalSlides - 1));
+            updateCarousel();
+        };
+        
+        // Navigation button events
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                goToSlide(currentSlide - 1);
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                goToSlide(currentSlide + 1);
+            });
+        }
+        
+        // Indicator events
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                goToSlide(index);
+            });
+        });
+        
+        // Keyboard navigation
+        carousel.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                goToSlide(currentSlide - 1);
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                goToSlide(currentSlide + 1);
+            }
+        });
+        
+        // Make carousel focusable for keyboard navigation
+        carousel.setAttribute('tabindex', '0');
+        
+        // Initial setup
+        updateCarousel();
     }
     
     closeModal() {

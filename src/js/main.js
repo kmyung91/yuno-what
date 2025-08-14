@@ -307,11 +307,11 @@ class App {
     createTestimonialModal() {
         const modal = document.createElement('div');
         modal.id = 'testimonial-modal';
-        modal.className = 'testimonial-modal';
+        modal.className = 'modal testimonial-modal';
         modal.innerHTML = `
             <div class="modal-backdrop"></div>
-            <div class="modal-content testimonial-modal-content">
-                <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal"></button>
                 <div class="modal-body">
                     <div class="testimonial-full-author">
                         <img src="" alt="" class="testimonial-full-avatar">
@@ -321,8 +321,13 @@ class App {
                         </div>
                     </div>
                     <div class="testimonial-full-quote">
-                        <div class="quote-mark large">"</div>
+                        <svg class="quote-open" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
                         <div class="testimonial-full-text"></div>
+                        <svg class="quote-close" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h3.983v-10h9.983z"/>
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -516,20 +521,17 @@ class App {
     createServiceModal() {
         const modal = document.createElement('div');
         modal.id = 'service-modal';
-        modal.className = 'service-modal';
+        modal.className = 'modal service-modal';
         modal.innerHTML = `
             <div class="modal-backdrop"></div>
-            <div class="modal-content service-modal-content">
+            <div class="modal-content">
                 <div class="service-modal-header">
-                    <button class="service-modal-close" aria-label="Close modal">&times;</button>
+                    <button class="modal-close" aria-label="Close modal"></button>
                     <h2 class="service-modal-title"></h2>
                     <p class="service-modal-subtitle"></p>
                 </div>
-                <div class="service-modal-body">
+                <div class="modal-body">
                     <!-- Service details will be dynamically loaded -->
-                </div>
-                <div class="service-cta-modal">
-                    <a href="#contact" class="contact-cta">Get Started →</a>
                 </div>
             </div>
         `;
@@ -537,7 +539,7 @@ class App {
         document.body.appendChild(modal);
         
         // Add event listeners
-        modal.querySelector('.service-modal-close').addEventListener('click', () => {
+        modal.querySelector('.modal-close').addEventListener('click', () => {
             this.closeServiceModal();
         });
         
@@ -719,13 +721,13 @@ class App {
         if (!data) return;
         
         // Reset scroll position to top
-        const modalBody = modal.querySelector('.service-modal-body');
+        const modalBody = modal.querySelector('.modal-body');
         modalBody.scrollTop = 0;
         
         // Populate modal content
         modal.querySelector('.service-modal-title').textContent = data.title;
         modal.querySelector('.service-modal-subtitle').textContent = data.subtitle;
-        modal.querySelector('.service-modal-body').innerHTML = data.content;
+        modal.querySelector('.modal-body').innerHTML = data.content;
         
         // Show modal
         modal.classList.add('active');

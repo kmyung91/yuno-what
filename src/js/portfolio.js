@@ -109,7 +109,7 @@ class PortfolioManager {
                 id: 'easypz',
                 title: 'EasyPZ',
                 description: 'Toilet Finder App on iOS and Android',
-                thumbnail: 'assets/portfolio-8.jpg',
+                thumbnail: 'assets/projects/tomorrow-university/tomorrow-uni-hero.png',
                 hero: 'assets/projects/easypz/easypz-hero.gif',
                 featured: true,
                 tags: ['Founder', 'Product Design', 'Mobile Development'],
@@ -137,7 +137,7 @@ class PortfolioManager {
                                 <p>Back in 2016, I was stuck in NYC traffic for 30 minutes, and I jumped out the bus window and ran to the nearest Subway sandwich shop because I needed to pee. As I exited the nasty restroom I had just used, I noticed that a guy in a wheelchair was waiting his turn. As I walked past the long line of people in this narrow corridor, I heard the door lock behind me and I felt so bad for him that it still haunts me to this day. This combined with seeing women having nowhere to pee, delivery workers being denied access by restaurants, and even my friends and family getting a UTI because they couldn't find a restroom made me realize that this is a major problem that not enough people are talking about.</p>
 
                                 <h3>Understanding the problem</h3>
-                                <p>I interviewed everyone—friends, family, strangers, even Tinder dates—about their restroom experiences. The pattern was clear: in general, women consider this to be quite a frequent and significant problem. Young parents, wheelchair users, elderly, trans people, and those who are affected by IBS and other issues are hit especially hard. My research revealed a darker truth: we're losing public restrooms every year, creating an inequitable world that restricts mobility and targets marginalized groups. This isn't just inconvenience—it's a threat to basic human dignity and civil rights.</p>
+                                <p>I interviewed everyone — friends, family, strangers, and every single Tinder date (yes, really) — about their restroom experiences. The pattern was clear: in general, women consider this to be quite a frequent and significant problem. Young parents, wheelchair users, elderly, trans people, and those who are affected by IBS and other issues are hit especially hard. My research revealed a darker truth: we're losing public restrooms every year, creating an inequitable world that restricts mobility and targets marginalized groups.The burden is placed on the people and local businesses, and this is wrong. This isn't just inconvenience — it's a fundamental need not being met, and a threat to basic human dignity and civil rights.</p>
 
                                 								<div class="project-image-carousel" data-carousel="easypz-research" style="margin: 20px 0;">
                                 									<div class="carousel-container" style="height: 400px; overflow: hidden;">
@@ -175,6 +175,7 @@ class PortfolioManager {
 
                                 <h3>Design decisions that mattered</h3>
                                 <p>Every design choice was intentional. Soft color palettes and rounded corners to reduce anxiety. Clear indicators showing if restrooms are public and if there are any barriers. Community features that let women warn each other about unsafe locations. The mascot Zima appears during loading states to provide comfort during urgent moments. I designed custom icons that are instantly recognizable even when someone is panicking. The entire UI is optimized for one-handed use because users often carry bags, push strollers, or hold children. These weren't just aesthetic choices—they were survival tools wrapped in delightful design.</p>
+                                <p>Below is the evolution of the mascot, Zima, from the initial concept to the final design.</p>
 
                                 <div class="project-image-carousel" data-carousel="easypz-mascot" style="margin: 20px 0;">
                                     <div class="carousel-container" style="height: 400px; overflow: hidden;">
@@ -239,7 +240,7 @@ class PortfolioManager {
 								</div>
 
 								<h3>Technical execution</h3>
-								<p>I recruited Batuhan Direk, who joined the project to replace my backend with a more robust and scalable backend. I built with React Native + TypeScript and Expo, and Batu handled the backend with NestJS + PostgreSQL in a monorepo. Together, we implemented OAuth (Apple/Google), real-time map search, user submissions with moderation, reviews, gamification (EXP points, leveling, in-app currency), reporting, and multi-language support (EN, ES, DE, FR, KR, JP, TR). Additionally, Batu built the admin panel in SvelteKit, where we manage all the content.</p>
+								<p>I recruited Batuhan Direk, who joined the project to replace my backend with a more robust and scalable one. I built with React Native + TypeScript and Expo, and Batu handled the backend with NestJS + PostgreSQL in a monorepo. Together, we implemented OAuth (Apple/Google), real-time map search, user submissions with moderation, reviews, gamification (EXP points, leveling, in-app currency), reporting, and multi-language support (EN, ES, DE, FR, KR, JP, TR). Additionally, Batu built the admin panel in SvelteKit, where we manage all the content.</p>
                                 <p>Together, we launched Version 3.0.0, a major milestone for the project.</p>
 
 								<h3>When it clicked</h3>
@@ -295,7 +296,7 @@ class PortfolioManager {
                 id: 'wefox',
                 title: 'wefox',
                 description: 'Insurtech application on iOS, Android, and Web',
-                thumbnail: 'assets/portfolio-7.jpg',
+                thumbnail: 'assets/projects/wefox/wefox-hero.png',
                 hero: 'assets/projects/wefox/wefox-hero.gif',
                 featured: true,
                 tags: ['Product Management', 'iOS', 'Android', 'Web'],
@@ -320,64 +321,64 @@ class PortfolioManager {
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Unlocking access via integrations</h3>
-                                <p>I led the initiative to support external insurance policies in the app, coordinating legal, privacy, and platform teams to design a compliant, secure integration approach.</p>
+                                <h3>Post-merger integration challenge</h3>
+                                <p>I joined wefox during a pivotal moment—fresh off a $1.5 billion valuation and just one month after they launched a unified MVP following a strategic merger. The transition presented classic integration challenges: user feedback indicated confusion about feature changes, app store ratings needed improvement (starting at 2.1), and the streamlined MVP approach meant some beloved features from the legacy app were temporarily unavailable. This created an opportunity to rebuild with intention.</p>
+                                
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/wefox/wefox-platform.png" alt="wefox integration platform architecture" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/wefox/wefox-1.png" alt="Before state showing fragmented user experience across platforms">
                                 </div>
 
-                                <h3>Design system across platforms</h3>
-                                <p>In parallel, I drove the first unified design system for iOS, Android, and Web—reducing design drift and aligning UX across product lines.</p>
-                                <div class="project-image-container" style="margin: 20px 0;">
-                                	<img src="assets/projects/wefox/wefox-design-system.gif" alt="wefox design system components and design tokens" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                <h3>The platform insight</h3>
+                                <p>Through user research (conducted via brokers due to insurance regulations), I identified a critical adoption barrier: customers weren't downloading our app because it only managed 1-2 of their policies. Why install dedicated software for partial coverage? The strategic opportunity was clear—transform wefox into a comprehensive platform where external insurance providers could integrate, making us the single hub for all their insurance needs.</p>
+
+                                <h3>Navigating regulatory complexity</h3>
+                                <p>Insurance operates in a heavily regulated environment where every feature requires approval from data privacy, security, legal, and compliance teams. Direct user communication required broker intermediaries, making research more complex. I coordinated across our Barcelona tech squad, sometimes working in Spanish, while managing relationships with three external design agencies to supplement our lean internal design capacity.</p>
+
+                                <h3>Building the design foundation</h3>
+                                <p>To keep development moving during early phases without designers, I jumped into Figma myself to unblock the team. Once we brought on talented designers like Carmine Mattia Scarciello, I shifted to leading the design system implementation as Product Manager. While our flagship consumer apps were already consistent, the broader ecosystem—landing pages, broker platform, internal tools—had evolved independently with fragmented experiences. I orchestrated the rollout of our first unified design system across this entire product suite, prioritizing which components to build first and ensuring coordinated delivery. This wasn't just about visual consistency; it was about creating a cohesive brand experience whether users were on our consumer app or brokers were using their dedicated platform.</p>
+                                
+                                <div class="project-image-gallery" style="margin: 20px 0; display: grid; grid-template-columns: auto auto; gap: 12px; justify-content: center; align-items: center;">
+                                    <img src="assets/projects/wefox/wefox-design-web.gif" alt="Web design system showcase" style="height: 400px; width: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/wefox/wefox-design-mobile.gif" alt="Mobile design system showcase" style="height: 400px; width: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                                 </div>
 
-                                								<h3>Impact</h3>
-								<ul>
-									<li>Expanded eligibility from a limited subset to the full customer base through external policy support</li>
-									<li>Material store‑rating improvement during my tenure</li>
-									<li>Consistent cross‑platform UX via a shared design system</li>
-								</ul>
+                                <h3>Delivering measurable impact</h3>
+                                <p>The results exceeded expectations: we expanded platform access from 35,000 users with wefox-branded policies to the full 2+ million customer base. App store ratings improved from 2.1 to 3.6 as we addressed user feedback about functionality and information access. Most significantly, we successfully transformed wefox from an internal tool into a comprehensive platform supporting external insurance provider integrations.</p>
 
-								<h3>What I did</h3>
-								<ul>
-									<li>Defined integration strategy under legal/privacy/security constraints</li>
-									<li>Coordinated iOS, Android, and Web squads with Principal Engineers, QA, and design</li>
-									<li>Drove the rollout of a unified cross‑platform design system</li>
-									<li>Aligned stakeholders and release timelines across platforms</li>
-								</ul>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/wefox/wefox-3.png" alt="Picture of me and our entire tech department celebrating at a party in Berlin.">
+                                </div>
 
-								<h3>Key outcomes</h3>
-								<ul>
-									<li>Eligibility expanded from ~35k to ~2M users in DE (during my tenure)</li>
-									<li>Store rating improved from 2.1 to 3.6 in DE (during my tenure)</li>
-									<li>Introduced a shared component library to reduce design/engineering drift</li>
-								</ul>
-
-								<h3>Technical highlights</h3>
-								<ul>
-									<li>External policy integrations; security/compliance reviews; API orchestration</li>
-									<li>Cross‑platform design tokens/components across iOS/Android/Web</li>
-								</ul>
+                                <h3>What I take with me</h3>
+                                <p>Leading product at wefox taught me how to ship at scale in a heavily regulated industry while juggling multiple stakeholders across legal, privacy, and engineering. During my tenure, the company's valuation grew from $1.5B to $4.5B—while I was one of 1000+ employees contributing to this growth, I'm proud that our platform transformation played a meaningful role. I learned when to roll up my sleeves (jumping into Figma when we had no designers) and when to step back and orchestrate (coordinating the design system rollout once we had the right team). Most importantly, I discovered that transforming a 2.1-rated app into a 3.6-rated platform serving 2 million users requires equal parts strategic vision, tactical execution, and the flexibility to adapt when markets shift. These lessons continue to shape how I approach product challenges today.</p>
 							</div>
 							<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>Aug 2021 - Oct 2023</p>
                                     
-                                    <h6>MY CONTRIBUTION</h6>
+                                    <h6>THE CHALLENGE</h6>
                                     <ul>
-                                        <li>Integration strategy & execution</li>
-                                        <li>Design system leadership</li>
-                                        <li>Squad coordination</li>
-                                        <li>Stakeholder alignment</li>
+                                        <li>Post-merger integration complexity</li>
+                                        <li>2.1 app store rating to improve</li>
+                                        <li>Lean design resources</li>
+                                        <li>Regulated industry constraints</li>
                                     </ul>
                                     
-                                    <h6>Technical Scope</h6>
+                                    <h6>MY ROLE</h6>
                                     <ul>
-                                        <li>External data integrations</li>
-                                        <li>Security & compliance</li>
-                                        <li>Platform consistency</li>
+                                        <li>Platform strategy & execution</li>
+                                        <li>Design system implementation lead</li>
+                                        <li>Cross-functional coordination</li>
+                                        <li>Emergency design support</li>
+                                    </ul>
+
+                                    <h6>IMPACT</h6>
+                                    <ul>
+                                        <li>35K → 2M+ eligible users</li>
+                                        <li>2.1 → 3.6 app store rating</li>
+                                        <li>First unified design system</li>
+                                        <li>External integration platform</li>
                                     </ul>
                                 </div>
                             </div>
@@ -389,7 +390,7 @@ class PortfolioManager {
                 id: 'morressier',
                 title: 'Morressier',
                 description: 'iPad/Web Apps for Medical Research',
-                thumbnail: 'assets/portfolio-4.png',
+                thumbnail: 'assets/projects/morressier/morressier-hero.png',
                 hero: 'assets/projects/morressier/morressier-hero.gif',
                 featured: true,
                 tags: ['Product Management', 'iOS', 'Web'],
@@ -407,20 +408,31 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/projects/morressier/morressier-hero.gif" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <img src="assets/projects/morressier/morressier-hero.gif" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     </div>
 
                     <div class="project-content">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3>Role evolution</h3>
-                                <p>I joined early, managed 60+ conference implementations, and transitioned into Product Management by advocating UX/UI improvements grounded in user feedback.</p>
+                                <h3>Breaking into Berlin tech</h3>
+                                <p>I moved to Berlin in 2017 with one goal: break into the tech sector. Coming from a role I wasn't passionate about, I joined Morressier as employee #8, drawn to their mission of digitizing centuries-old academic poster sessions. While medical researchers had been pinning paper posters to boards since forever, Morressier envisioned a digital platform where research could be shared, discovered, and connected globally.</p>
+
+                                <h3>Baptism by fire</h3>
+                                <p>Managing 60+ medical conferences across Europe and beyond taught me to thrive in chaos. From major capitals to smaller cities, I coordinated events spanning the continent—plus international conferences in places like Tel Aviv, NYC, South Korea, and Australia. When my manager had a personal emergency at 3AM, I packed my bags and flew to NYC on 6 hours notice—in the worst seat on the plane. When submission IDs got scrambled at a major conference, I worked through the night to decode the pattern and save the event. I've debugged systems from a car driving to a Valencia beach, turning vacation into troubleshooting sessions. This wasn't just a job; it was my proving ground.</p>
+
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/morressier/morressier-timeline.png" alt="Morressier role progression timeline" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/morressier/morressier-conference.png" alt="Conference setup showing digital poster displays" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                                 </div>
 
-                                <h3>iPad app redesign</h3>
-                                <p>Partnered with design and engineering to redesign the on‑site presentation app for global medical conferences, improving reliability and presenter workflows.</p>
+                                <h3>Almost Homeless in  U-Bahn stations to Product Management</h3>
+                                <p>While holding down Customer Success solo during my manager's paternity leave, I spent evenings studying UX/UI design. Without stable housing or WiFi, I'd camp in Berlin U-Bahn stations using their free internet until security kicked me out at closing. I channeled this design knowledge into QA'ing releases, proposing improvements, and essentially filling the PM gap in our scrappy team. The CTO noticed and offered me a Product Manager role—my first time even hearing the title. I pivoted from my designer dreams and never looked back.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/morressier/morressier-timeline.png" alt="Journey from Customer Success to Product Management">
+                                </div>
+
+                                <h3>Redesigning for researchers</h3>
+                                <p>After closing Series A, we retired the MVP iPad app built by a freelancer and created something worthy of the world's leading medical conferences. I partnered with our new design and engineering teams to build an experience that respected researchers' workflows while delighting conference attendees—some would spend hours exploring posters on our hardware setups. The positive feedback from organizers and users validated that we'd finally matched our ambitious vision with execution.</p>
                                 <div class="project-image-carousel" data-carousel="morressier-ipad">
                                     <div class="carousel-container">
                                         <div class="carousel-track">
@@ -448,53 +460,46 @@ class PortfolioManager {
                                     </div>
                                 </div>
 
-                                <h3>Research discovery platform</h3>
-                                <p>Contributed to a web platform to help researchers discover related work and build connections from early‑stage presentations to publication.</p>
-                                <div class="project-image-gallery single-image">
-                                    <img src="assets/projects/morressier/morressier-platform.png" alt="Morressier research discovery platform interface">
+                                <h3>Building the research platform</h3>
+                                <p>Beyond conferences, we developed a year-round platform where researchers could discover related work and build connections. Think ResearchGate but starting from the earliest stages of research—those poster presentations that often contain groundbreaking ideas before they hit journals. I contributed to both the platform development and the company landing page, helping communicate our vision to the academic world.</p>
+                                
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/morressier/morressier-platform.png" alt="Morressier research discovery platform interface" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                                 </div>
 
-                                									<h3>Feedback</h3>
-									<p>Consistently positive organizer feedback across events validated the direction.</p>
+                                <h3>The results spoke for themselves</h3>
+                                <p>Despite the technical hiccups and constant firefighting, the outcomes were strong: 97% user satisfaction from researchers and conference attendees, with virtually every client renewing their contracts. Conference organizers consistently praised both the technology and the on-site execution. The platform successfully scaled through Series A funding, validating that our scrappy approach was building something valuable.</p>
 
-									<h3>What I did</h3>
-									<ul>
-										<li>Managed 60+ conference implementations as an early hire (8th employee)</li>
-										<li>Redesigned the on‑site iPad presentation app for medical conferences</li>
-										<li>Partnered with design/engineering to improve reliability and presenter workflows</li>
-										<li>Contributed to the research discovery platform and the company landing page</li>
-									</ul>
-
-									<h3>Key outcomes</h3>
-									<ul>
-										<li>Deployed at medical conferences worldwide; improved on‑site presenter experience</li>
-										<li>Consistent organizer satisfaction across events</li>
-									</ul>
-
-									<h3>Technical highlights</h3>
-									<ul>
-										<li>iPad presentation app; on‑site constraints; reliability improvements</li>
-										<li>ML‑assisted discovery: extracted metadata from PDFs to relate similar research</li>
-									</ul>
+                                <h3>What I learned</h3>
+                                <p>Morressier taught me resilience, resourcefulness, and how to transform determination into opportunity. I successfully broke into Berlin tech like I'd dreamed, evolved from Customer Success to Product Management, and helped scale a platform from 8 people to Series A. While my time there ended during a restructuring in late 2019, I'm proud of the systems I built, the chaos I navigated, and most importantly, proving to myself that career reinvention is possible with enough grit.</p>
 								</div>
 								<div class="col-lg-4">
                                 <div class="project-sidebar">
                                     <h6>TIMELINE</h6>
                                     <p>Feb 2018 - Apr 2020</p>
                                     
-                                    <h6>MY CONTRIBUTION</h6>
+                                    <h6>THE JOURNEY</h6>
                                     <ul>
-                                        <li>60+ global implementations</li>
-                                        <li>Conference iPad app redesign</li>
-                                        <li>Research discovery platform</li>
-                                        <li>Landing page relaunch</li>
+                                        <li>Employee #8 at seed startup</li>
+                                        <li>60+ global conferences</li>
+                                        <li>Customer Success → PM</li>
+                                        <li>Seed to Series A growth</li>
                                     </ul>
                                     
-                                    <h6>Focus</h6>
+                                    <h6>WHAT I DELIVERED</h6>
                                     <ul>
-                                        <li>iOS reliability & UX</li>
-                                        <li>Search/discovery</li>
-                                        <li>On‑site workflows</li>
+                                        <li>iPad app redesign</li>
+                                        <li>Research discovery platform</li>
+                                        <li>Conference implementations</li>
+                                        <li>QA & process improvements</li>
+                                    </ul>
+
+                                    <h6>PERSONAL GROWTH</h6>
+                                    <ul>
+                                        <li>Self-taught UX/UI design</li>
+                                        <li>Discovered Product Management</li>
+                                        <li>Broke into Berlin tech</li>
+                                        <li>Proved career change possible</li>
                                     </ul>
                                 </div>
                             </div>
@@ -506,7 +511,7 @@ class PortfolioManager {
                 id: 'tomorrow-university',
                 title: 'Tomorrow University',
                 description: 'The Metaverse University of the Future',
-                thumbnail: 'assets/portfolio-9.png',
+                thumbnail: 'assets/projects/feedbacker/feedbacker-hero.png',
                 featured: true,
                 tags: ['Apple Vision Pro', 'Product Management', 'Growth'],
                 year: '2023-2024',
@@ -590,7 +595,7 @@ class PortfolioManager {
                 id: 'tattoo-booking',
                 title: 'Tattoo Booking Form',
                 description: 'Custom-Designed Appointment Form',
-                thumbnail: 'assets/portfolio-6.jpg',
+                thumbnail: 'assets/projects/easypz/easypz-hero.png',
                 featured: false,
                 tags: ['Form Design', 'Custom Development'],
                 year: '2021',
@@ -653,7 +658,7 @@ class PortfolioManager {
                 id: 'feedbacker',
                 title: 'Feedbacker',
                 description: 'Visual Art Feedback Sharing Platform',
-                thumbnail: 'assets/portfolio-5.jpg',
+                thumbnail: 'assets/projects/undulmood-store/undulmood-hero.png',
                 featured: false,
                 tags: ['Design Leadership', 'Ruby on Rails', 'Javascript'],
                 year: '2021',
@@ -719,7 +724,7 @@ class PortfolioManager {
                 id: 'undulmood-store',
                 title: 'Undulmood Store',
                 description: 'Shopify-Powered Online Store for Local Tattoist',
-                thumbnail: 'assets/portfolio-3.jpg',
+                thumbnail: 'assets/projects/perfect-living/perfect-living-hero.png',
                 featured: false,
                 tags: ['E-commerce', 'Shopify', 'Design', 'Development'],
                 year: '2020',
@@ -789,7 +794,7 @@ class PortfolioManager {
                 id: 'perfect-living',
                 title: 'Perfect Living',
                 description: 'Responsive Designs of a Real Estate App',
-                thumbnail: 'assets/portfolio-2.jpg',
+                thumbnail: 'assets/projects/tattoo-booking/tattoo-booking-hero.png',
                 featured: false,
                 tags: ['UI Design', 'UX Design', 'Responsive App'],
                 year: '2019',
@@ -852,7 +857,7 @@ class PortfolioManager {
                 id: 'inkery',
                 title: 'Inkery',
                 description: 'Mobile Designs of a Tattoo Appointment Booking Service',
-                thumbnail: 'assets/portfolio-1.jpg',
+                thumbnail: 'assets/projects/inkery/inkery-hero.png',
                 featured: false,
                 tags: ['UX Research', 'Service Design', 'Mobile App'],
                 year: '2019',

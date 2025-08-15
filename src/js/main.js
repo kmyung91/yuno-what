@@ -420,17 +420,25 @@ class App {
             submitBtn.disabled = true;
             
             try {
-                // In production, replace with actual form handler
-                await this.simulateFormSubmission(formData);
+                // Submit to Netlify
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData).toString()
+                });
                 
-                // Success
-                submitBtn.textContent = 'Message Sent!';
-                form.reset();
-                
-                setTimeout(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                }, 3000);
+                if (response.ok) {
+                    // Success
+                    submitBtn.textContent = 'Message Sent!';
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
                 
             } catch (error) {
                 // Error
@@ -442,19 +450,6 @@ class App {
                     submitBtn.disabled = false;
                 }, 3000);
             }
-        });
-    }
-    
-    async simulateFormSubmission(formData) {
-        // Simulate API call
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                if (Math.random() > 0.1) { // 90% success rate
-                    resolve();
-                } else {
-                    reject(new Error('Simulated network error'));
-                }
-            }, 2000);
         });
     }
     

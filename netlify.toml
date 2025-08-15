@@ -1,0 +1,14 @@
+[build]
+  publish = "src"
+  
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Form handling
+[forms]
+  spam_filter = true

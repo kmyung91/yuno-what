@@ -132,7 +132,7 @@ class TimelineManager {
                 					achievements: [
 						'Rebuilt v2 & v3 with React Native + TypeScript and a modern backend',
 						'Improved stability and time-to-first-result; streamlined onboarding',
-						'Multilingual support (EN, ES, DE, FR, KR, JP) with a calm, task-focused UI',
+						'Multilingual support (EN, ES, DE, FR, KR, JP, TR) with a calm, task-focused UI',
 						'Partnership presence at Karneval der Kulturen and Christopher Street Day (Berlin)',
 						'Organic growth with zero paid marketing',
 						'Consistently strong store ratings'

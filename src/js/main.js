@@ -415,6 +415,9 @@ class App {
             const submitBtn = form.querySelector('.form-submit');
             const originalText = submitBtn.textContent;
             
+            // Ensure form-name is included for Netlify
+            formData.set('form-name', 'contact');
+            
             // Show loading state
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
@@ -542,13 +545,16 @@ class App {
             this.closeServiceModal();
         });
         
-        modal.querySelector('.contact-cta').addEventListener('click', () => {
-            this.closeServiceModal();
-            setTimeout(() => {
-                this.smoothScrollTo('#contact');
-                this.prefillContactForm();
-            }, 300);
-        });
+        const contactCta = modal.querySelector('.contact-cta');
+        if (contactCta) {
+            contactCta.addEventListener('click', () => {
+                this.closeServiceModal();
+                setTimeout(() => {
+                    this.smoothScrollTo('#contact');
+                    this.prefillContactForm();
+                }, 300);
+            });
+        }
         
         // ESC key handler
         document.addEventListener('keydown', (e) => {

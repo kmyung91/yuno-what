@@ -59,7 +59,7 @@ video {
 }
 
 p span {
-    opacity: 0.25;
+    opacity: 0;
     animation: highlight both ease-in-out;
     animation-timeline: view();
 }
@@ -103,7 +103,7 @@ p span:nth-of-type(7) {
 }
 
 p span:nth-of-type(8) {
-    animation-range: cover 63% cover 70%;
+    animation-range: cover 70% cover 85%;
 }
 
 .story-text {

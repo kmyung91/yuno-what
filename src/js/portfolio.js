@@ -21,17 +21,17 @@ class PortfolioManager {
     
     setupScrollAnimations() {
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -20px 0px'
         };
         
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                    // Add delay for portfolio items to let story finish first
-                    const baseDelay = 800; // 0.8 second base delay
+                    // Reduced delay for smoother experience
+                    const baseDelay = 200; // 0.2 second base delay
                     const itemIndex = Array.from(entry.target.parentElement.children).indexOf(entry.target);
-                    const staggerDelay = itemIndex * 100; // 100ms stagger between items
+                    const staggerDelay = itemIndex * 80; // 80ms stagger between items
                     
                     setTimeout(() => {
                         entry.target.classList.add('animated');

@@ -827,7 +827,8 @@
 
 /* Service modal body - uses unified modal-body with custom padding */
 .service-modal .modal-body {
-    max-height: calc(90vh - 150px);
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .service-section {
@@ -928,6 +929,106 @@
     font-style: italic;
 }
 
+
+/* Testimonial Navigation */
+.testimonial-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    color: var(--color-light);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.testimonial-nav-btn:hover {
+    background: rgba(34, 141, 255, 0.2);
+    border-color: rgba(34, 141, 255, 0.4);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.testimonial-nav-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.testimonial-nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-prev {
+    left: -80px;
+}
+
+.testimonial-next {
+    right: -80px;
+}
+
+/* Mobile navigation buttons */
+.testimonial-nav-mobile {
+    display: none;
+    flex-direction: row;
+    gap: var(--space-md);
+    justify-content: center;
+    padding: var(--space-md);
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.testimonial-prev-mobile,
+.testimonial-next-mobile {
+    position: relative;
+    top: auto;
+    transform: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-prev-mobile:hover,
+.testimonial-next-mobile:hover {
+    transform: scale(1.05);
+    background: rgba(34, 141, 255, 0.2);
+    border-color: rgba(34, 141, 255, 0.4);
+}
+
+.testimonial-prev-mobile:active,
+.testimonial-next-mobile:active {
+    transform: scale(0.95);
+}
+
+.testimonial-prev-mobile svg,
+.testimonial-next-mobile svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+    .testimonial-prev,
+    .testimonial-next {
+        display: none;
+    }
+    
+    .testimonial-nav-mobile {
+        display: flex;
+    }
+}
 
 /* Contact Section */
 .contact-section {

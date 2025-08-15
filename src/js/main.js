@@ -258,8 +258,13 @@ class App {
                 card.className = 'testimonial-card glass-morph';
                 card.innerHTML = `
                     <div class="testimonial-quote">
-                        <i data-feather="quote" class="quote-mark quote-open"></i>
+                        <svg class="quote-open" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
                         <p class="testimonial-excerpt">${testimonial.excerpt}</p>
+                        <svg class="quote-close" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                        </svg>
                     </div>
                     <div class="testimonial-author">
                         <img src="${testimonial.avatar}" alt="${testimonial.author}" class="testimonial-avatar">
@@ -312,6 +317,16 @@ class App {
             <div class="modal-backdrop"></div>
             <div class="modal-content">
                 <button class="modal-close" aria-label="Close modal"></button>
+                <button class="testimonial-nav-btn testimonial-prev" aria-label="Previous testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="testimonial-nav-btn testimonial-next" aria-label="Next testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
                 <div class="modal-body">
                     <div class="testimonial-full-author">
                         <img src="" alt="" class="testimonial-full-avatar">
@@ -330,6 +345,18 @@ class App {
                         </svg>
                     </div>
                 </div>
+                <div class="testimonial-nav-mobile">
+                    <button class="testimonial-nav-btn testimonial-prev-mobile" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="testimonial-nav-btn testimonial-next-mobile" aria-label="Next testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
             </div>
         `;
         
@@ -344,10 +371,33 @@ class App {
             this.closeTestimonialModal();
         });
         
-        // ESC key handler
+        // Navigation event listeners
+        modal.querySelector('.testimonial-prev').addEventListener('click', () => {
+            this.navigateTestimonial(-1);
+        });
+        
+        modal.querySelector('.testimonial-next').addEventListener('click', () => {
+            this.navigateTestimonial(1);
+        });
+        
+        modal.querySelector('.testimonial-prev-mobile').addEventListener('click', () => {
+            this.navigateTestimonial(-1);
+        });
+        
+        modal.querySelector('.testimonial-next-mobile').addEventListener('click', () => {
+            this.navigateTestimonial(1);
+        });
+        
+        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                this.closeTestimonialModal();
+            if (modal.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    this.closeTestimonialModal();
+                } else if (e.key === 'ArrowLeft') {
+                    this.navigateTestimonial(-1);
+                } else if (e.key === 'ArrowRight') {
+                    this.navigateTestimonial(1);
+                }
             }
         });
     }
@@ -356,16 +406,72 @@ class App {
         const modal = document.getElementById('testimonial-modal');
         if (!modal) return;
         
+        // Find and store current testimonial index
+        this.currentTestimonialIndex = this.allTestimonials.findIndex(t => t.author === testimonial.author);
+        
         // Populate modal content
+        this.updateTestimonialModalContent(testimonial);
+        
+        // Update navigation button states
+        this.updateTestimonialNavigation();
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    updateTestimonialModalContent(testimonial) {
+        const modal = document.getElementById('testimonial-modal');
+        if (!modal) return;
+        
         modal.querySelector('.testimonial-full-text').textContent = testimonial.fullText;
         modal.querySelector('.testimonial-full-avatar').src = testimonial.avatar;
         modal.querySelector('.testimonial-full-avatar').alt = testimonial.author;
         modal.querySelector('.testimonial-full-name').textContent = testimonial.author;
         modal.querySelector('.testimonial-full-position').textContent = testimonial.position;
+    }
+    
+    navigateTestimonial(direction) {
+        if (!this.allTestimonials || this.allTestimonials.length === 0) return;
         
-        // Show modal
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // Calculate new index
+        let newIndex = this.currentTestimonialIndex + direction;
+        
+        // Handle wrapping
+        if (newIndex < 0) {
+            newIndex = this.allTestimonials.length - 1;
+        } else if (newIndex >= this.allTestimonials.length) {
+            newIndex = 0;
+        }
+        
+        this.currentTestimonialIndex = newIndex;
+        const newTestimonial = this.allTestimonials[newIndex];
+        
+        // Update modal content
+        this.updateTestimonialModalContent(newTestimonial);
+        this.updateTestimonialNavigation();
+    }
+    
+    updateTestimonialNavigation() {
+        const modal = document.getElementById('testimonial-modal');
+        if (!modal || !this.allTestimonials) return;
+        
+        const prevButtons = modal.querySelectorAll('.testimonial-prev, .testimonial-prev-mobile');
+        const nextButtons = modal.querySelectorAll('.testimonial-next, .testimonial-next-mobile');
+        
+        // Update button states (optional: disable if only one testimonial)
+        const hasPrev = this.allTestimonials.length > 1;
+        const hasNext = this.allTestimonials.length > 1;
+        
+        prevButtons.forEach(btn => {
+            btn.style.opacity = hasPrev ? '1' : '0.5';
+            btn.disabled = !hasPrev;
+        });
+        
+        nextButtons.forEach(btn => {
+            btn.style.opacity = hasNext ? '1' : '0.5';
+            btn.disabled = !hasNext;
+        });
     }
     
     closeTestimonialModal() {
@@ -510,6 +616,21 @@ class App {
             button.addEventListener('click', (e) => {
                 const service = e.target.getAttribute('data-service');
                 this.openServiceModal(service);
+            });
+        });
+        
+        // Add click handlers to service card titles
+        const serviceTitles = document.querySelectorAll('.service-card h3');
+        serviceTitles.forEach(title => {
+            title.style.cursor = 'pointer';
+            title.addEventListener('click', (e) => {
+                // Find the data-service attribute from the button in the same card
+                const card = e.target.closest('.service-card');
+                const button = card?.querySelector('.service-cta');
+                const service = button?.getAttribute('data-service');
+                if (service) {
+                    this.openServiceModal(service);
+                }
             });
         });
         
@@ -754,7 +875,7 @@ class App {
                             </div>
                             <div class="service-package">
                                 <h4>Fractional Product Lead</h4>
-                                <div class="price">€99/hour</div>
+                                <div class="price">€111.11/hour</div>
                                 <p>Ongoing product leadership without the full-time commitment. Perfect for companies that need PM expertise but not a full-time hire.</p>
                                 <ul class="service-features">
                                     <li>Product strategy & roadmap planning</li>

@@ -587,26 +587,51 @@ class App {
                         <h3>Investment Options</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>Design Foundation</h4>
-                                <div class="price">Starting at €2,000</div>
-                                <p>Essential design work to get your project moving forward.</p>
+                                <h4>Quick Design Sprint</h4>
+                                <div class="price">€1,199 - €2,499</div>
+                                <p>Perfect for startups and small businesses needing rapid design validation.</p>
                                 <ul class="service-features">
-                                    <li>Core wireframes & user flows</li>
-                                    <li>Visual design & style direction</li>
+                                    <li>1-3 day turnaround</li>
+                                    <li>Core user flows & wireframes</li>
+                                    <li>Key screen designs</li>
+                                    <li>Basic style guide</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Design Foundation</h4>
+                                <div class="price">€3,499 - €6,499</div>
+                                <p>Comprehensive design work to get your product investment-ready.</p>
+                                <ul class="service-features">
+                                    <li>User research & competitive analysis</li>
+                                    <li>Complete wireframes & user flows</li>
+                                    <li>High-fidelity visual design</li>
                                     <li>Developer-ready specifications</li>
                                     <li>Mobile-first responsive design</li>
                                 </ul>
                             </div>
                             <div class="service-package">
                                 <h4>Complete Design System</h4>
-                                <div class="price">Custom pricing</div>
-                                <p>Comprehensive design solution scaled to your specific needs.</p>
+                                <div class="price">€7,999 - €14,999+</div>
+                                <p>Full design solution with ongoing support and iteration.</p>
                                 <ul class="service-features">
-                                    <li>Full user research & strategy</li>
-                                    <li>High-fidelity designs & prototypes</li>
-                                    <li>Reusable component library</li>
-                                    <li>Developer handoff & ongoing support</li>
-                                    <li>Iterative design process</li>
+                                    <li>Strategic design workshops</li>
+                                    <li>Comprehensive user research</li>
+                                    <li>Interactive prototypes</li>
+                                    <li>Scalable component library</li>
+                                    <li>Team training & handoff</li>
+                                    <li>3 months of design support</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Daily Rate Work</h4>
+                                <div class="price">€649 - €899/day</div>
+                                <p>Flexible daily engagement for ongoing design needs and support.</p>
+                                <ul class="service-features">
+                                    <li>Design reviews & feedback</li>
+                                    <li>Quick iterations & updates</li>
+                                    <li>Design system maintenance</li>
+                                    <li>Team workshops & training</li>
+                                    <li>Ad-hoc design requests</li>
                                 </ul>
                             </div>
                         </div>
@@ -634,27 +659,51 @@ class App {
                         <h3>Development Options</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>Web Development</h4>
-                                <div class="price">Starting at €2,500</div>
-                                <p>Professional websites and e-commerce that convert visitors into customers.</p>
+                                <h4>Quick Launch</h4>
+                                <div class="price">€999 - €4,999</div>
+                                <p>Fast, professional solutions for immediate business needs.</p>
                                 <ul class="service-features">
-                                    <li>Modern responsive websites</li>
-                                    <li>E-commerce & Shopify setup</li>
-                                    <li>Landing page optimization</li>
-                                    <li>SEO & performance optimization</li>
-                                    <li>Analytics & conversion tracking</li>
+                                    <li>Simple business websites (€999-2,999)</li>
+                                    <li>Shopify store setup (€1,199-4,999)</li>
+                                    <li>Landing pages & portfolios</li>
+                                    <li>1-2 week delivery</li>
+                                    <li>Basic SEO & analytics setup</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Custom Web Development</h4>
+                                <div class="price">€3,999 - €11,999+</div>
+                                <p>Tailored web applications and e-commerce solutions.</p>
+                                <ul class="service-features">
+                                    <li>Custom web applications</li>
+                                    <li>Advanced e-commerce features</li>
+                                    <li>Third-party integrations</li>
+                                    <li>Custom admin dashboards</li>
+                                    <li>Performance optimization</li>
                                 </ul>
                             </div>
                             <div class="service-package">
                                 <h4>Mobile Applications</h4>
-                                <div class="price">€5,000 - €25,000+</div>
-                                <p>Cross-platform mobile apps from simple MVPs to full-featured applications.</p>
+                                <div class="price">€5,999 - €24,999+</div>
+                                <p>Cross-platform mobile apps from MVPs to full-featured applications.</p>
                                 <ul class="service-features">
                                     <li>React Native for iOS & Android</li>
-                                    <li>MVP apps & prototypes (€5k-10k)</li>
-                                    <li>Full-featured apps (€15k-25k+)</li>
-                                    <li>App store deployment & optimization</li>
-                                    <li>Backend integration when needed</li>
+                                    <li>Simple MVPs (€5,999-9,999)</li>
+                                    <li>Feature-rich apps (€14,999-24,999+)</li>
+                                    <li>App store deployment</li>
+                                    <li>Backend & API integration</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Daily Rate Development</h4>
+                                <div class="price">€599 - €999/day</div>
+                                <p>Flexible development support for ongoing projects and maintenance.</p>
+                                <ul class="service-features">
+                                    <li>Bug fixes & improvements</li>
+                                    <li>Feature additions</li>
+                                    <li>Code reviews & optimization</li>
+                                    <li>Technical consulting</li>
+                                    <li>Emergency support</li>
                                 </ul>
                             </div>
                         </div>
@@ -682,6 +731,18 @@ class App {
                         <h3>Partnership Models</h3>
                         <div class="service-packages">
                             <div class="service-package">
+                                <h4>Quick Wins</h4>
+                                <div class="price">€1,499 - €3,499</div>
+                                <p>Rapid product insights and actionable recommendations for immediate impact.</p>
+                                <ul class="service-features">
+                                    <li>1-week product audit</li>
+                                    <li>User journey analysis</li>
+                                    <li>Quick competitor research</li>
+                                    <li>3 high-impact recommendations</li>
+                                    <li>Implementation roadmap</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
                                 <h4>Strategic Consulting</h4>
                                 <div class="price">€111.11/hour</div>
                                 <p>Project-based product strategy and technical guidance.</p>
@@ -695,15 +756,26 @@ class App {
                             </div>
                             <div class="service-package">
                                 <h4>Ongoing Partnership</h4>
-                                <div class="price">€7,000-10,000/month</div>
-                                <p>Turn your ideas into shipped products. Part-time embedded leadership (15-25 hours/week).</p>
+                                <div class="price">€6,999-9,999/month</div>
+                                <p>Turn your ideas into shipped products (15-25 hours/week).</p>
                                 <ul class="service-features">
                                     <li>From idea to launch execution</li>
                                     <li>Cross-functional team coordination</li>
                                     <li>Weekly planning & rapid iteration</li>
                                     <li>Technical feasibility & roadmapping</li>
                                     <li>Performance tracking & optimization</li>
-                                    <li>Full-time positions from €85k+/year</li>
+                                </ul>
+                            </div>
+                            <div class="service-package">
+                                <h4>Full-Time Employment</h4>
+                                <div class="price">€85,000 - €120,000k/year</div>
+                                <p>Ready to join your team as a permanent Product Manager.</p>
+                                <ul class="service-features">
+                                    <li>Senior Product Manager roles</li>
+                                    <li>Head of Product positions</li>
+                                    <li>Interim CPO opportunities</li>
+                                    <li>Equity participation welcome</li>
+                                    <li>Remote, hybrid, or Berlin-based. Open to relocation.</li>
                                 </ul>
                             </div>
                         </div>

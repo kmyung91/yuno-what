@@ -889,34 +889,10 @@
 }
 
 .service-package {
-    opacity: 0;
-    transform: translateY(15px);
-    transition: all 0.3s ease;
-}
-
-.service-modal.active .service-package:nth-child(1) {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 0.4s;
 }
 
-.service-modal.active .service-package:nth-child(2) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.5s;
-}
-
-.service-modal.active .service-package:nth-child(3) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.6s;
-}
-
-.service-modal.active .service-package:nth-child(4) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.7s;
-}
 
 .service-package {
     background: rgba(255, 255, 255, 0.03);

@@ -408,6 +408,9 @@ class App {
         const form = document.getElementById('contact-form');
         if (!form) return;
         
+        // Create success modal
+        this.createSuccessModal();
+        
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
@@ -434,6 +437,7 @@ class App {
                     // Success
                     submitBtn.textContent = 'Message Sent!';
                     form.reset();
+                    this.showSuccessModal();
                     
                     setTimeout(() => {
                         submitBtn.textContent = originalText;
@@ -721,8 +725,8 @@ class App {
                 subtitle: 'Your technical co-pilot from idea to launch',
                 content: `
                     <div class="service-section">
-                        <h3>The Rare Combo: Business Sense + Technical Expertise</h3>
-                        <p>I bridge the gap between vision and execution. Perfect for startups who need someone who speaks both business and code. I've built successful products from 0 to scale—and I can do the same for you.</p>
+                        <h3>Ship Faster Than Teams: I Design, Build & Manage</h3>
+                        <p>Why hire 3 people when one can do it all? I eliminate coordination overhead by handling product strategy, UX/UI design, and technical execution myself. Perfect for lean teams who need to move fast.</p>
                         <ul class="service-features">
                             <li>Product strategy & competitive positioning</li>
                             <li>User research & data-driven decisions</li>
@@ -737,51 +741,51 @@ class App {
                         <h3>Partnership Models</h3>
                         <div class="service-packages">
                             <div class="service-package">
-                                <h4>Quick Wins</h4>
-                                <div class="price">€1,499 - €3,499</div>
-                                <p>Rapid product insights and actionable recommendations for immediate impact.</p>
+                                <h4>Product Audit & Quick Wins</h4>
+                                <div class="price">€1,299 - €2,999</div>
+                                <p>Fast product insights and actionable improvements. Get clarity on what to build next.</p>
                                 <ul class="service-features">
-                                    <li>1-week product audit</li>
-                                    <li>User journey analysis</li>
-                                    <li>Quick competitor research</li>
-                                    <li>3 high-impact recommendations</li>
-                                    <li>Implementation roadmap</li>
+                                    <li>1-week comprehensive product audit</li>
+                                    <li>User experience review & recommendations</li>
+                                    <li>Technical feasibility assessment</li>
+                                    <li>3-5 prioritized improvement opportunities</li>
+                                    <li>Clear implementation roadmap</li>
                                 </ul>
                             </div>
                             <div class="service-package">
-                                <h4>Strategic Consulting</h4>
-                                <div class="price">€111.11/hour</div>
-                                <p>Project-based product strategy and technical guidance.</p>
+                                <h4>Fractional Product Lead</h4>
+                                <div class="price">€99/hour</div>
+                                <p>Ongoing product leadership without the full-time commitment. Perfect for companies that need PM expertise but not a full-time hire.</p>
                                 <ul class="service-features">
-                                    <li>Product audits & strategic planning</li>
-                                    <li>Market research & competitive analysis</li>
-                                    <li>Technical roadmap development</li>
-                                    <li>Team process optimization</li>
-                                    <li>Go-to-market strategy</li>
+                                    <li>Product strategy & roadmap planning</li>
+                                    <li>Feature prioritization & user research</li>
+                                    <li>Design & development coordination</li>
+                                    <li>Team process setup & optimization</li>
+                                    <li>Stakeholder communication & reporting</li>
                                 </ul>
                             </div>
                             <div class="service-package">
-                                <h4>Ongoing Partnership</h4>
-                                <div class="price">€6,999-9,999/month</div>
-                                <p>Turn your ideas into shipped products (15-25 hours/week).</p>
+                                <h4>Product Partnership</h4>
+                                <div class="price">€5,999-8,999/month</div>
+                                <p>Embed with your team part-time (15-20 hours/week). I handle product strategy, design, and technical execution so you can focus on business.</p>
                                 <ul class="service-features">
-                                    <li>From idea to launch execution</li>
-                                    <li>Cross-functional team coordination</li>
-                                    <li>Weekly planning & rapid iteration</li>
-                                    <li>Technical feasibility & roadmapping</li>
-                                    <li>Performance tracking & optimization</li>
+                                    <li>End-to-end product ownership</li>
+                                    <li>Design + development + strategy</li>
+                                    <li>Weekly sprints & rapid iteration</li>
+                                    <li>No coordination overhead</li>
+                                    <li>Direct founder/stakeholder communication</li>
                                 </ul>
                             </div>
                             <div class="service-package">
                                 <h4>Full-Time Employment</h4>
-                                <div class="price">€85,000 - €120,000k/year</div>
-                                <p>Ready to join your team as a permanent Product Manager.</p>
+                                <div class="price">€82,000 - €105,000/year</div>
+                                <p>Ready to join your team as a permanent product leader who can design, build, and manage.</p>
                                 <ul class="service-features">
                                     <li>Senior Product Manager roles</li>
-                                    <li>Head of Product positions</li>
-                                    <li>Interim CPO opportunities</li>
+                                    <li>Lead Product Manager positions</li>
+                                    <li>Product Owner with technical depth</li>
                                     <li>Equity participation welcome</li>
-                                    <li>Remote, hybrid, or Berlin-based. Open to relocation.</li>
+                                    <li>Remote, hybrid, or Berlin-based</li>
                                 </ul>
                             </div>
                         </div>
@@ -865,6 +869,62 @@ class App {
         document.querySelectorAll('.section-title').forEach(title => {
             observer.observe(title);
         });
+    }
+    
+    createSuccessModal() {
+        const modal = document.createElement('div');
+        modal.id = 'success-modal';
+        modal.className = 'modal success-modal';
+        modal.innerHTML = `
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="success-modal-body">
+                    <div class="success-icon">✅</div>
+                    <h3 class="success-title">Message Sent Successfully!</h3>
+                    <p class="success-message">Thanks for reaching out! I'll get back to you within 24 hours.</p>
+                    <button class="success-close-btn">Perfect</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Add event listeners
+        modal.querySelector('.success-close-btn').addEventListener('click', () => {
+            this.closeSuccessModal();
+        });
+        
+        modal.querySelector('.modal-backdrop').addEventListener('click', () => {
+            this.closeSuccessModal();
+        });
+        
+        // ESC key handler
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                this.closeSuccessModal();
+            }
+        });
+    }
+    
+    showSuccessModal() {
+        const modal = document.getElementById('success-modal');
+        if (!modal) return;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Focus the close button for accessibility
+        setTimeout(() => {
+            modal.querySelector('.success-close-btn')?.focus();
+        }, 100);
+    }
+    
+    closeSuccessModal() {
+        const modal = document.getElementById('success-modal');
+        if (!modal) return;
+        
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 

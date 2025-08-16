@@ -1002,7 +1002,7 @@ class App {
                 <div class="success-modal-body">
                     <div class="success-icon">✅</div>
                     <h3 class="success-title">Message Sent Successfully!</h3>
-                    <p class="success-message">Thanks for reaching out! I'll get back to you within 24 hours.</p>
+                    <p class="success-message">Thanks for reaching out! I'll get back to you shortly.</p>
                     <button class="success-close-btn">Perfect</button>
                 </div>
             </div>

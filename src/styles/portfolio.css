@@ -390,6 +390,15 @@
     box-shadow: 0 5px 15px rgba(34, 141, 255, 0.2);
 }
 
+/* Consistent Image Styling - All project images use 12px border radius */
+.project-image,
+.project-showcase-image,
+.project-image-container img,
+.carousel-slide img {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
 /* Portfolio Disclaimer */
 .portfolio-disclaimer-container {
     text-align: center;
@@ -436,7 +445,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: rgba(255,255,255,0.02);
@@ -458,7 +467,7 @@
 .project-image-carousel {
     position: relative;
     margin: 20px 0;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     background: rgba(0,0,0,0.05);
     min-height: 300px;

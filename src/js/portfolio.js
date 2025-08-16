@@ -143,19 +143,19 @@ class PortfolioManager {
                                 									<div class="carousel-container" style="height: 400px; overflow: hidden;">
                                 										<div class="carousel-track">
                                 											<div class="carousel-slide">
-                                												<img src="assets/projects/easypz/easypz-1.png" alt="Competitive analysis whiteboard" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                												<img src="assets/projects/easypz/easypz-1.png" alt="Competitive analysis whiteboard" style="width: 100%; height: 400px; object-fit: contain;">
                                 											</div>
                                 											<div class="carousel-slide">
-                                												<img src="assets/projects/easypz/easypz-2.png" alt="Research and planning: business model, personas, sitemaps, flowcharts, mockups, data schema" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                												<img src="assets/projects/easypz/easypz-2.png" alt="Research and planning: business model, personas, sitemaps, flowcharts, mockups, data schema" style="width: 100%; height: 400px; object-fit: contain;">
                                 											</div>
                                 											<div class="carousel-slide">
-                                												<img src="assets/projects/easypz/easypz-3.png" alt="Low fidelity sketches and wireframes" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                												<img src="assets/projects/easypz/easypz-3.png" alt="Low fidelity sketches and wireframes" style="width: 100%; height: 400px; object-fit: contain;">
                                 											</div>
                                 											<div class="carousel-slide">
-                                												<img src="assets/projects/easypz/easypz-4.png" alt="User journey maps and pain points analysis" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                												<img src="assets/projects/easypz/easypz-4.png" alt="User journey maps and pain points analysis" style="width: 100%; height: 400px; object-fit: contain;">
                                 											</div>
                                 											<div class="carousel-slide">
-                                												<img src="assets/projects/easypz/easypz-5.png" alt="Market research findings and opportunity mapping" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                												<img src="assets/projects/easypz/easypz-5.png" alt="Market research findings and opportunity mapping" style="width: 100%; height: 400px; object-fit: contain;">
                                 											</div>
                                 										</div>
                                 										<button class="carousel-nav prev" aria-label="Previous image">❮</button>
@@ -181,37 +181,37 @@ class PortfolioManager {
                                     <div class="carousel-container" style="height: 400px; overflow: hidden;">
                                         <div class="carousel-track">
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-1.png" alt="Zima mascot evolution 1" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-1.png" alt="Zima mascot evolution 1" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-2.png" alt="Zima mascot evolution 2" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-2.png" alt="Zima mascot evolution 2" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-3.png" alt="Zima mascot evolution 3" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-3.png" alt="Zima mascot evolution 3" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-4.png" alt="Zima mascot evolution 4" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-4.png" alt="Zima mascot evolution 4" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-5.gif" alt="Zima mascot evolution 5" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-5.gif" alt="Zima mascot evolution 5" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-6.png" alt="Zima mascot evolution 6" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-6.png" alt="Zima mascot evolution 6" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-7.png" alt="Zima mascot evolution 7" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-7.png" alt="Zima mascot evolution 7" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-8.jpg" alt="Zima mascot evolution 8" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-8.jpg" alt="Zima mascot evolution 8" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-9.jpg" alt="Zima mascot evolution 9" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-9.jpg" alt="Zima mascot evolution 9" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-10.gif" alt="Zima mascot evolution 10" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-10.gif" alt="Zima mascot evolution 10" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                             <div class="carousel-slide">
-                                                <img src="assets/projects/easypz/easypz-mascot-11.png" alt="Zima mascot evolution 11" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px;">
+                                                <img src="assets/projects/easypz/easypz-mascot-11.png" alt="Zima mascot evolution 11" style="width: 100%; height: 400px; object-fit: contain;">
                                             </div>
                                         </div>
                                         <button class="carousel-nav prev" aria-label="Previous image">❮</button>
@@ -235,8 +235,47 @@ class PortfolioManager {
                                 								<h3>First rocket crashed, built a second one</h3>
 								<p>The idea started in 2020, found a technical cofounder in 2022, launched in 2023, then went dormant due to the unexpected departure of my co-founder. Around August 2024, I decided to use AI-driven development (aka "vibe coding") to bring it back. Learning mobile development from scratch, I rebuilt everything in React Native + TypeScript with a modern backend. The original code was messy and obsolete, so starting fresh was the only way forward. I managed to re-launch it in January 2025. As of August 2025, the iOS and Android apps are 100% vibe-coded.</p>
 
-								<div class="project-image-container" style="margin: 20px 0;">
-									<img src="assets/projects/easypz/easypz-screens.png" alt="All app screens mockup showing the complete user interface" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+								<div class="project-image-carousel" data-carousel="easypz-screens" style="margin: 20px 0;">
+									<div class="carousel-container" style="height: 600px; overflow: hidden;">
+										<div class="carousel-track">
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-0.png" alt="EasyPZ app screens - Light and Dark mode comparison 1" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-1.png" alt="EasyPZ app screens - Light and Dark mode comparison 2" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-2.png" alt="EasyPZ app screens - Light and Dark mode comparison 3" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-3.png" alt="EasyPZ app screens - Light and Dark mode comparison 4" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-4.png" alt="EasyPZ app screens - Light and Dark mode comparison 5" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-5.png" alt="EasyPZ app screens - Light and Dark mode comparison 6" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-6.png" alt="EasyPZ app screens - Light and Dark mode comparison 7" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/easypz/easypz-screens-7.png" alt="EasyPZ app screens - Light and Dark mode comparison 8" style="width: 100%; height: 600px; object-fit: contain;">
+											</div>
+										</div>
+										<button class="carousel-nav prev" aria-label="Previous image">❮</button>
+										<button class="carousel-nav next" aria-label="Next image">❯</button>
+									</div>
+									<div class="carousel-indicators">
+										<div class="carousel-indicator active"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+									</div>
 								</div>
 
 								<h3>Technical execution</h3>
@@ -247,7 +286,7 @@ class PortfolioManager {
 								<p>Festival organizers loved the concept. They shared restroom location data, we mapped it in our app, and hundreds used it at events like Karneval der Kulturen and Christopher Street Day in Berlin. Users tell me the app is "saving their lives." The numbers speak for themselves: 11.73k searches, 4,710 users, 1k MAU, and 4.8/4.6 app store ratings. The soft launch was a success, with room for improvement.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
-									<img src="assets/projects/easypz/easypz-reviews.png" alt="Positive user reviews and app store ratings" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+									<img src="assets/projects/easypz/easypz-reviews.png" alt="Positive user reviews and app store ratings" class="project-image" style="width: 100%;">
 								</div>
 
 								<h3>Reception and what's next</h3>
@@ -315,7 +354,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/projects/wefox/wefox-hero.gif" alt="wefox before and after UI snapshots" class="project-showcase-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <img src="assets/projects/wefox/wefox-hero.gif" alt="wefox before and after UI snapshots" class="project-showcase-image" style="width: 100%;">
                     </div>
 
                     <div class="project-content">
@@ -325,7 +364,7 @@ class PortfolioManager {
                                 <p>I joined wefox during a pivotal moment—fresh off a $1.5 billion valuation and just one month after they launched a unified MVP following a strategic merger. The transition presented classic integration challenges: user feedback indicated confusion about feature changes, app store ratings needed improvement (starting at 2.1), and the streamlined MVP approach meant some beloved features from the legacy app were temporarily unavailable. This created an opportunity to rebuild with intention.</p>
                                 
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/wefox/wefox-1.png" alt="Before state showing fragmented user experience across platforms">
+                                    <img src="assets/projects/wefox/wefox-1.png" alt="Before state showing fragmented user experience across platforms" class="project-image">
                                 </div>
 
                                 <h3>The platform insight</h3>
@@ -338,15 +377,15 @@ class PortfolioManager {
                                 <p>To keep development moving during early phases without designers, I jumped into Figma myself to unblock the team. Once we brought on talented designers like Carmine Mattia Scarciello, I shifted to leading the design system implementation as Product Manager. While our flagship consumer apps were already consistent, the broader ecosystem—landing pages, broker platform, internal tools—had evolved independently with fragmented experiences. I orchestrated the rollout of our first unified design system across this entire product suite, prioritizing which components to build first and ensuring coordinated delivery. This wasn't just about visual consistency; it was about creating a cohesive brand experience whether users were on our consumer app or brokers were using their dedicated platform.</p>
                                 
                                 <div class="project-image-gallery" style="margin: 20px 0; display: grid; grid-template-columns: auto auto; gap: 12px; justify-content: center; align-items: center;">
-                                    <img src="assets/projects/wefox/wefox-design-web.gif" alt="Web design system showcase" style="height: 400px; width: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                                    <img src="assets/projects/wefox/wefox-design-mobile.gif" alt="Mobile design system showcase" style="height: 400px; width: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/wefox/wefox-design-web.gif" alt="Web design system showcase" style="height: 400px; width: auto; object-fit: contain;">
+                                    <img src="assets/projects/wefox/wefox-design-mobile.gif" alt="Mobile design system showcase" style="height: 400px; width: auto; object-fit: contain;">
                                 </div>
 
                                 <h3>Delivering measurable impact</h3>
                                 <p>The results exceeded expectations: we expanded platform access from 35,000 users with wefox-branded policies to the full 2+ million customer base. App store ratings improved from 2.1 to 3.6 as we addressed user feedback about functionality and information access. Most significantly, we successfully transformed wefox from an internal tool into a comprehensive platform supporting external insurance provider integrations.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/wefox/wefox-3.png" alt="Picture of me and our entire tech department celebrating at a party in Berlin.">
+                                    <img src="assets/projects/wefox/wefox-3.png" alt="Picture of me and our entire tech department celebrating at a party in Berlin." class="project-image">
                                 </div>
 
                                 <h3>What I take with me</h3>
@@ -408,7 +447,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/projects/morressier/morressier-hero.gif" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <img src="assets/projects/morressier/morressier-hero.gif" alt="Morressier redesigned iPad app screens" class="project-showcase-image" style="width: 100%; max-height: 450px; object-fit: contain;">
                     </div>
 
                     <div class="project-content">
@@ -421,7 +460,7 @@ class PortfolioManager {
                                 <p>Managing 60+ medical conferences across Europe and beyond taught me to thrive in chaos. From major capitals to smaller cities, I coordinated events spanning the continent—plus international conferences in places like Tel Aviv, NYC, South Korea, and Australia. When my manager had a personal emergency at 3AM, I packed my bags and flew to NYC on 6 hours notice—in the worst seat on the plane. When submission IDs got scrambled at a major conference, I worked through the night to decode the pattern and save the event. I've debugged systems from a car driving to a Valencia beach, turning vacation into troubleshooting sessions. This wasn't just a job; it was my proving ground.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/morressier/morressier-conference.png" alt="Conference setup showing digital poster displays" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/morressier/morressier-conference.png" alt="Conference setup showing digital poster displays" class="project-image" style="width: 100%;">
                                 </div>
 
                                 <h3>Almost Homeless, in U-Bahn stations</h3>
@@ -464,7 +503,7 @@ class PortfolioManager {
                                 <p>Beyond conferences, we developed a year-round platform where researchers could discover related work and build connections. Think ResearchGate but starting from the earliest stages of research—those poster presentations that often contain groundbreaking ideas before they hit journals. I contributed to both the platform development and the company landing page, helping communicate our vision to the academic world.</p>
                                 
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/morressier/morressier-platform.png" alt="Morressier research discovery platform interface" class="project-image" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                                    <img src="assets/projects/morressier/morressier-platform.png" alt="Morressier research discovery platform interface" class="project-image" style="width: 100%;">
                                 </div>
 
                                 <h3>The results spoke for themselves</h3>

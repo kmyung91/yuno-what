@@ -158,6 +158,52 @@ p span:nth-of-type(8) {
     animation-range: cover 58% cover 73%;
 }
 
+/* Safari-compatible fade reveal animation */
+.fade-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fallback for browsers that don't support animation-timeline */
+@supports not (animation-timeline: view()) {
+    p span {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    
+    p span.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .story-content div.story-heading {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    
+    .story-content div.story-heading.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    video {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+    }
+    
+    video.visible {
+        opacity: 0.2;
+    }
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .story-container {
@@ -181,7 +227,7 @@ p span:nth-of-type(8) {
         animation-range: cover 50% cover 70%;
     }
     
-    .story-text {
+    .story-text, .story-text span, .story-text div {
         font-size: clamp(1.25rem, 5vw, 1.75rem);
         line-height: 1.4;
     }

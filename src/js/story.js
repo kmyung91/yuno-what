@@ -4,6 +4,7 @@ class StoryAnimations {
     constructor() {
         this.video = document.querySelector('.story-video');
         this.revealElements = document.querySelectorAll('.reveal-text');
+        this.fadeRevealElements = document.querySelectorAll('.fade-reveal');
         this.storySection = document.querySelector('.story-section');
         
         this.init();
@@ -14,6 +15,7 @@ class StoryAnimations {
         
         this.setupVideoAnimation();
         this.setupTextReveals();
+        this.setupFadeRevealAnimations();
     }
     
     setupVideoAnimation() {
@@ -106,6 +108,59 @@ class StoryAnimations {
             // Apply smooth transition
             element.style.opacity = opacity;
         });
+    }
+    
+    setupFadeRevealAnimations() {
+        // Check if browser supports animation-timeline
+        const supportsAnimationTimeline = CSS.supports('animation-timeline', 'view()');
+        
+        if (supportsAnimationTimeline) {
+            // Modern browsers will use CSS animations
+            return;
+        }
+        
+        // Safari fallback - handle all animated elements
+        const allAnimatedElements = document.querySelectorAll('.fade-reveal, .story-text span, .story-heading');
+        
+        if (!allAnimatedElements.length) return;
+        
+        // Create observer for fade reveal elements
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add visible class with a slight delay based on element index
+                    const allElements = Array.from(allAnimatedElements);
+                    const index = allElements.indexOf(entry.target);
+                    
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100); // 100ms delay between each element
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '-10% 0px -10% 0px'
+        });
+        
+        // Observe all animated elements
+        allAnimatedElements.forEach(el => {
+            fadeObserver.observe(el);
+        });
+        
+        // Also handle video visibility
+        if (this.video) {
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        this.video.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            videoObserver.observe(this.video);
+        }
     }
 }
 

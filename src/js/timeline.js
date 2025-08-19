@@ -110,7 +110,7 @@ class TimelineManager {
             {
                 id: 'stealth-startup',
                 type: 'venture',
-                title: 'Co-Founder / Vibe Engineer',
+                title: 'Co-Founder / AI-Assisted Development Lead',
                 organization: 'Stealth Startup',
                 period: 'Jul 2023 - Jan 2024',
                 location: 'Berlin, DE (Remote)',
@@ -150,7 +150,7 @@ class TimelineManager {
                 					achievements: [
 						'Defined integration approach to support external insurance policies under legal and privacy constraints',
 						'Drove a shared design system across iOS, Android, and Web for consistent UX',
-						'Expanded eligibility from ~35k to ~2M users in DE (during my tenure)',
+						'Led platform expansion that opened access to 2M+ users—a 57x increase from the original 35K user base',
 						'Store rating improved from 2.1 to 3.6 in DE (during my tenure)'
 					],
                 logo: 'assets/companylogos/logo_wefox.jpeg'

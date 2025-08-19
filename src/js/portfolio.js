@@ -170,8 +170,11 @@ class PortfolioManager {
                                 									</div>
                                 								</div>
 
-                                <h3>It was not exactly a novel idea</h3>
-                                <p>This type of app has been attempted ever since the smartphone came out. But why wasn't it sticking? If looking for a restroom is cumbersome and people settle for the first option, wouldn't they be willing to use an app that saves them time and gives them more options? I realized the existing apps, and the big graveyard of similar apps, were overwhelming and failed to provide trust. To me, it was clear that men were behind these projects, and I decided to approach it with woman-first design principles. Besides a sleek and modern UI, I also implemented a mascot — the cat came from interview insights where women mentioned feeling comfortable peeing with their cats at home. I built a community-first app with gamification, reviews, and submissions, wrapped in aesthetics that create trust and delight.</p>
+                                <h3>Competitive analysis revealed a clear opportunity</h3>
+                                <p>I conducted comprehensive competitive analysis by gathering existing solutions, posting on Reddit to connect with developers who had attempted similar apps, and creating a detailed Miro board with screenshots, pros/cons, and threat assessments. The research revealed that existing apps were overwhelming, failed to provide trust, and clearly built by men without understanding women's unique needs. User interviews confirmed significantly higher enthusiasm from women, validating the target demographic. I decided to approach it with woman-first design principles, implementing features like a mascot (inspired by interview insights where women mentioned feeling comfortable with their cats at home) and community-first architecture with gamification, reviews, and submissions.</p>
+
+                                <h3>MVP strategy: Focus on urgency, trust, and simplicity</h3>
+                                <p>I identified three core user needs for the MVP: orientation (finding nearby locations), trust (safety and cleanliness indicators), and urgency-optimized UI. Rather than feature bloat, I prioritized addressing the immediate need state when someone urgently needs to find a restroom. This strategic focus guided every development decision.</p>
 
                                 <h3>Design decisions that mattered</h3>
                                 <p>Every design choice was intentional. Soft color palettes and rounded corners to reduce anxiety. Clear indicators showing if restrooms are public and if there are any barriers. Community features that let women warn each other about unsafe locations. The mascot Zima appears during loading states to provide comfort during urgent moments. I designed custom icons that are instantly recognizable even when someone is panicking. The entire UI is optimized for one-handed use because users often carry bags, push strollers, or hold children. These weren't just aesthetic choices—they were survival tools wrapped in delightful design.</p>
@@ -278,8 +281,8 @@ class PortfolioManager {
 									</div>
 								</div>
 
-								<h3>Technical execution</h3>
-								<p>I recruited Batuhan Direk, who joined the project to replace my backend with a more robust and scalable one. I built with React Native + TypeScript and Expo, and Batu handled the backend with NestJS + PostgreSQL in a monorepo. Together, we implemented OAuth (Apple/Google), real-time map search, user submissions with moderation, reviews, gamification (EXP points, leveling, in-app currency), reporting, and multi-language support (EN, ES, DE, FR, KR, JP, TR). Additionally, Batu built the admin panel in SvelteKit, where we manage all the content.</p>
+								<h3>Technical execution with lean team</h3>
+								<p>I built and coordinated a lean 3-person core team plus freelancer network for rapid iteration. I recruited Batuhan Direk, who joined the project to replace my backend with a more robust and scalable one, plus a content lead to manage our growing database. I handled the React Native + TypeScript frontend and Expo deployment, while Batu built the backend with NestJS + PostgreSQL in a monorepo. Together, we implemented OAuth (Apple/Google), real-time map search, user submissions with moderation, reviews, gamification (EXP points, leveling, in-app currency), reporting, and multi-language support (EN, ES, DE, FR, KR, JP, TR). Additionally, Batu built the admin panel in SvelteKit, where we manage all the content.</p>
                                 <p>Together, we launched Version 3.0.0, a major milestone for the project.</p>
 
 								<h3>When it clicked</h3>
@@ -370,8 +373,8 @@ class PortfolioManager {
                                 <h3>The platform insight</h3>
                                 <p>Through user research (conducted via brokers due to insurance regulations), I identified a critical adoption barrier: customers weren't downloading our app because it only managed 1-2 of their policies. Why install dedicated software for partial coverage? The strategic opportunity was clear—transform wefox into a comprehensive platform where external insurance providers could integrate, making us the single hub for all their insurance needs.</p>
 
-                                <h3>Navigating regulatory complexity</h3>
-                                <p>Insurance operates in a heavily regulated environment where every feature requires approval from data privacy, security, legal, and compliance teams. Direct user communication required broker intermediaries, making research more complex. I coordinated across our Barcelona tech squad, sometimes working in Spanish, while managing relationships with three external design agencies to supplement our lean internal design capacity.</p>
+                                <h3>Navigating regulatory complexity with cross-functional teams</h3>
+                                <p>Insurance operates in a heavily regulated environment where every feature requires approval from data privacy, security, legal, and compliance teams. I led cross-functional product squads of ~11 people (engineers, designers, QA) across iOS, Android, and Web platforms. Direct user communication required broker intermediaries, making research more complex. I coordinated across our Barcelona tech squad, sometimes working in Spanish, while managing relationships with three external design agencies to supplement our lean internal design capacity.</p>
 
                                 <h3>Building the design foundation</h3>
                                 <p>To keep development moving during early phases without designers, I jumped into Figma myself to unblock the team. Once we brought on talented designers like Carmine Mattia Scarciello, I shifted to leading the design system implementation as Product Manager. While our flagship consumer apps were already consistent, the broader ecosystem—landing pages, broker platform, internal tools—had evolved independently with fragmented experiences. I orchestrated the rollout of our first unified design system across this entire product suite, prioritizing which components to build first and ensuring coordinated delivery. This wasn't just about visual consistency; it was about creating a cohesive brand experience whether users were on our consumer app or brokers were using their dedicated platform.</p>
@@ -470,8 +473,8 @@ class PortfolioManager {
                                     <img src="assets/projects/morressier/morressier-timeline.png" alt="Journey from Customer Success to Product Management">
                                 </div>
 
-                                <h3>Redesigning for researchers</h3>
-                                <p>After closing Series A, we retired the MVP iPad app built by a freelancer and created something worthy of the world's leading medical conferences. I partnered with our new design and engineering teams to build an experience that respected researchers' workflows while delighting conference attendees—some would spend hours exploring posters on our hardware setups. The positive feedback from organizers and users validated that we'd finally matched our ambitious vision with execution.</p>
+                                <h3>Redesigning for researchers with strategic rollout</h3>
+                                <p>After closing Series A, we retired the MVP iPad app built by a freelancer and created something worthy of the world's leading medical conferences. I managed a 7-person product team (including data scientists) through the complete redesign process. We executed a low-risk soft launch strategy with established client relationships at smaller conferences, starting with EAO Congress 2019 in Lisbon where we achieved seamless deployment and proved product-market fit. The experience respected researchers' workflows while delighting conference attendees—some would spend hours exploring posters on our hardware setups. The positive feedback from organizers and users validated that we'd finally matched our ambitious vision with execution.</p>
                                 <div class="project-image-carousel" data-carousel="morressier-ipad">
                                     <div class="carousel-container">
                                         <div class="carousel-track">
@@ -540,6 +543,139 @@ class PortfolioManager {
                                         <li>Broke into Berlin tech</li>
                                         <li>Proved career change possible</li>
                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 'tomorrow-university',
+                title: 'Tomorrow University',
+                description: 'Product-Led Growth for Metaverse Education Platform',
+                thumbnail: 'assets/projects/tomorrow/tomorrow-hero.png',
+                hero: 'assets/projects/tomorrow/tomorrow-hero.gif',
+                featured: true,
+                tags: ['Product Management', 'Growth', 'Apple Vision Pro'],
+                year: '2023-2024',
+                content: `
+                    <div class="project-header">
+                        <img src="assets/companylogos/logo_tou.jpeg" class="project-logo" alt="Tomorrow University Logo">
+                        <h2>Tomorrow University of Applied Sciences</h2>
+                        <p class="lead">Transforming closed education platform into growth engine</p>
+                        <div class="project-meta">
+                            <span class="project-tag">Product Management</span>
+                            <span class="project-tag">Growth</span>
+                            <span class="project-tag">Apple Vision Pro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-showcase">
+                        <img src="assets/projects/tomorrow/tomorrow-hero.gif" alt="Tomorrow University App Interface" class="project-showcase-image" style="width: 100%;">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3>The growth challenge</h3>
+                                <p>Tomorrow University had ambitious metaverse education goals but faced critical growth barriers: a closed learning platform, inconsistent branding, lackluster homepage, and extremely high customer acquisition costs. The learning platform was inaccessible to prospects, creating a "black box" experience that prevented lead qualification and conversion. As sole Product Manager, I was brought in to transform this closed system into an open growth engine.</p>
+
+                                <h3>Strategic approach: Lead-to-enrollment architecture</h3>
+                                <p>I diagnosed the core issue: prospects couldn't experience the product before paying, creating massive conversion friction. My strategy focused on redesigning the entire user journey for non-paying visitors who discovered us through social media ads. The solution required rethinking platform architecture to support two user types: enrolled students and prospective leads, each with different access levels and experiences.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/tomorrow/tomorrow-homepage.jpg" alt="Before and after homepage redesign" class="project-image" style="width: 100%;">
+                                </div>
+
+                                <h3>Leading cross-functional delivery under pressure</h3>
+                                <p>As sole PM coordinating a 7-person team (Director of Engineering, Product Designer, 3 Full-Stack Engineers, QA Engineer), I managed competing priorities while the CEO continued adding scope. When the designer was let go mid-project, I took on additional UX responsibilities to maintain momentum. I worked extremely closely with our Director of Engineering to ensure technical feasibility while pushing back on unrealistic timelines.</p>
+
+                                <h3>Key strategic releases</h3>
+                                <p>Each release targeted specific conversion barriers while building toward the complete lead-to-enrollment journey:</p>
+                                
+                                <div class="project-image-carousel" data-carousel="tomorrow-releases" style="margin: 20px 0;">
+									<div class="carousel-container" style="height: 400px; overflow: hidden;">
+										<div class="carousel-track">
+											<div class="carousel-slide">
+												<img src="assets/projects/tomorrow/tomorrow-releases-1.jpg" alt="Homepage transformation before and after" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/tomorrow/tomorrow-releases-2.jpg" alt="End-to-end sales funnel flow" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/tomorrow/tomorrow-releases-3.jpg" alt="Authentication and onboarding with Clerk SSO" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/tomorrow/tomorrow-releases-4.jpg" alt="Community features: student directory and events" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+										</div>
+										<button class="carousel-nav prev" aria-label="Previous image">❮</button>
+										<button class="carousel-nav next" aria-label="Next image">❯</button>
+									</div>
+									<div class="carousel-indicators">
+										<div class="carousel-indicator active"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+									</div>
+								</div>
+
+                                <p><strong>1. Homepage Transformation:</strong> Completely rebuilt the homepage from scratch, conducting user interviews with existing students to ensure we didn't break their expected experience while creating compelling first impressions for prospects.</p>
+                                
+                                <p><strong>2. End-to-End Sales Funnel:</strong> Built the complete lead-to-enrollment journey including course catalog, program discovery, application forms, checkout flow, and enrollment process. This became the company's largest feature release in its history.</p>
+
+                                <p><strong>3. Authentication & Onboarding:</strong> Implemented Clerk-based signup flows with Google/Apple SSO to reduce registration friction and improve conversion rates.</p>
+
+                                <p><strong>4. Community Features:</strong> Enhanced student directory with search and filtering capabilities, plus centralized events page with calendar integration to increase platform value and engagement.</p>
+
+                                <h3>Apple Vision Pro: Strategic market response</h3>
+                                <p>When Apple Vision Pro launched ahead of schedule, I recognized the media opportunity for a "metaverse university." I guided the technical approach—implementing a strategic web-view solution that met Apple's app store requirements while maximizing development efficiency. This rapid market response generated positive media coverage and positioned Tomorrow University as an early adopter in educational AR/VR.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/tomorrow/tomorrow-visionpro.png" alt="Tomorrow University Apple Vision Pro app" class="project-image" style="width: 100%;">
+                                </div>
+
+                                <h3>Delivering major company milestone</h3>
+                                <p>The results validated our strategic approach: we successfully opened the previously closed platform to prospects, created a complete sales funnel, and delivered what leadership called "the largest feature release in company history." The team achieved 2 major company OKRs, with the end-to-end sales journey becoming fully operational. Despite challenging leadership dynamics, we shipped a growth transformation that fundamentally changed how the company could acquire and convert customers.</p>
+
+                                <h3>What I learned</h3>
+                                <p>Tomorrow University taught me how to drive product-led growth in a resource-constrained environment while managing stakeholder expectations. Leading the transformation from closed platform to open growth funnel required both strategic vision and tactical execution. The experience reinforced my ability to deliver under pressure, make smart technical trade-offs, and coordinate complex feature releases as the sole PM in a fast-moving startup environment.</p>
+							</div>
+							<div class="col-lg-4">
+                                <div class="project-sidebar">
+                                    <h6>TIMELINE</h6>
+                                    <p>Nov 2023 - May 2024</p>
+                                    
+                                    <h6>THE CHALLENGE</h6>
+                                    <ul>
+                                        <li>Closed platform preventing lead conversion</li>
+                                        <li>Extremely high customer acquisition costs</li>
+                                        <li>Inconsistent branding and poor UX</li>
+                                        <li>Resource constraints and scope creep</li>
+                                    </ul>
+                                    
+                                    <h6>MY ROLE</h6>
+                                    <ul>
+                                        <li>Sole Product Manager</li>
+                                        <li>Growth strategy & execution</li>
+                                        <li>Cross-functional team coordination</li>
+                                        <li>Emergency UX support</li>
+                                    </ul>
+
+                                    <h6>IMPACT</h6>
+                                    <ul>
+                                        <li>Delivered largest company feature release</li>
+                                        <li>Complete lead-to-enrollment journey</li>
+                                        <li>Achieved 2 major company OKRs</li>
+                                        <li>Apple Vision Pro early market entry</li>
+                                    </ul>
+                                    
+                                    <h6>WEBSITE</h6>
+                                    <div class="store-badges">
+                                        <a href="https://www.tomorrow.university" target="_blank" rel="noopener">
+                                            Visit Tomorrow University →
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -816,7 +816,7 @@ class PortfolioManager {
                     </div>
                     
                     <div class="project-showcase">
-                        <img src="assets/projects/undulmood/undulmood-hero2.png" alt="Undulmood Digital Solutions Overview" class="project-showcase-image" style="width: 100%;">
+                        <img src="assets/projects/undulmood/undulmood-hero.gif" alt="Undulmood Digital Solutions Overview" class="project-showcase-image" style="width: 100%; max-height: 600px; object-fit: contain;">
                     </div>
 
                     <div class="project-content">
@@ -840,12 +840,12 @@ class PortfolioManager {
                                 <h3>Phase 2: Operations optimization and workflow improvement (2021-2022)</h3>
                                 <p>As his popularity grew, Undulmood faced a new problem: overwhelming inquiries that lacked sufficient context. Popular artists receive dozens of emails simply asking "how much?" without project details, creating hours of filtering and back-and-forth communication. As someone who isn't a fluent writer, this process was causing significant stress and eating into his creative time.</p>
 
-                                <p>I designed and built a custom booking form that required visitors to provide complete project context upfront. This zero-cost solution (using FormSubmit.co initially) dramatically reduced his administrative burden and eliminated unqualified inquiries. The impact was immediate: he went from spending hours on email clarification to receiving only serious, well-detailed requests. Eventually, seeing the value of the solution, he upgraded to Typeform as originally recommended.</p>
+                                <p>I designed and built a custom booking form that required visitors to provide complete project context upfront, carefully following his creative and stylistic choices—including using hanji (Korean traditional paper) as the background texture to maintain brand consistency. This zero-cost solution (using FormSubmit.co initially) dramatically reduced his administrative burden and eliminated unqualified inquiries. The impact was immediate: he went from spending hours on email clarification to receiving only serious, well-detailed requests. Eventually, seeing the value of the solution, he upgraded to Typeform as originally recommended.</p>
 
                                 <div class="project-image-container expandable-image" style="margin: 20px 0;">
                                     <div class="expandable-image-wrapper" style="overflow: hidden; max-height: 400px; position: relative; transition: max-height 0.3s ease;">
                                         <img src="assets/projects/undulmood/undulmood-booking.png" alt="Custom booking form interface" class="project-image" style="width: 100%;">
-                                        <div class="expand-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(255,255,255,0.95)); display: flex; align-items: center; justify-content: center;">
+                                        <div class="expand-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); display: flex; align-items: center; justify-content: center;">
                                             <button class="expand-btn" style="background: rgba(34, 141, 255, 0.9); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; cursor: pointer; backdrop-filter: blur(10px);">Show full form ↓</button>
                                         </div>
                                     </div>
@@ -855,8 +855,32 @@ class PortfolioManager {
                                 <p>With core operations stabilized, Undulmood approached me about a more ambitious project: MISANG, a curated marketplace for Korean artisan goods. The concept targeted affluent European and American consumers interested in authentic Korean craftsmanship—woodworkers, metalworkers, and traditional artisans creating unique gifts and home goods.</p>
 
                                 <p>This project required genuine strategic discovery. Unlike his previous needs, this was about building a multi-vendor platform with complex categorization: products organized by type, but also by individual artisan brands. I began with systematic architecture planning, user flow mapping, and categorization strategy before moving to visual design—an approach that prioritized understanding the business requirements and user needs first.</p>
-                                <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/undulmood/undulmood-misang.jpg" alt="MISANG marketplace concept designs" class="project-image" style="width: 100%;">
+                                <div class="project-image-carousel" data-carousel="misang-concepts">
+                                    <p style="text-align: center; color: #666; font-size: 0.9em; margin-bottom: 15px;"><em>Early concept exploration work - Site architecture and visual direction research</em></p>
+                                    <div class="carousel-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/undulmood/misang-architecture.png" alt="Site architecture, product categorization, and sitemap">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/undulmood/misang-moodboard.png" alt="Visual moodboard and brand direction">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/undulmood/misang-typography.png" alt="Typography exploration and decisions">
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/projects/undulmood/misang-lowfi.png" alt="Low fidelity wireframes and layout concepts">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-nav prev" aria-label="Previous image">❮</button>
+                                        <button class="carousel-nav next" aria-label="Next image">❯</button>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <div class="carousel-indicator active"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                        <div class="carousel-indicator"></div>
+                                    </div>
                                 </div>
 
                                 <h3>The value of systematic process and lean execution</h3>
@@ -895,16 +919,16 @@ class PortfolioManager {
 
                                     <h6>DELIVERABLES</h6>
                                     <ul>
+                                    <li>Business operations consulting</li>
                                         <li>Shopify store (prints, brushes, goods)</li>
                                         <li>Custom booking form system</li>
                                         <li>MISANG marketplace strategy & design</li>
-                                        <li>Business operations consulting</li>
                                     </ul>
 
                                     <h6>IMPACT</h6>
                                     <ul>
-                                        <li>€4-5K ongoing passive revenue stream</li>
-                                        <li>Eliminated hours of weekly admin work</li>
+                                        <li>Passive revenue stream unlocked</li>
+                                        <li>Eliminated several hours of weekly admin work</li>
                                         <li>Trusted long-term digital partnership</li>
                                         <li>Strategic foundation for future growth</li>
                                     </ul>

@@ -134,7 +134,7 @@ class PortfolioManager {
                         <div class="row">
                             <div class="col-lg-8">
                                 <h3>How it started</h3>
-                                <p>Back in 2016, I was stuck in NYC traffic for 30 minutes, and I jumped out the bus window and ran to the nearest Subway sandwich shop because I needed to pee. It was disgusting but it was better than nothing. As I came out, I saw a guy in a wheelchair waiting his turn. The heavy lock clicking, as I squeezed past the long line of people in this tight corridor, is a sound I can still hear vividly to this day. This combined with seeing women having nowhere to pee, delivery workers being denied access by restaurants, and even my friends and family getting a UTI because they couldn't find a restroom made me realize that this is a major problem that not enough people are talking about.</p>
+                                <p>Back in 2016, I was stuck in NYC traffic for 30 minutes, and I had to quickly find the nearest available restroom at a Subway sandwich shop. It was disgusting but it was better than nothing. As I came out, I saw a guy in a wheelchair waiting his turn. The heavy lock clicking, as I squeezed past the long line of people in this tight corridor, is a sound I can still hear vividly to this day. This combined with seeing women having nowhere to pee, delivery workers being denied access by restaurants, and even my friends and family getting a UTI because they couldn't find a restroom made me realize that this is a major problem that not enough people are talking about.</p>
 
                                 <h3>Understanding the problem</h3>
                                 <p>I interviewed everyone — friends, family, strangers, and every single Tinder date (yes, really) — about their restroom experiences. The pattern was clear: in general, women consider this to be quite a frequent and significant problem. Young parents, wheelchair users, elderly, trans people, and those who are affected by IBS and other issues are hit especially hard. My research revealed a darker truth: we're losing public restrooms every year, creating an inequitable world that restricts mobility and targets marginalized groups. The burden is placed on the people and local businesses, and this is wrong. This isn't just inconvenience — it's a fundamental need not being met, and a threat to basic human dignity and civil rights.</p>
@@ -286,7 +286,7 @@ class PortfolioManager {
                                 <p>Together, we launched Version 3.0.0, a major milestone for the project.</p>
 
 								<h3>When it clicked</h3>
-								<p>Festival organizers loved the concept. They shared restroom location data, we mapped it in our app, and hundreds used it at events like Karneval der Kulturen and Christopher Street Day in Berlin. Users tell me the app is "saving their lives." The numbers speak for themselves: 11.73k searches, 4,710 users, 1k MAU, and 4.8/4.6 app store ratings. The soft launch was a success, with room for improvement.</p>
+								<p>Festival organizers loved the concept. They shared restroom location data, we mapped it in our app, and hundreds used it at events like Karneval der Kulturen and Christopher Street Day in Berlin. Users tell me the app is "saving their lives." The numbers speak for themselves: 12k searches, 5k users, 1k MAU, and 4.8/4.6 app store ratings. The soft launch was a success, with room for improvement.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
 									<img src="assets/projects/easypz/easypz-reviews.png" alt="Positive user reviews and app store ratings" class="project-image" style="width: 100%;">
@@ -316,7 +316,7 @@ class PortfolioManager {
                                         <li>React Native + TypeScript</li>
                                         <li>NestJS + PostgreSQL</li>
                                         <li>AWS</li>
-                                        <li>Monorepo</li>
+                                        <li>Expo deployment</li>
                                     </ul>
                                     
                                     <h6>DOWNLOAD</h6>
@@ -466,7 +466,7 @@ class PortfolioManager {
                                     <img src="assets/projects/morressier/morressier-conference.png" alt="Conference setup showing digital poster displays" class="project-image" style="width: 100%;">
                                 </div>
 
-                                <h3>Almost Homeless, in U-Bahn stations</h3>
+                                <h3>Learning design with limited resources</h3>
                                 <p>While holding down Customer Success solo during my manager's paternity leave, I spent evenings studying UX/UI design. Without stable housing or WiFi, I'd camp in Berlin U-Bahn stations using their free internet until security kicked me out at closing. I channeled this design knowledge into QA'ing releases, proposing improvements, and essentially filling the PM gap in our scrappy team. The CTO noticed and offered me a Product Manager role—my first time even hearing the title. I pivoted from my designer dreams and never looked back.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
@@ -884,13 +884,13 @@ class PortfolioManager {
                                 </div>
 
                                 <h3>The value of systematic process and lean execution</h3>
-                                <p>My approach to MISANG balanced strategic rigor with budget realities. By focusing on understanding the business model, target market, and operational requirements first, then using lightweight design exploration before moving directly to Shopify development, we achieved strategic depth while controlling costs. This systematic-yet-lean methodology resonated strongly with the client, who was "completely taken aback by how different my process is." Although MISANG ultimately didn't launch due to supplier sourcing challenges, the strategic foundation work demonstrated the value of thorough discovery combined with pragmatic execution.</p>
+                                <p>My approach to MISANG balanced strategic rigor with budget realities. By focusing on understanding the business model, target market, and operational requirements first, then using lightweight design exploration before moving directly to Shopify development, we achieved strategic depth while controlling costs. This systematic-yet-lean methodology was well-received by the client, who appreciated the strategic foundation approach. Although MISANG ultimately didn't launch due to supplier sourcing challenges, the strategic foundation work demonstrated the value of thorough discovery combined with pragmatic execution.</p>
 
                                 <h3>Becoming the trusted digital advisor</h3>
                                 <p>Over three years, I evolved from crisis contractor to strategic digital partner. "For anything technical, he comes to me first," reflects the trust built through consistent delivery and strategic thinking. Each project built on previous successes: the e-commerce foundation enabled operational optimization, which then supported larger strategic initiatives.</p>
 
                                 <h3>Measurable business impact</h3>
-                                <p>The partnership delivered concrete results: the Shopify store has generated more than €5,000 in ongoing passive income since 2020, with Procreate brushes becoming particularly popular due to their immediate digital delivery and accessible pricing for digital artists. The booking form eliminated hours of administrative work weekly, reducing stress and allowing focus on creative work. While MISANG didn't materialize, the strategic planning process demonstrated sophisticated marketplace thinking that the client valued highly.</p>
+                                <p>The partnership delivered concrete results: the Shopify store unlocked a sustainable passive revenue stream, with Procreate brushes becoming particularly popular due to their immediate digital delivery and accessible pricing for digital artists. The booking form eliminated hours of administrative work weekly, reducing stress and allowing focus on creative work. While MISANG didn't materialize, the strategic planning process demonstrated sophisticated marketplace thinking that the client valued highly.</p>
 
                                 <h3>What this partnership taught me</h3>
                                 <p>Working with Undulmood reinforced the importance of systematic process over aesthetic output. Clients value strategic thinking and business understanding as much as technical execution. The evolution from crisis response to growth strategy showed how trusted partnerships develop through consistent delivery and genuine business impact. Most importantly, I learned that sustainable client relationships are built on solving real problems systematically, not just delivering what's asked for.</p>

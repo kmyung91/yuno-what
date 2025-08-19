@@ -110,14 +110,15 @@ class TimelineManager {
             {
                 id: 'stealth-startup',
                 type: 'venture',
-                title: 'Co-Founder / AI-Assisted Development Lead',
-                organization: 'Stealth Startup',
+                title: 'Co-Founder / AI Integration Lead',
+                organization: 'Stealth Startup (Part-time)',
                 period: 'Jul 2023 - Jan 2024',
                 location: 'Berlin, DE (Remote)',
-                description: 'Led product development for an AI content generation system that transformed text scripts into complete videos by orchestrating multiple AI services through Python integration.',
+                description: 'Part-time side project developing AI content generation system. Built Python scripts to orchestrate multiple AI services for automated video production.',
                 achievements: [
-                    'Led product development for an AI content generation system that transformed text scripts into complete videos by orchestrating multiple AI services (ChatGPT, MidJourney, ElevenLabs) through Python integration',
-                    'Successfully built and validated an MVP that automated the entire content creation pipeline from script to finished video, demonstrating technical feasibility and market potential'
+                    'Created Python automation scripts integrating ChatGPT, MidJourney, and ElevenLabs APIs',
+                    'Built end-to-end pipeline transforming text scripts into complete videos',
+                    'Validated early AI orchestration concepts before widespread adoption'
                 ],
                 logo: 'assets/companylogos/logo_stealth.jpeg'
             },

@@ -583,10 +583,6 @@ class PortfolioManager {
                                 <h3>Strategic approach: Lead-to-enrollment architecture</h3>
                                 <p>I diagnosed the core issue: prospects couldn't experience the product before paying, creating massive conversion friction. My strategy focused on redesigning the entire user journey for non-paying visitors who discovered us through social media ads. The solution required rethinking platform architecture to support two user types: enrolled students and prospective leads, each with different access levels and experiences.</p>
 
-                                <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/tomorrow/tomorrow-homepage.jpg" alt="Before and after homepage redesign" class="project-image" style="width: 100%;">
-                                </div>
-
                                 <h3>Leading cross-functional delivery under pressure</h3>
                                 <p>As sole PM coordinating a 7-person team (Director of Engineering, Product Designer, 3 Full-Stack Engineers, QA Engineer), I managed competing priorities while the CEO continued adding scope. When the designer was let go mid-project, I took on additional UX responsibilities to maintain momentum. I worked extremely closely with our Director of Engineering to ensure technical feasibility while pushing back on unrealistic timelines.</p>
 
@@ -670,12 +666,249 @@ class PortfolioManager {
                                         <li>Apple Vision Pro early market entry</li>
                                     </ul>
                                     
-                                    <h6>WEBSITE</h6>
-                                    <div class="store-badges">
-                                        <a href="https://www.tomorrow.university" target="_blank" rel="noopener">
-                                            Visit Tomorrow University →
-                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 'feedbacker',
+                title: 'Feedbacker (Fdbckr)',
+                description: 'Visual Design Feedback Platform - Bootcamp Final Project',
+                thumbnail: 'assets/projects/feedbacker/feedbacker-hero.jpg',
+                hero: 'assets/projects/feedbacker/feedbacker-hero.gif',
+                featured: false,
+                tags: ['Full-Stack Development', 'Web', 'Student Project'],
+                year: '2021',
+                content: `
+                    <div class="project-header">
+                        <img src="assets/companylogos/logo_lewagon.jpeg" class="project-logo" alt="Le Wagon Logo">
+                        <h2>Feedbacker: Visual Design Feedback Platform</h2>
+                        <p class="lead">Full-Stack PM in action - applying product leadership while learning to code</p>
+                        <div class="project-meta">
+                            <span class="project-tag">Full-Stack Development</span>
+                            <span class="project-tag">Web</span>
+                            <span class="project-tag">Student Project</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-showcase">
+                        <img src="assets/projects/feedbacker/feedbacker-hero.gif" alt="Feedbacker App Interface" class="project-showcase-image" style="width: 100%;">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3>Identifying the problem from personal experience</h3>
+                                <p>During Le Wagon's intensive coding bootcamp, students pitch final project ideas and vote on which to build. I identified a frustrating communication problem I'd experienced repeatedly: giving specific feedback on visual designs. Typically, you can only comment on entire images or struggle to describe exactly which element needs work ("the cloud in the upper right needs more detail"). This creates confusion and inefficient feedback loops for designers and visual artists.</p>
+
+                                <h3>From pitch to team leadership</h3>
+                                <p>My idea was selected for development, and I found myself leading a 4-person team of coding students. Drawing on my PM experience at Morressier, I naturally took charge of organizing workloads, distributing tasks, cutting scope, and driving technical decisions. While my teammates focused on learning to code, I applied my existing product management skills to coordinate our 2-week sprint from concept to demo-ready product.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/feedbacker/feedbacker-wireframes.png" alt="Early Figma wireframes and product planning" class="project-image" style="width: 100%;">
+                                </div>
+
+                                <h3>Technical innovation: Location-based feedback</h3>
+                                <p>The core technical challenge was implementing location-based commenting on images—similar to what Figma offers today, but this was 2021. Users could upload visual artwork and others could click specific points to leave contextual feedback tied to exact locations. We built this with Ruby on Rails, JavaScript for the interactive commenting system, and deployed on Heroku. The solution required careful coordinate mapping and real-time feedback display.</p>
+
+                                <div class="project-image-carousel" data-carousel="feedbacker-features" style="margin: 20px 0;">
+									<div class="carousel-container" style="height: 400px; overflow: hidden;">
+										<div class="carousel-track">
+											<div class="carousel-slide">
+												<img src="assets/projects/feedbacker/feedbacker-discover-artworks.png" alt="Discover artworks page showing community gallery" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/feedbacker/feedbacker-discover-artists.png" alt="Discover artists page with user profiles" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+											<div class="carousel-slide">
+												<img src="assets/projects/feedbacker/feedbacker-artist-profile.png" alt="Artist profile page with portfolio and feedback" style="width: 100%; height: 400px; object-fit: contain;">
+											</div>
+										</div>
+										<button class="carousel-nav prev" aria-label="Previous image">❮</button>
+										<button class="carousel-nav next" aria-label="Next image">❯</button>
+									</div>
+									<div class="carousel-indicators">
+										<div class="carousel-indicator active"></div>
+										<div class="carousel-indicator"></div>
+										<div class="carousel-indicator"></div>
+									</div>
+								</div>
+
+                                <h3>Project management and delivery under pressure</h3>
+                                <p>I organized our 2-week timeline by breaking down the product into core user journeys: account creation, image upload, commenting system, and community discovery. I held planning meetings to discuss architecture, UI layouts, and user flows, then distributed tasks across the team. Despite typical development hiccups, we maintained momentum through clear communication and scope prioritization. The key was focusing on our core value proposition rather than feature creep.</p>
+
+                                <h3>Demo day validation</h3>
+                                <p>Initially, some classmates didn't understand the concept during development. But during our demo to 3 full batches plus staff, alumni, and external attendees, the value became immediately clear. As one attendee put it: "Ah yes, it's much better to click on the cloud and say it needs more work, rather than explaining that in a comment box." The clean, intuitive interface helped users grasp the value proposition instantly.</p>
+
+                                <div class="embed-responsive embed-responsive-16by9" style="margin: 20px 0;">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/snYk8xveH5g?si=xkf66p0n2KcV60pz&amp;start=5724" title="Feedbacker Demo - Le Wagon Berlin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <h3>Becoming a more technical PM</h3>
+                                <p>Leading Feedbacker while learning to code was transformative for my PM career. I could finally bridge the gap between user needs and technical execution with hands-on development experience. Understanding the actual complexity of implementation made me a better PM—more realistic about timelines, better at technical trade-offs, and able to communicate more effectively with engineering teams. This foundation later proved invaluable at wefox, where I could jump into Figma when needed and make informed technical decisions.</p>
+
+                                <h3>What I learned</h3>
+                                <p>This project reinforced that great products solve real problems you've personally experienced. The most compelling pitches come from authentic pain points. Learning to code while applying PM skills taught me the importance of realistic technical scoping and clear communication with development teams. Most importantly, I gained hands-on experience that made me a more technical PM—capable of making informed trade-offs and bridging the gap between product vision and engineering reality.</p>
+							</div>
+							<div class="col-lg-4">
+                                <div class="project-sidebar">
+                                    <h6>TIMELINE</h6>
+                                    <p>2 weeks (July 2021)</p>
+                                    
+                                    <h6>THE CHALLENGE</h6>
+                                    <ul>
+                                        <li>Visual feedback communication problem</li>
+                                        <li>2-week sprint to working demo</li>
+                                        <li>Technical complexity of location-based commenting</li>
+                                        <li>Applying PM skills in development context</li>
+                                    </ul>
+                                    
+                                    <h6>MY ROLE</h6>
+                                    <ul>
+                                        <li>Product vision & strategy</li>
+                                        <li>Team leadership (4-person squad)</li>
+                                        <li>Project management & scope prioritization</li>
+                                        <li>Full-stack development</li>
+                                    </ul>
+
+                                    <h6>IMPACT</h6>
+                                    <ul>
+                                        <li>Selected project pitch</li>
+                                        <li>Successful demo to 100+ attendees</li>
+                                        <li>Team commended for rapid delivery</li>
+                                        <li>Enhanced PM skills with technical depth</li>
+                                    </ul>
+                                    
+                                    <h6>TECH STACK</h6>
+                                    <ul>
+                                        <li>Ruby on Rails</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML/CSS</li>
+                                        <li>Heroku</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 'undulmood-partnership',
+                title: 'Undulmood',
+                description: 'Digital Solutions for Creative Industry',
+                thumbnail: 'assets/projects/undulmood/undulmood-hero.png',
+                hero: 'assets/projects/undulmood/undulmood-hero.gif',
+                featured: false,
+                tags: ['Consulting', 'E-commerce Strategy', 'Partnership'],
+                year: '2020-2023',
+                content: `
+                    <div class="project-header">
+                        <img src="assets/companylogos/logo_undulmood.svg" class="project-logo" alt="Undulmood Logo" style="filter: brightness(0) invert(1);">
+                        <h2>Undulmood</h2>
+                        <p class="lead">Digital solutions for creative industry - a multi-year partnership</p>
+                        <div class="project-meta">
+                            <span class="project-tag">Consulting</span>
+                            <span class="project-tag">E-commerce Strategy</span>
+                            <span class="project-tag">Partnership</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-showcase">
+                        <img src="assets/projects/undulmood/undulmood-hero2.png" alt="Undulmood Digital Solutions Overview" class="project-showcase-image" style="width: 100%;">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3>A partnership born from crisis</h3>
+                                <p>In 2020, Berlin-based tattoo artist Undulmood faced an unprecedented challenge: COVID lockdowns had completely dried up his business. Like many creatives, he needed to pivot quickly. He'd been receiving requests from clients to sell art prints and had been developing this idea, but lacked the technical knowledge to execute. Operating on a tight budget during uncertain times, we began what would become a multi-year digital partnership spanning crisis response, operational optimization, and strategic growth initiatives.</p>
+
+                                <h3>Phase 1: Crisis response and e-commerce foundation (2020)</h3>
+                                <p>The immediate need was clear: establish an online sales channel quickly and affordably. After researching available solutions, I recommended Shopify for its reliability and ease of management. Beyond technical setup, I consulted on the full business model: print production logistics, warehousing solutions, delivery options, and international shipping strategies for his global client base. The focus was creating a sustainable revenue stream that could operate independently of his physical tattoo work.</p>
+
+                                <div class="project-image-gallery" style="margin: 20px 0;">
+                                    <div class="project-image-container" style="margin-bottom: 20px;">
+                                        <img src="assets/projects/undulmood/undulmood-daggers.png" alt="DAGGERS collection showcasing tattoo-inspired artwork" class="project-image" style="width: 100%;">
                                     </div>
+                                    <div class="project-image-container">
+                                        <img src="assets/projects/undulmood/undulmood-message.png" alt="Personal message from artist to customers" class="project-image" style="width: 100%;">
+                                    </div>
+                                </div>
+
+                                <h3>Phase 2: Operations optimization and workflow improvement (2021-2022)</h3>
+                                <p>As his popularity grew, Undulmood faced a new problem: overwhelming inquiries that lacked sufficient context. Popular artists receive dozens of emails simply asking "how much?" without project details, creating hours of filtering and back-and-forth communication. As someone who isn't a fluent writer, this process was causing significant stress and eating into his creative time.</p>
+
+                                <p>I designed and built a custom booking form that required visitors to provide complete project context upfront. This zero-cost solution (using FormSubmit.co initially) dramatically reduced his administrative burden and eliminated unqualified inquiries. The impact was immediate: he went from spending hours on email clarification to receiving only serious, well-detailed requests. Eventually, seeing the value of the solution, he upgraded to Typeform as originally recommended.</p>
+
+                                <div class="project-image-container expandable-image" style="margin: 20px 0;">
+                                    <div class="expandable-image-wrapper" style="overflow: hidden; max-height: 400px; position: relative; transition: max-height 0.3s ease;">
+                                        <img src="assets/projects/undulmood/undulmood-booking.png" alt="Custom booking form interface" class="project-image" style="width: 100%;">
+                                        <div class="expand-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(255,255,255,0.95)); display: flex; align-items: center; justify-content: center;">
+                                            <button class="expand-btn" style="background: rgba(34, 141, 255, 0.9); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; cursor: pointer; backdrop-filter: blur(10px);">Show full form ↓</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>Phase 3: Strategic expansion and marketplace vision (2023)</h3>
+                                <p>With core operations stabilized, Undulmood approached me about a more ambitious project: MISANG, a curated marketplace for Korean artisan goods. The concept targeted affluent European and American consumers interested in authentic Korean craftsmanship—woodworkers, metalworkers, and traditional artisans creating unique gifts and home goods.</p>
+
+                                <p>This project required genuine strategic discovery. Unlike his previous needs, this was about building a multi-vendor platform with complex categorization: products organized by type, but also by individual artisan brands. I began with systematic architecture planning, user flow mapping, and categorization strategy before moving to visual design—an approach that prioritized understanding the business requirements and user needs first.</p>
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/undulmood/undulmood-misang.jpg" alt="MISANG marketplace concept designs" class="project-image" style="width: 100%;">
+                                </div>
+
+                                <h3>The value of systematic process and lean execution</h3>
+                                <p>My approach to MISANG balanced strategic rigor with budget realities. By focusing on understanding the business model, target market, and operational requirements first, then using lightweight design exploration before moving directly to Shopify development, we achieved strategic depth while controlling costs. This systematic-yet-lean methodology resonated strongly with the client, who was "completely taken aback by how different my process is." Although MISANG ultimately didn't launch due to supplier sourcing challenges, the strategic foundation work demonstrated the value of thorough discovery combined with pragmatic execution.</p>
+
+                                <h3>Becoming the trusted digital advisor</h3>
+                                <p>Over three years, I evolved from crisis contractor to strategic digital partner. "For anything technical, he comes to me first," reflects the trust built through consistent delivery and strategic thinking. Each project built on previous successes: the e-commerce foundation enabled operational optimization, which then supported larger strategic initiatives.</p>
+
+                                <h3>Measurable business impact</h3>
+                                <p>The partnership delivered concrete results: the Shopify store has generated more than €5,000 in ongoing passive income since 2020, with Procreate brushes becoming particularly popular due to their immediate digital delivery and accessible pricing for digital artists. The booking form eliminated hours of administrative work weekly, reducing stress and allowing focus on creative work. While MISANG didn't materialize, the strategic planning process demonstrated sophisticated marketplace thinking that the client valued highly.</p>
+
+                                <h3>What this partnership taught me</h3>
+                                <p>Working with Undulmood reinforced the importance of systematic process over aesthetic output. Clients value strategic thinking and business understanding as much as technical execution. The evolution from crisis response to growth strategy showed how trusted partnerships develop through consistent delivery and genuine business impact. Most importantly, I learned that sustainable client relationships are built on solving real problems systematically, not just delivering what's asked for.</p>
+
+                                <p>You can explore the ongoing results of this partnership at <a href="https://undulmood.com" target="_blank" rel="noopener">undulmood.com</a>, where the e-commerce foundation we built continues to generate passive income and showcase his artistic work to a global audience.</p>
+							</div>
+							<div class="col-lg-4">
+                                <div class="project-sidebar">
+                                    <h6>TIMELINE</h6>
+                                    <p>2020 - 2023</p>                                    
+                                    <h6>THE CHALLENGE</h6>
+                                    <ul>
+                                        <li>COVID business crisis requiring immediate pivot</li>
+                                        <li>Operational inefficiencies in client communication</li>
+                                        <li>Ambitious marketplace strategy development</li>
+                                        <li>Budget constraints throughout</li>
+                                    </ul>
+                                    
+                                    <h6>MY ROLE</h6>
+                                    <ul>
+                                        <li>Strategic digital advisor</li>
+                                        <li>E-commerce setup & optimization</li>
+                                        <li>Business process improvement</li>
+                                        <li>Marketplace concept development</li>
+                                    </ul>
+
+                                    <h6>DELIVERABLES</h6>
+                                    <ul>
+                                        <li>Shopify store (prints, brushes, goods)</li>
+                                        <li>Custom booking form system</li>
+                                        <li>MISANG marketplace strategy & design</li>
+                                        <li>Business operations consulting</li>
+                                    </ul>
+
+                                    <h6>IMPACT</h6>
+                                    <ul>
+                                        <li>€4-5K ongoing passive revenue stream</li>
+                                        <li>Eliminated hours of weekly admin work</li>
+                                        <li>Trusted long-term digital partnership</li>
+                                        <li>Strategic foundation for future growth</li>
+                                    </ul>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -908,6 +1141,9 @@ class PortfolioManager {
         // Initialize carousels in the modal
         this.initCarousels();
         
+        // Initialize expandable images
+        this.initExpandableImages();
+        
         // Show modal
         this.modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scroll
@@ -992,6 +1228,37 @@ class PortfolioManager {
         
         // Initial setup
         updateCarousel();
+    }
+    
+    initExpandableImages() {
+        const expandableImages = this.modalBody?.querySelectorAll('.expandable-image');
+        if (!expandableImages) return;
+        
+        expandableImages.forEach(container => {
+            const wrapper = container.querySelector('.expandable-image-wrapper');
+            const button = container.querySelector('.expand-btn');
+            const overlay = container.querySelector('.expand-overlay');
+            
+            if (!wrapper || !button || !overlay) return;
+            
+            let isExpanded = false;
+            
+            button.addEventListener('click', () => {
+                if (!isExpanded) {
+                    // Expand
+                    wrapper.style.maxHeight = 'none';
+                    button.textContent = 'Show less ↑';
+                    overlay.style.display = 'none';
+                    isExpanded = true;
+                } else {
+                    // Collapse
+                    wrapper.style.maxHeight = '400px';
+                    button.textContent = 'Show full form ↓';
+                    overlay.style.display = 'flex';
+                    isExpanded = false;
+                }
+            });
+        });
     }
     
     closeModal() {

@@ -388,11 +388,15 @@ class PortfolioManager {
                                 <p>The results exceeded expectations: we expanded platform access from 35,000 users with wefox-branded policies to the full 2+ million customer base. App store ratings improved from 2.1 to 3.6 as we addressed user feedback about functionality and information access. Most significantly, we successfully transformed wefox from an internal tool into a comprehensive platform supporting external insurance provider integrations.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
-                                    <img src="assets/projects/wefox/wefox-3.png" alt="Picture of me and our entire tech department celebrating at a party in Berlin." class="project-image">
+                                    <img src="assets/projects/wefox/wefox-products-mockup.png" alt="Final product mockups showcasing the redesigned platform" class="project-image">
                                 </div>
 
                                 <h3>What I take with me</h3>
                                 <p>Leading product at wefox taught me how to ship at scale in a heavily regulated industry while juggling multiple stakeholders across legal, privacy, and engineering. During my tenure, the company's valuation grew from $1.5B to $4.5B—while I was one of 1000+ employees contributing to this growth, I'm proud that our platform transformation played a meaningful role. I learned when to roll up my sleeves (jumping into Figma when we had no designers) and when to step back and orchestrate (coordinating the design system rollout once we had the right team). Most importantly, I discovered that transforming a 2.1-rated app into a 3.6-rated platform serving 2 million users requires equal parts strategic vision, tactical execution, and the flexibility to adapt when markets shift. These lessons continue to shape how I approach product challenges today.</p>
+
+                                <div class="project-image-container" style="margin: 20px 0;">
+                                    <img src="assets/projects/wefox/wefox-3.png" alt="Picture of me and our entire tech department celebrating at a party in Berlin." class="project-image">
+                                </div>
 							</div>
 							<div class="col-lg-4">
                                 <div class="project-sidebar">

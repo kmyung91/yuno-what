@@ -409,7 +409,7 @@ class PortfolioManager {
                                     
                                     <h6>MY ROLE</h6>
                                     <ul>
-                                        <li>Platform strategy & execution</li>
+                                        <li>iOS & Android Product Manager</li>
                                         <li>Design system implementation lead</li>
                                         <li>Cross-functional coordination</li>
                                         <li>Emergency design support</li>

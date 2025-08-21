@@ -459,7 +459,7 @@ class PortfolioManager {
                                 <h3>Breaking into Berlin tech</h3>
                                 <p>I moved to Berlin in 2017 with one goal: break into the tech sector. Coming from a role I wasn't passionate about, I joined Morressier as employee #8, drawn to their mission of digitizing centuries-old academic poster sessions. While medical researchers had been pinning paper posters to boards since forever, Morressier envisioned a digital platform where research could be shared, discovered, and connected globally.</p>
 
-                                <h3>Baptism by fire</h3>
+                                <h3>Learning to thrive under pressure</h3>
                                 <p>Managing 60+ medical conferences across Europe and beyond taught me to thrive in chaos. From major capitals to smaller cities, I coordinated events spanning the continent—plus international conferences in places like Tel Aviv, NYC, South Korea, and Australia. When my manager had a personal emergency at 3AM, I packed my bags and flew to NYC on 6 hours notice—in the worst seat on the plane. When submission IDs got scrambled at a major conference, I worked through the night to decode the pattern and save the event. I've debugged systems from a car driving to a Valencia beach, turning vacation into troubleshooting sessions. This wasn't just a job; it was my proving ground.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
@@ -632,7 +632,7 @@ class PortfolioManager {
                                 </div>
 
                                 <h3>Delivering major company milestone</h3>
-                                <p>The results validated our strategic approach: we successfully opened the previously closed platform to prospects, created a complete sales funnel, and delivered what leadership called "the largest feature release in company history." The team achieved 2 major company OKRs, with the end-to-end sales journey becoming fully operational. Despite challenging leadership dynamics, we shipped a growth transformation that fundamentally changed how the company could acquire and convert customers.</p>
+                                <p>The results validated our strategic approach: we successfully opened the previously closed platform to prospects, created a complete sales funnel, and delivered what leadership called "the largest feature release in company history." The team achieved 2 major company OKRs, with the end-to-end sales journey becoming fully operational. Working in a fast-paced startup environment, we shipped a growth transformation that fundamentally changed how the company could acquire and convert customers.</p>
 
                                 <h3>What I learned</h3>
                                 <p>Tomorrow University taught me how to drive product-led growth in a resource-constrained environment while managing stakeholder expectations. Leading the transformation from closed platform to open growth funnel required both strategic vision and tactical execution. The experience reinforced my ability to deliver under pressure, make smart technical trade-offs, and coordinate complex feature releases as the sole PM in a fast-moving startup environment.</p>

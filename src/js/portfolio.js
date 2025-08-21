@@ -625,7 +625,7 @@ class PortfolioManager {
                                 <p><strong>4. Community Features:</strong> Enhanced student directory with search and filtering capabilities, plus centralized events page with calendar integration to increase platform value and engagement.</p>
 
                                 <h3>Apple Vision Pro: Strategic market response</h3>
-                                <p>When Apple Vision Pro launched ahead of schedule, I recognized the media opportunity for a "metaverse university." I guided the technical approach—implementing a strategic web-view solution that met Apple's app store requirements while maximizing development efficiency. This rapid market response generated positive media coverage and positioned Tomorrow University as an early adopter in educational AR/VR.</p>
+                                <p>CEO Christian Rebernik had convinced me to join his company to build a metaverse university in the Apple Vision Pro. When Apple Vision Pro launched ahead of schedule, I had to expedite technical guidance and delivered a strategic web-view solution that met Apple's app store requirements while maximizing development efficiency. This rapid market response generated positive media coverage and positioned Tomorrow University as an early adopter in educational AR/VR.</p>
 
                                 <div class="project-image-container" style="margin: 20px 0;">
                                     <img src="assets/projects/tomorrow/tomorrow-visionpro.png" alt="Tomorrow University Apple Vision Pro app" class="project-image" style="width: 100%;">
